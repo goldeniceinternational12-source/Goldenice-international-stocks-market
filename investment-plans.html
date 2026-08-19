@@ -1,0 +1,2630 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Investment Plans | Goldenice International</title>
+
+    <meta
+        name="description"
+        content="Explore Goldenice International investment options and discuss global market opportunities directly with our team."
+    >
+
+    <meta
+        name="robots"
+        content="index, follow"
+    >
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <style>
+        /* =========================================
+   GOLDENICE INTERNATIONAL
+   INVESTMENT PLANS
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background: #050b08;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+button {
+    font-family: inherit;
+}
+
+
+/* =========================================
+   NAVIGATION
+========================================= */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+
+    background: rgba(5, 11, 8, 0.92);
+    backdrop-filter: blur(18px);
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.nav-container {
+    width: min(1200px, 92%);
+    min-height: 82px;
+
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 25px;
+}
+
+.logo img {
+    width: 155px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: #89958e;
+    font-size: 11px;
+    transition: 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #b9ef49;
+}
+
+.nav-button {
+    padding: 12px 18px;
+
+    border-radius: 7px;
+
+    background: #b9ef49;
+    color: #061008;
+
+    font-size: 10px;
+    font-weight: 800;
+
+    transition: 0.3s ease;
+}
+
+.nav-button:hover {
+    transform: translateY(-2px);
+}
+
+.menu-button {
+    display: none;
+
+    border: none;
+    background: transparent;
+
+    color: #ffffff;
+
+    font-size: 27px;
+
+    cursor: pointer;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.plans-hero {
+    position: relative;
+
+    min-height: 690px;
+
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+
+    background: #050c08;
+}
+
+.hero-background {
+    position: absolute;
+    inset: 0;
+
+    background:
+        radial-gradient(
+            circle at 75% 40%,
+            rgba(185, 239, 73, 0.12),
+            transparent 32%
+        );
+
+    pointer-events: none;
+}
+
+.hero-background::before {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    opacity: 0.35;
+
+    background-image:
+        linear-gradient(
+            rgba(185, 239, 73, 0.035) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            90deg,
+            rgba(185, 239, 73, 0.035) 1px,
+            transparent 1px
+        );
+
+    background-size: 60px 60px;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+
+    width: min(1200px, 92%);
+
+    margin: 80px auto 0;
+}
+
+.hero-label {
+    display: inline-block;
+
+    padding: 8px 13px;
+
+    border: 1px solid rgba(185, 239, 73, 0.22);
+
+    border-radius: 30px;
+
+    color: #b9ef49;
+
+    font-size: 9px;
+    font-weight: 800;
+
+    letter-spacing: 2px;
+}
+
+.hero-content h1 {
+    max-width: 900px;
+
+    margin-top: 25px;
+
+    font-size: clamp(48px, 7vw, 82px);
+
+    line-height: 0.98;
+
+    letter-spacing: -4px;
+}
+
+.hero-content h1 span {
+    color: #b9ef49;
+}
+
+.hero-content p {
+    max-width: 650px;
+
+    margin-top: 27px;
+
+    color: #7f8c85;
+
+    font-size: 14px;
+}
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    margin-top: 32px;
+}
+
+.primary-button,
+.secondary-button {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 12px;
+
+    padding: 14px 19px;
+
+    border-radius: 7px;
+
+    font-size: 10px;
+    font-weight: 800;
+
+    transition: 0.3s ease;
+}
+
+.primary-button {
+    background: #b9ef49;
+    color: #061008;
+}
+
+.primary-button:hover {
+    transform: translateY(-3px);
+}
+
+.primary-button span {
+    font-size: 17px;
+}
+
+.secondary-button {
+    border: 1px solid rgba(255, 255, 255, 0.12);
+
+    color: #a4afa9;
+}
+
+.secondary-button:hover {
+    border-color: rgba(185, 239, 73, 0.35);
+    color: #b9ef49;
+}
+
+
+/* =========================================
+   CONTAINER
+========================================= */
+
+.container {
+    width: min(1200px, 92%);
+    margin: auto;
+}
+
+
+/* =========================================
+   INTRO
+========================================= */
+
+.plans-intro {
+    padding: 100px 0;
+
+    background: #08120d;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.intro-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 0.85fr;
+
+    gap: 90px;
+
+    align-items: start;
+}
+
+.section-label,
+.section-heading > span,
+.start-heading > span,
+.risk-box > div:last-child > span,
+.plans-cta > .cta-content > span {
+    color: #b9ef49;
+
+    font-size: 9px;
+    font-weight: 800;
+
+    letter-spacing: 2px;
+}
+
+.intro-grid h2 {
+    margin-top: 14px;
+
+    max-width: 600px;
+
+    font-size: clamp(36px, 4vw, 52px);
+
+    line-height: 1.05;
+
+    letter-spacing: -2px;
+}
+
+.intro-grid h2 strong {
+    color: #b9ef49;
+}
+
+.intro-grid p {
+    margin-bottom: 18px;
+
+    color: #748078;
+
+    font-size: 12px;
+}
+
+
+/* =========================================
+   PLANS SECTION
+========================================= */
+
+.plans-section {
+    padding: 110px 0;
+
+    background: #050c08;
+}
+
+.section-heading {
+    max-width: 700px;
+
+    margin-bottom: 55px;
+}
+
+.section-heading h2 {
+    margin-top: 13px;
+
+    font-size: clamp(38px, 4vw, 54px);
+
+    line-height: 1.05;
+
+    letter-spacing: -2px;
+}
+
+.section-heading h2 strong {
+    color: #b9ef49;
+}
+
+.section-heading p {
+    max-width: 600px;
+
+    margin-top: 17px;
+
+    color: #748078;
+
+    font-size: 13px;
+}
+
+
+/* =========================================
+   PLAN GRID
+========================================= */
+
+.plans-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 18px;
+}
+
+
+/* =========================================
+   PLAN CARD
+========================================= */
+
+.plan-card {
+    position: relative;
+
+    min-height: 580px;
+
+    padding: 32px;
+
+    overflow: hidden;
+
+    border-radius: 15px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #0a1710,
+            #071009
+        );
+
+    border: 1px solid rgba(255, 255, 255, 0.06);
+
+    transition:
+        transform 0.35s ease,
+        border-color 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+.plan-card::before {
+    content: "";
+
+    position: absolute;
+
+    width: 240px;
+    height: 240px;
+
+    right: -110px;
+    bottom: -110px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(185, 239, 73, 0.09),
+            transparent 70%
+        );
+
+    pointer-events: none;
+}
+
+.plan-card:hover {
+    transform: translateY(-7px);
+
+    border-color:
+        rgba(185, 239, 73, 0.22);
+
+    box-shadow:
+        0 25px 70px rgba(0, 0, 0, 0.28);
+}
+
+
+/* =========================================
+   FEATURED CARD
+========================================= */
+
+.plan-card.featured {
+    background:
+        linear-gradient(
+            145deg,
+            #11291a,
+            #071109
+        );
+
+    border-color:
+        rgba(185, 239, 73, 0.22);
+}
+
+.featured-label {
+    position: absolute;
+
+    top: 0;
+    right: 30px;
+
+    padding: 8px 13px;
+
+    border-radius: 0 0 7px 7px;
+
+    background: #b9ef49;
+
+    color: #061008;
+
+    font-size: 7px;
+    font-weight: 900;
+
+    letter-spacing: 1px;
+}
+
+
+/* =========================================
+   PLAN TOP
+========================================= */
+
+.plan-top {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+}
+
+.plan-number {
+    color: #435149;
+
+    font-size: 10px;
+    font-weight: 800;
+}
+
+.plan-duration {
+    color: #b9ef49;
+
+    font-size: 9px;
+    font-weight: 800;
+
+    letter-spacing: 1px;
+}
+
+
+/* =========================================
+   PLAN ICON
+========================================= */
+
+.plan-icon {
+    width: 65px;
+    height: 65px;
+
+    margin-top: 30px;
+
+    display: grid;
+    place-items: center;
+
+    border-radius: 12px;
+
+    background:
+        rgba(185, 239, 73, 0.08);
+
+    border: 1px solid
+        rgba(185, 239, 73, 0.12);
+
+    color: #b9ef49;
+
+    font-size: 16px;
+    font-weight: 900;
+
+    letter-spacing: 1px;
+}
+
+
+/* =========================================
+   PLAN TEXT
+========================================= */
+
+.plan-card h3 {
+    margin-top: 25px;
+
+    font-size: 23px;
+
+    line-height: 1.2;
+}
+
+.plan-description {
+    max-width: 500px;
+
+    margin-top: 10px;
+
+    color: #68766e;
+
+    font-size: 11px;
+}
+
+
+/* =========================================
+   CAPITAL BOX
+========================================= */
+
+.capital-box {
+    margin-top: 24px;
+
+    padding: 17px;
+
+    border-radius: 9px;
+
+    background:
+        rgba(255, 255, 255, 0.025);
+
+    border:
+        1px solid rgba(255, 255, 255, 0.05);
+}
+
+.capital-box span {
+    display: block;
+
+    color: #59665f;
+
+    font-size: 7px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+}
+
+.capital-box strong {
+    display: block;
+
+    margin-top: 6px;
+
+    color: #b9ef49;
+
+    font-size: 25px;
+
+    letter-spacing: -1px;
+}
+
+.capital-box small {
+    display: block;
+
+    margin-top: 4px;
+
+    color: #59665f;
+
+    font-size: 8px;
+}
+
+
+/* =========================================
+   FEATURES
+========================================= */
+
+.plan-features {
+    margin-top: 23px;
+
+    list-style: none;
+
+    display: grid;
+
+    gap: 9px;
+}
+
+.plan-features li {
+    position: relative;
+
+    padding-left: 20px;
+
+    color: #738078;
+
+    font-size: 10px;
+}
+
+.plan-features li::before {
+    content: "✓";
+
+    position: absolute;
+
+    left: 0;
+    top: 0;
+
+    color: #b9ef49;
+
+    font-weight: 900;
+}
+
+
+/* =========================================
+   PLAN BUTTON
+========================================= */
+
+.plan-button {
+    position: absolute;
+
+    left: 32px;
+    right: 32px;
+    bottom: 30px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 12px;
+
+    padding: 14px;
+
+    border-radius: 7px;
+
+    background: #b9ef49;
+
+    color: #061008;
+
+    font-size: 9px;
+    font-weight: 900;
+
+    transition: 0.3s ease;
+}
+
+.plan-button:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 10px 25px rgba(185, 239, 73, 0.12);
+}
+
+.plan-button span {
+    font-size: 16px;
+}
+
+
+/* =========================================
+   PREMIUM CARD
+========================================= */
+
+.plan-card.premium {
+    background:
+        linear-gradient(
+            145deg,
+            #0d2115,
+            #071009
+        );
+}
+
+
+/* =========================================
+   START SECTION
+========================================= */
+
+.start-section {
+    padding: 110px 0;
+
+    background: #08120d;
+}
+
+.start-heading {
+    max-width: 720px;
+
+    margin-bottom: 55px;
+}
+
+.start-heading h2 {
+    margin-top: 13px;
+
+    font-size: clamp(38px, 4vw, 52px);
+
+    line-height: 1.05;
+
+    letter-spacing: -2px;
+}
+
+.start-heading h2 strong {
+    color: #b9ef49;
+}
+
+.start-heading p {
+    margin-top: 17px;
+
+    color: #748078;
+
+    font-size: 12px;
+}
+
+
+/* =========================================
+   STEPS
+========================================= */
+
+.steps-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 12px;
+}
+
+.step {
+    padding: 25px;
+
+    min-height: 220px;
+
+    border-radius: 12px;
+
+    background: #071009;
+
+    border: 1px solid
+        rgba(255, 255, 255, 0.05);
+
+    transition: 0.3s ease;
+}
+
+.step:hover {
+    transform: translateY(-5px);
+
+    border-color:
+        rgba(185, 239, 73, 0.18);
+}
+
+.step-number {
+    color: #b9ef49;
+
+    font-size: 10px;
+    font-weight: 900;
+}
+
+.step h3 {
+    margin-top: 28px;
+
+    font-size: 15px;
+}
+
+.step p {
+    margin-top: 9px;
+
+    color: #66736b;
+
+    font-size: 10px;
+}
+
+.start-button {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 12px;
+
+    margin-top: 35px;
+
+    padding: 14px 20px;
+
+    border-radius: 7px;
+
+    background: #b9ef49;
+
+    color: #061008;
+
+    font-size: 10px;
+
+    font-weight: 900;
+}
+
+.start-button span {
+    font-size: 16px;
+}
+
+
+/* =========================================
+   RISK NOTICE
+========================================= */
+
+.risk-section {
+    padding: 75px 0;
+
+    background: #050c08;
+}
+
+.risk-box {
+    display: grid;
+
+    grid-template-columns: 70px 1fr;
+
+    gap: 25px;
+
+    padding: 32px;
+
+    border-radius: 13px;
+
+    background: #09150f;
+
+    border: 1px solid
+        rgba(255, 196, 77, 0.12);
+}
+
+.risk-icon {
+    width: 48px;
+    height: 48px;
+
+    display: grid;
+
+    place-items: center;
+
+    border-radius: 50%;
+
+    background:
+        rgba(255, 196, 77, 0.08);
+
+    color: #ffc44d;
+
+    font-weight: 900;
+}
+
+.risk-box h2 {
+    margin-top: 9px;
+
+    font-size: 22px;
+}
+
+.risk-box p {
+    max-width: 850px;
+
+    margin-top: 13px;
+
+    color: #68756e;
+
+    font-size: 10px;
+}
+
+
+/* =========================================
+   FINAL CTA
+========================================= */
+
+.plans-cta {
+    padding: 120px 20px;
+
+    text-align: center;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(185, 239, 73, 0.09),
+            transparent 42%
+        ),
+        #08120d;
+}
+
+.cta-content {
+    max-width: 760px;
+
+    margin: auto;
+}
+
+.cta-content h2 {
+    margin-top: 15px;
+
+    font-size: clamp(38px, 5vw, 58px);
+
+    line-height: 1.05;
+
+    letter-spacing: -2px;
+}
+
+.cta-content h2 strong {
+    color: #b9ef49;
+}
+
+.cta-content p {
+    max-width: 550px;
+
+    margin: 18px auto 28px;
+
+    color: #748078;
+
+    font-size: 12px;
+}
+
+.cta-button {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 13px;
+
+    padding: 15px 22px;
+
+    border-radius: 7px;
+
+    background: #b9ef49;
+
+    color: #061008;
+
+    font-size: 10px;
+    font-weight: 900;
+
+    transition: 0.3s ease;
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+}
+
+.cta-button span {
+    font-size: 16px;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+    background: #030805;
+
+    border-top: 1px solid
+        rgba(255, 255, 255, 0.06);
+}
+
+.footer-container {
+    width: min(1200px, 92%);
+
+    margin: auto;
+
+    padding: 60px 0;
+
+    display: grid;
+
+    grid-template-columns: 2fr 1fr 1fr;
+
+    gap: 60px;
+}
+
+.footer-brand img {
+    width: 145px;
+}
+
+.footer-brand p {
+    max-width: 350px;
+
+    margin-top: 14px;
+
+    color: #505c55;
+
+    font-size: 10px;
+}
+
+.footer-column {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+.footer-column h4 {
+    margin-bottom: 5px;
+
+    font-size: 9px;
+}
+
+.footer-column a {
+    color: #5e6a63;
+
+    font-size: 10px;
+
+    transition: 0.3s ease;
+}
+
+.footer-column a:hover {
+    color: #b9ef49;
+}
+
+.footer-bottom {
+    width: min(1200px, 92%);
+
+    margin: auto;
+
+    padding: 20px 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    border-top: 1px solid
+        rgba(255, 255, 255, 0.06);
+
+    color: #455149;
+
+    font-size: 8px;
+}
+
+
+/* =========================================
+   WHATSAPP BUTTON
+========================================= */
+
+.whatsapp-button {
+    position: fixed;
+
+    right: 24px;
+    bottom: 24px;
+
+    z-index: 999;
+
+    width: 58px;
+    height: 58px;
+
+    display: grid;
+
+    place-items: center;
+
+    border-radius: 50%;
+
+    background: #25d366;
+
+    color: #ffffff;
+
+    font-size: 22px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.4);
+
+    animation: whatsappPulse 2s infinite;
+}
+
+@keyframes whatsappPulse {
+
+    0% {
+        box-shadow:
+            0 0 0 0 rgba(37, 211, 102, 0.45);
+    }
+
+    70% {
+        box-shadow:
+            0 0 0 15px rgba(37, 211, 102, 0);
+    }
+
+    100% {
+        box-shadow:
+            0 0 0 0 rgba(37, 211, 102, 0);
+    }
+}
+
+
+/* =========================================
+   SCROLL ANIMATION
+========================================= */
+
+.reveal {
+    opacity: 0;
+
+    transform: translateY(25px);
+
+    transition:
+        opacity 0.7s ease,
+        transform 0.7s ease;
+}
+
+.reveal.visible {
+    opacity: 1;
+
+    transform: translateY(0);
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+
+    .nav-links {
+        gap: 14px;
+    }
+
+    .nav-links a {
+        font-size: 9px;
+    }
+
+    .plans-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .steps-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+/* =========================================
+   SMALL TABLET
+========================================= */
+
+@media (max-width: 850px) {
+
+    .nav-links,
+    .nav-button {
+        display: none;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    .nav-links.active {
+
+        position: absolute;
+
+        top: 82px;
+        left: 0;
+
+        width: 100%;
+
+        padding: 25px;
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 20px;
+
+        background: #061009;
+
+        border-bottom:
+            1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .intro-grid {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+}
+
+
+/* =========================================
+   PHONE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .nav-container {
+        min-height: 72px;
+    }
+
+    .logo img {
+        width: 125px;
+    }
+
+    .plans-hero {
+        min-height: 620px;
+    }
+
+    .hero-content {
+        margin-top: 55px;
+    }
+
+    .hero-content h1 {
+        font-size: 45px;
+
+        letter-spacing: -2.5px;
+    }
+
+    .hero-content p {
+        font-size: 12px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+    .primary-button,
+    .secondary-button {
+        width: 100%;
+    }
+
+    .plans-intro,
+    .plans-section,
+    .start-section {
+        padding: 75px 0;
+    }
+
+    .intro-grid h2,
+    .section-heading h2,
+    .start-heading h2 {
+        font-size: 36px;
+    }
+
+    .plan-card {
+        min-height: 600px;
+
+        padding: 25px;
+    }
+
+    .plan-button {
+        left: 25px;
+        right: 25px;
+        bottom: 25px;
+    }
+
+    .capital-box strong {
+        font-size: 22px;
+    }
+
+    .steps-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .step {
+        min-height: auto;
+    }
+
+    .risk-box {
+        grid-template-columns: 1fr;
+
+        gap: 15px;
+
+        padding: 25px;
+    }
+
+    .plans-cta {
+        padding: 85px 20px;
+    }
+
+    .cta-content h2 {
+        font-size: 37px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+
+        padding: 50px 0;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        padding-bottom: 25px;
+    }
+
+    .whatsapp-button {
+        right: 18px;
+        bottom: 18px;
+
+        width: 54px;
+        height: 54px;
+    }
+
+}
+
+
+/* =========================================
+   VERY SMALL PHONES
+========================================= */
+
+@media (max-width: 380px) {
+
+    .hero-content h1 {
+        font-size: 39px;
+    }
+
+    .plan-card h3 {
+        font-size: 20px;
+    }
+
+    .capital-box strong {
+        font-size: 20px;
+    }
+
+}
+    </style>
+</head>
+
+
+<body>
+
+
+<!-- ================================
+     NAVIGATION
+================================ -->
+
+<header class="navbar">
+
+    <div class="nav-container">
+
+        <a
+            href="index.html"
+            class="logo"
+        >
+
+            <img
+                src="/ChatGPT Image Aug 16, 2026, 07_22_34 PM.png"
+                alt="Goldenice International Logo"
+            >
+
+        </a>
+
+
+        <nav
+            class="nav-links"
+            id="navLinks"
+        >
+
+            <a href="/index.html">
+                Home
+            </a>
+
+            <a href="/about.html">
+                About
+            </a>
+
+            <a href="/market.html">
+                Markets
+            </a>
+
+            <a
+                href="investment-plans.html"
+                class="active"
+            >
+                Investment Plans
+            </a>
+
+            <a href="/ai-insights.html">
+                AI Insights
+            </a>
+
+            <a href="/contact.html">
+                Contact
+            </a>
+
+        </nav>
+
+
+        <a
+            href="https://wa.me/2347068609938?text=Hello%20Goldenice%20International,%20I%20would%20like%20to%20discuss%20your%20investment%20options."
+            target="_blank"
+            class="nav-button"
+        >
+            Talk to Us
+        </a>
+
+
+        <button
+            class="menu-button"
+            id="menuButton"
+            aria-label="Open navigation menu"
+        >
+            ☰
+        </button>
+
+    </div>
+
+</header>
+
+
+
+<!-- ================================
+     HERO
+================================ -->
+
+<section class="plans-hero">
+
+    <div class="hero-background"></div>
+
+    <div class="hero-content">
+
+        <span class="hero-label">
+            INVESTMENT OPTIONS
+        </span>
+
+
+        <h1>
+
+            Choose Your
+            <span>
+                Investment Horizon.
+            </span>
+
+        </h1>
+
+
+        <p>
+
+            Explore structured investment horizons designed
+            for different capital levels and timeframes.
+            Speak directly with Goldenice International to
+            understand the available opportunities.
+
+        </p>
+
+
+        <div class="hero-buttons">
+
+            <a
+                href="#plans"
+                class="primary-button"
+            >
+                Explore Plans
+                <span>↓</span>
+            </a>
+
+
+            <a
+                href="https://wa.me/2347068609938?text=Hello%20Goldenice%20International,%20I%20would%20like%20to%20learn%20more%20about%20your%20investment plans."
+                target="_blank"
+                class="secondary-button"
+            >
+                Speak With Us
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================================
+     INTRODUCTION
+================================ -->
+
+<section class="plans-intro">
+
+    <div class="container">
+
+        <div class="intro-grid">
+
+            <div>
+
+                <span class="section-label">
+                    FLEXIBLE HORIZONS
+                </span>
+
+
+                <h2>
+
+                    An Approach Built
+                    Around Your
+                    <strong>
+                        Time Horizon.
+                    </strong>
+
+                </h2>
+
+            </div>
+
+
+            <div>
+
+                <p>
+
+                    Goldenice International focuses on global
+                    markets and investment research. Different
+                    opportunities may have different time
+                    horizons, capital requirements and levels
+                    of risk.
+
+                </p>
+
+
+                <p>
+
+                    The options below are presented as
+                    investment-capital ranges for discussion.
+                    They are not promises of profit or guaranteed
+                    investment returns.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================================
+     INVESTMENT PLANS
+================================ -->
+
+<section
+    class="plans-section"
+    id="plans"
+>
+
+    <div class="container">
+
+
+        <div class="section-heading">
+
+            <span>
+                OUR OPTIONS
+            </span>
+
+
+            <h2>
+
+                Investment
+                <strong>
+                    Horizons.
+                </strong>
+
+            </h2>
+
+
+            <p>
+
+                Select an investment horizon to learn more
+                and contact the Goldenice International team.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="plans-grid">
+
+
+            <!-- ========================
+                 3 MONTH
+            ========================= -->
+
+            <article class="plan-card">
+
+                <div class="plan-top">
+
+                    <span class="plan-number">
+                        01
+                    </span>
+
+                    <span class="plan-duration">
+                        3 MONTHS
+                    </span>
+
+                </div>
+
+
+                <div class="plan-icon">
+                    03
+                </div>
+
+
+                <h3>
+                    Three-Month Horizon
+                </h3>
+
+
+                <p class="plan-description">
+
+                    A shorter investment horizon for clients
+                    interested in discussing opportunities
+                    with a relatively short timeframe.
+
+                </p>
+
+
+                <div class="capital-box">
+
+                    <span>
+                        CAPITAL RANGE
+                    </span>
+
+                    <strong>
+                        $200 — $4,000
+                    </strong>
+
+                </div>
+
+
+                <ul class="plan-features">
+
+                    <li>
+                        Global market research
+                    </li>
+
+                    <li>
+                        Sector analysis
+                    </li>
+
+                    <li>
+                        Investment discussion
+                    </li>
+
+                    <li>
+                        Direct WhatsApp communication
+                    </li>
+
+                </ul>
+
+
+                <a
+                    href="https://wa.me/2347068609938?text=Hello%20Goldenice%20International,%20I%20am%20interested%20in%20the%203-month%20investment%20option."
+                    target="_blank"
+                    class="plan-button"
+                >
+                    Discuss This Option
+                    <span>→</span>
+                </a>
+
+            </article>
+
+
+
+            <!-- ========================
+                 6 MONTH
+            ========================= -->
+
+            <article class="plan-card featured">
+
+                <div class="featured-label">
+                    POPULAR HORIZON
+                </div>
+
+
+                <div class="plan-top">
+
+                    <span class="plan-number">
+                        02
+                    </span>
+
+                    <span class="plan-duration">
+                        6 MONTHS
+                    </span>
+
+                </div>
+
+
+                <div class="plan-icon">
+                    06
+                </div>
+
+
+                <h3>
+                    Six-Month Horizon
+                </h3>
+
+
+                <p class="plan-description">
+
+                    A medium-term horizon for clients seeking
+                    to explore global market opportunities over
+                    a longer period.
+
+                </p>
+
+
+                <div class="capital-box">
+
+                    <span>
+                        CAPITAL RANGE
+                    </span>
+
+                    <strong>
+                        $5,000 — $8,000
+                    </strong>
+
+                </div>
+
+
+                <ul class="plan-features">
+
+                    <li>
+                        Global market research
+                    </li>
+
+                    <li>
+                        Sector monitoring
+                    </li>
+
+                    <li>
+                        AI-assisted research
+                    </li>
+
+                    <li>
+                        Direct WhatsApp communication
+                    </li>
+
+                </ul>
+
+
+                <a
+                    href="https://wa.me/2347068609938?text=Hello%20Goldenice%20International,%20I%20am%20interested%20in%20the%206-month%20investment%20option."
+                    target="_blank"
+                    class="plan-button"
+                >
+                    Discuss This Option
+                    <span>→</span>
+                </a>
+
+            </article>
+
+
+
+            <!-- ========================
+                 9 MONTH
+            ========================= -->
+
+            <article class="plan-card">
+
+                <div class="plan-top">
+
+                    <span class="plan-number">
+                        03
+                    </span>
+
+                    <span class="plan-duration">
+                        9 MONTHS
+                    </span>
+
+                </div>
+
+
+                <div class="plan-icon">
+                    09
+                </div>
+
+
+                <h3>
+                    Nine-Month Horizon
+                </h3>
+
+
+                <p class="plan-description">
+
+                    A longer-term horizon for larger capital
+                    allocations and deeper discussions around
+                    global market opportunities.
+
+                </p>
+
+
+                <div class="capital-box">
+
+                    <span>
+                        CAPITAL RANGE
+                    </span>
+
+                    <strong>
+                        $10,000 — $30,000
+                    </strong>
+
+                </div>
+
+
+                <ul class="plan-features">
+
+                    <li>
+                        Global market research
+                    </li>
+
+                    <li>
+                        Sector analysis
+                    </li>
+
+                    <li>
+                        AI-assisted research
+                    </li>
+
+                    <li>
+                        Direct consultation
+                    </li>
+
+                </ul>
+
+
+                <a
+                    href="https://wa.me/2347068609938?text=Hello%20Goldenice%20International,%20I%20am%20interested%20in%20the%209-month%20investment%20option."
+                    target="_blank"
+                    class="plan-button"
+                >
+                    Discuss This Option
+                    <span>→</span>
+                </a>
+
+            </article>
+
+
+
+            <!-- ========================
+                 12 MONTH
+            ========================= -->
+
+            <article class="plan-card premium">
+
+                <div class="plan-top">
+
+                    <span class="plan-number">
+                        04
+                    </span>
+
+                    <span class="plan-duration">
+                        12 MONTHS
+                    </span>
+
+                </div>
+
+
+                <div class="plan-icon">
+                    12
+                </div>
+
+
+                <h3>
+                    Twelve-Month Horizon
+                </h3>
+
+
+                <p class="plan-description">
+
+                    A long-term option discussed directly with
+                    the Goldenice International team according
+                    to the client's objectives and circumstances.
+
+                </p>
+
+
+                <div class="capital-box">
+
+                    <span>
+                        CAPITAL RANGE
+                    </span>
+
+                    <strong>
+                        CUSTOM
+                    </strong>
+
+                    <small>
+                        Discuss with CEO / Investment Team
+                    </small>
+
+                </div>
+
+
+                <ul class="plan-features">
+
+                    <li>
+                        Global market research
+                    </li>
+
+                    <li>
+                        Long-term market analysis
+                    </li>
+
+                    <li>
+                        AI-assisted research
+                    </li>
+
+                    <li>
+                        Direct consultation
+                    </li>
+
+                </ul>
+
+
+                <a
+                    href="https://wa.me/2347068609938?text=Hello%20Goldenice%20International,%20I%20would%20like%20to discuss%20the%2012-month%20investment%20option."
+                    target="_blank"
+                    class="plan-button"
+                >
+                    Discuss With Our Team
+                    <span>→</span>
+                </a>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================================
+     HOW TO START
+================================ -->
+
+<section class="start-section">
+
+    <div class="container">
+
+        <div class="start-heading">
+
+            <span>
+                GET STARTED
+            </span>
+
+            <h2>
+                Start With A
+                <strong>Conversation.</strong>
+            </h2>
+
+            <p>
+
+                No complicated online investment form.
+                Start by speaking directly with our team
+                through WhatsApp.
+
+            </p>
+
+        </div>
+
+
+        <div class="steps-grid">
+
+
+            <div class="step">
+
+                <div class="step-number">
+                    01
+                </div>
+
+                <h3>
+                    Choose Your Horizon
+                </h3>
+
+                <p>
+                    Review the available investment
+                    timeframes and capital ranges.
+                </p>
+
+            </div>
+
+
+            <div class="step">
+
+                <div class="step-number">
+                    02
+                </div>
+
+                <h3>
+                    Contact Goldenice
+                </h3>
+
+                <p>
+                    Speak directly with the Goldenice
+                    International team through WhatsApp.
+                </p>
+
+            </div>
+
+
+            <div class="step">
+
+                <div class="step-number">
+                    03
+                </div>
+
+                <h3>
+                    Discuss The Opportunity
+                </h3>
+
+                <p>
+                    Understand the relevant opportunity,
+                    terms, risks and requirements.
+                </p>
+
+            </div>
+
+
+            <div class="step">
+
+                <div class="step-number">
+                    04
+                </div>
+
+                <h3>
+                    Make An Informed Decision
+                </h3>
+
+                <p>
+                    Review all relevant information before
+                    deciding whether an investment is suitable.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <a
+            href="https://wa.me/2347068609938?text=Hello%20Goldenice%20International,%20I%20would%20like%20to%20discuss%20an%20investment%20opportunity."
+            target="_blank"
+            class="start-button"
+        >
+            Chat With Goldenice
+            <span>→</span>
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================================
+     RISK NOTICE
+================================ -->
+
+<section class="risk-section">
+
+    <div class="container">
+
+        <div class="risk-box">
+
+            <div class="risk-icon">
+                !
+            </div>
+
+
+            <div>
+
+                <span>
+                    IMPORTANT INFORMATION
+                </span>
+
+
+                <h2>
+                    Investment Risk
+                </h2>
+
+
+                <p>
+
+                    Investments in financial markets involve
+                    risk, and the value of investments can rise
+                    or fall. Past performance is not a guarantee
+                    of future results. The capital ranges shown
+                    on this page are investment ranges for
+                    discussion and should not be interpreted as
+                    guaranteed returns or guaranteed profits.
+
+                </p>
+
+
+                <p>
+
+                    Before committing funds, investors should
+                    understand the relevant investment terms,
+                    risks, fees and applicable legal or regulatory
+                    requirements.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================================
+     FINAL CTA
+================================ -->
+
+<section class="plans-cta">
+
+    <div class="cta-content">
+
+        <span>
+            GOLDENICE INTERNATIONAL
+        </span>
+
+
+        <h2>
+
+            Ready To Discuss
+            Your <strong>Investment Goals?</strong>
+
+        </h2>
+
+
+        <p>
+
+            Speak directly with Goldenice International
+            through WhatsApp.
+
+        </p>
+
+
+        <a
+            href="https://wa.me/2347068609938?text=Hello%20Goldenice%20International,%20I%20would%20like%20to%20discuss%20my%20investment%20goals."
+            target="_blank"
+            class="cta-button"
+        >
+            Chat On WhatsApp
+            <span>→</span>
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================================
+     FOOTER
+================================ -->
+
+<footer>
+
+    <div class="footer-container">
+
+
+        <div class="footer-brand">
+
+            <img
+                src="/ChatGPT Image Aug 16, 2026, 07_22_34 PM.png"
+                alt="Goldenice International"
+            >
+
+            <p>
+
+                Global market research and investment
+                opportunities through Goldenice International.
+
+            </p>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>
+                NAVIGATION
+            </h4>
+
+            <a href="/index.html">
+                Home
+            </a>
+
+            <a href="/about.html">
+                About
+            </a>
+
+            <a href="/market.html">
+                Markets
+            </a>
+
+            <a href="investment-plans.html">
+                Investment Plans
+            </a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>
+                EXPLORE
+            </h4>
+
+            <a href="/ai-insights.html">
+                AI Insights
+            </a>
+
+            <a href="/how-it-works.html">
+                How It Works
+            </a>
+
+            <a href="/faq.html">
+                FAQ
+            </a>
+
+            <a href="/contact.html">
+                Contact
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+            ©
+            <span id="year"></span>
+            Goldenice International.
+            All rights reserved.
+        </p>
+
+
+        <p>
+            Investment involves risk.
+        </p>
+
+    </div>
+
+</footer>
+
+
+
+<!-- ================================
+     FLOATING WHATSAPP
+================================ -->
+
+<a
+    href="https://wa.me/2347068609938?text=Hello%20Goldenice%20International,%20I%20would%20like%20more%20information%20about%20your%20investment options."
+    target="_blank"
+    class="whatsapp-button"
+    aria-label="Chat with Goldenice International on WhatsApp"
+>
+    ◉
+</a>
+
+
+
+<script>
+    /* =========================================
+   GOLDENICE INTERNATIONAL
+   INVESTMENT PLANS JAVASCRIPT
+========================================= */
+
+
+/* =========================================
+   MOBILE NAVIGATION
+========================================= */
+
+const menuButton = document.getElementById("menuButton");
+const navLinks = document.getElementById("navLinks");
+
+if (menuButton && navLinks) {
+
+    menuButton.addEventListener("click", () => {
+
+        navLinks.classList.toggle("active");
+
+    });
+
+}
+
+
+/* =========================================
+   CLOSE MENU AFTER CLICKING A LINK
+========================================= */
+
+const navigationLinks =
+    document.querySelectorAll(".nav-links a");
+
+navigationLinks.forEach((link) => {
+
+    link.addEventListener("click", () => {
+
+        navLinks.classList.remove("active");
+
+    });
+
+});
+
+
+/* =========================================
+   NAVBAR SCROLL EFFECT
+========================================= */
+
+const navbar =
+    document.querySelector(".navbar");
+
+window.addEventListener("scroll", () => {
+
+    if (window.scrollY > 40) {
+
+        navbar.style.background =
+            "rgba(3, 8, 5, 0.97)";
+
+    } else {
+
+        navbar.style.background =
+            "rgba(5, 11, 8, 0.92)";
+
+    }
+
+});
+
+
+/* =========================================
+   PLAN CARD SCROLL ANIMATION
+========================================= */
+
+const animatedElements =
+    document.querySelectorAll(
+        ".plan-card, .step, .risk-box"
+    );
+
+
+const revealObserver =
+    new IntersectionObserver(
+
+        (entries) => {
+
+            entries.forEach((entry) => {
+
+                if (entry.isIntersecting) {
+
+                    entry.target.classList.add(
+                        "visible"
+                    );
+
+                    revealObserver.unobserve(
+                        entry.target
+                    );
+
+                }
+
+            });
+
+        },
+
+        {
+            threshold: 0.12
+        }
+
+    );
+
+
+animatedElements.forEach((element) => {
+
+    element.classList.add("reveal");
+
+    revealObserver.observe(element);
+
+});
+
+
+/* =========================================
+   PLAN CARD HOVER
+========================================= */
+
+const planCards =
+    document.querySelectorAll(".plan-card");
+
+planCards.forEach((card) => {
+
+    card.addEventListener(
+        "mouseenter",
+        () => {
+
+            card.style.transform =
+                "translateY(-7px)";
+
+        }
+    );
+
+
+    card.addEventListener(
+        "mouseleave",
+        () => {
+
+            card.style.transform =
+                "translateY(0)";
+
+        }
+    );
+
+});
+
+
+/* =========================================
+   WHATSAPP BUTTON TRACKING
+========================================= */
+
+const whatsappButtons =
+    document.querySelectorAll(
+        'a[href*="wa.me"]'
+    );
+
+
+whatsappButtons.forEach((button) => {
+
+    button.addEventListener("click", () => {
+
+        console.log(
+            "Goldenice International WhatsApp enquiry started."
+        );
+
+    });
+
+});
+
+
+/* =========================================
+   SMOOTH SCROLL TO PLANS
+========================================= */
+
+const exploreButton =
+    document.querySelector(
+        'a[href="#plans"]'
+    );
+
+
+if (exploreButton) {
+
+    exploreButton.addEventListener(
+        "click",
+        (event) => {
+
+            event.preventDefault();
+
+            const plansSection =
+                document.getElementById("plans");
+
+            if (plansSection) {
+
+                plansSection.scrollIntoView({
+                    behavior: "smooth"
+                });
+
+            }
+
+        }
+    );
+
+}
+
+
+/* =========================================
+   CURRENT YEAR
+========================================= */
+
+const yearElement =
+    document.getElementById("year");
+
+
+if (yearElement) {
+
+    yearElement.textContent =
+        new Date().getFullYear();
+
+}
+
+
+/* =========================================
+   WHATSAPP MESSAGE BUILDER
+========================================= */
+
+function openWhatsApp(planName) {
+
+    const phoneNumber =
+        "2347068609938";
+
+    const message =
+        `Hello Goldenice International, I would like to discuss the ${planName} investment option. Please provide me with more information about the available opportunity, terms, requirements and risks.`;
+
+    const whatsappURL =
+        `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+
+    window.open(
+        whatsappURL,
+        "_blank"
+    );
+
+}
+
+
+/* =========================================
+   GLOBAL WHATSAPP FUNCTION
+========================================= */
+
+window.openWhatsApp = openWhatsApp;
+
+
+/* =========================================
+   PAGE LOAD MESSAGE
+========================================= */
+
+document.addEventListener(
+    "DOMContentLoaded",
+    () => {
+
+        console.log(
+            "Goldenice International Investment Plans loaded successfully."
+        );
+
+    }
+);
+</script>
+
+</body>
+
+</html>

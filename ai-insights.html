@@ -1,0 +1,3003 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        AI Market Insights | Goldenice International
+    </title>
+
+    <meta
+        name="description"
+        content="Explore Goldenice International's AI-assisted market research, global market analysis and technology-driven investment insights."
+    >
+
+    <meta
+        name="keywords"
+        content="Goldenice International, AI market insights, AI investment research, global stock market, market analysis, investment research"
+    >
+
+    <meta
+        name="robots"
+        content="index, follow"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+   <style>
+    /* =========================================
+   GOLDENICE INTERNATIONAL
+   AI INSIGHTS PAGE
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background: #050b08;
+    color: #ffffff;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+/* =========================================
+   NAVIGATION
+========================================= */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+
+    background: rgba(5, 11, 8, 0.92);
+    backdrop-filter: blur(18px);
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.nav-container {
+    width: min(1200px, 92%);
+    min-height: 82px;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 25px;
+}
+
+.logo img {
+    width: 155px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: #89958e;
+    font-size: 11px;
+    transition: 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #b9ef49;
+}
+
+.nav-button {
+    padding: 12px 18px;
+    border-radius: 7px;
+
+    background: #b9ef49;
+    color: #061008;
+
+    font-size: 10px;
+    font-weight: 800;
+
+    transition: 0.3s ease;
+}
+
+.nav-button:hover {
+    transform: translateY(-2px);
+}
+
+.menu-button {
+    display: none;
+
+    border: none;
+    background: transparent;
+
+    color: #ffffff;
+
+    font-size: 27px;
+
+    cursor: pointer;
+}
+
+
+/* =========================================
+   GLOBAL CONTAINER
+========================================= */
+
+.container {
+    width: min(1200px, 92%);
+    margin: auto;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.ai-hero {
+    position: relative;
+
+    min-height: 720px;
+
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at 75% 42%,
+            rgba(185, 239, 73, 0.14),
+            transparent 30%
+        ),
+        #050c08;
+}
+
+.ai-grid {
+    position: absolute;
+    inset: 0;
+
+    opacity: 0.4;
+
+    background-image:
+        linear-gradient(
+            rgba(185, 239, 73, 0.04) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            90deg,
+            rgba(185, 239, 73, 0.04) 1px,
+            transparent 1px
+        );
+
+    background-size: 60px 60px;
+
+    mask-image:
+        linear-gradient(
+            to bottom,
+            black,
+            transparent
+        );
+}
+
+.ai-glow {
+    position: absolute;
+
+    width: 500px;
+    height: 500px;
+
+    right: -170px;
+    top: 100px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(185, 239, 73, 0.12),
+            transparent 68%
+        );
+
+    filter: blur(10px);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+
+    width: min(1200px, 92%);
+
+    margin: 80px auto 0;
+}
+
+.hero-label {
+    display: inline-block;
+
+    padding: 8px 13px;
+
+    border: 1px solid
+        rgba(185, 239, 73, 0.25);
+
+    border-radius: 30px;
+
+    color: #b9ef49;
+
+    font-size: 9px;
+    font-weight: 800;
+
+    letter-spacing: 2px;
+}
+
+.hero-content h1 {
+    max-width: 850px;
+
+    margin-top: 25px;
+
+    font-size: clamp(48px, 7vw, 82px);
+
+    line-height: 0.98;
+
+    letter-spacing: -4px;
+}
+
+.hero-content h1 span {
+    color: #b9ef49;
+}
+
+.hero-content p {
+    max-width: 650px;
+
+    margin-top: 28px;
+
+    color: #7f8c85;
+
+    font-size: 14px;
+}
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    margin-top: 32px;
+}
+
+.primary-button,
+.secondary-button {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 12px;
+
+    padding: 14px 19px;
+
+    border-radius: 7px;
+
+    font-size: 10px;
+    font-weight: 800;
+
+    transition: 0.3s ease;
+}
+
+.primary-button {
+    background: #b9ef49;
+    color: #061008;
+}
+
+.primary-button:hover {
+    transform: translateY(-3px);
+}
+
+.primary-button span {
+    font-size: 17px;
+}
+
+.secondary-button {
+    border: 1px solid
+        rgba(255, 255, 255, 0.12);
+
+    color: #a4afa9;
+}
+
+.secondary-button:hover {
+    border-color:
+        rgba(185, 239, 73, 0.35);
+
+    color: #b9ef49;
+}
+
+
+/* =========================================
+   AI INTRO
+========================================= */
+
+.ai-intro {
+    padding: 105px 0;
+
+    background: #08120d;
+
+    border-top:
+        1px solid rgba(255, 255, 255, 0.04);
+}
+
+.intro-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 0.9fr;
+
+    gap: 90px;
+}
+
+.intro-heading > span,
+.section-heading > span,
+.dashboard-content > span,
+.research-card .research-icon,
+.disclaimer-box > div:last-child > span,
+.ai-cta .cta-content > span {
+    color: #b9ef49;
+
+    font-size: 9px;
+    font-weight: 800;
+
+    letter-spacing: 2px;
+}
+
+.intro-heading h2 {
+    max-width: 600px;
+
+    margin-top: 15px;
+
+    font-size: clamp(38px, 4vw, 55px);
+
+    line-height: 1.04;
+
+    letter-spacing: -2.5px;
+}
+
+.intro-heading h2 strong {
+    color: #b9ef49;
+}
+
+.intro-text p {
+    margin-bottom: 20px;
+
+    color: #748078;
+
+    font-size: 12px;
+}
+
+
+/* =========================================
+   AI SYSTEM
+========================================= */
+
+.ai-system {
+    padding: 110px 0;
+
+    background: #050c08;
+}
+
+.section-heading {
+    max-width: 720px;
+
+    margin-bottom: 55px;
+}
+
+.section-heading h2 {
+    margin-top: 14px;
+
+    font-size: clamp(38px, 4vw, 54px);
+
+    line-height: 1.05;
+
+    letter-spacing: -2px;
+}
+
+.section-heading h2 strong {
+    color: #b9ef49;
+}
+
+.section-heading p {
+    max-width: 600px;
+
+    margin-top: 17px;
+
+    color: #748078;
+
+    font-size: 12px;
+}
+
+
+/* =========================================
+   SYSTEM GRID
+========================================= */
+
+.system-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 13px;
+}
+
+.system-card {
+    position: relative;
+
+    min-height: 350px;
+
+    padding: 27px;
+
+    border-radius: 13px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #0a1710,
+            #071009
+        );
+
+    border: 1px solid
+        rgba(255, 255, 255, 0.06);
+
+    overflow: hidden;
+
+    transition: 0.35s ease;
+}
+
+.system-card::before {
+    content: "";
+
+    position: absolute;
+
+    width: 150px;
+    height: 150px;
+
+    right: -75px;
+    bottom: -75px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(185, 239, 73, 0.10),
+            transparent 70%
+        );
+}
+
+.system-card:hover {
+    transform: translateY(-7px);
+
+    border-color:
+        rgba(185, 239, 73, 0.2);
+}
+
+.system-card.featured {
+    background:
+        linear-gradient(
+            145deg,
+            #102519,
+            #071009
+        );
+
+    border-color:
+        rgba(185, 239, 73, 0.22);
+}
+
+.system-number {
+    color: #4b5951;
+
+    font-size: 9px;
+    font-weight: 800;
+}
+
+.system-icon {
+    width: 60px;
+    height: 60px;
+
+    margin-top: 27px;
+
+    display: grid;
+    place-items: center;
+
+    border-radius: 12px;
+
+    background:
+        rgba(185, 239, 73, 0.07);
+
+    border: 1px solid
+        rgba(185, 239, 73, 0.13);
+
+    color: #b9ef49;
+
+    font-size: 10px;
+    font-weight: 900;
+
+    letter-spacing: 1px;
+}
+
+.system-card h3 {
+    margin-top: 25px;
+
+    font-size: 17px;
+}
+
+.system-card p {
+    margin-top: 10px;
+
+    color: #68766e;
+
+    font-size: 10px;
+}
+
+.system-line {
+    position: absolute;
+
+    left: 27px;
+    right: 27px;
+    bottom: 45px;
+
+    height: 1px;
+
+    background:
+        rgba(255, 255, 255, 0.06);
+}
+
+.system-status {
+    position: absolute;
+
+    left: 27px;
+    bottom: 25px;
+
+    color: #59665f;
+
+    font-size: 7px;
+    font-weight: 800;
+
+    letter-spacing: 1px;
+}
+
+
+/* =========================================
+   DASHBOARD SECTION
+========================================= */
+
+.dashboard-section {
+    padding: 110px 0;
+
+    background: #08120d;
+}
+
+.dashboard-grid {
+    display: grid;
+
+    grid-template-columns:
+        0.85fr 1.15fr;
+
+    align-items: center;
+
+    gap: 80px;
+}
+
+.dashboard-content h2 {
+    margin-top: 14px;
+
+    font-size: clamp(38px, 4vw, 54px);
+
+    line-height: 1.04;
+
+    letter-spacing: -2px;
+}
+
+.dashboard-content h2 strong {
+    color: #b9ef49;
+}
+
+.dashboard-content p {
+    max-width: 550px;
+
+    margin-top: 18px;
+
+    color: #748078;
+
+    font-size: 12px;
+}
+
+.dashboard-button {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-top: 28px;
+
+    padding: 14px 20px;
+
+    border-radius: 7px;
+
+    background: #b9ef49;
+
+    color: #061008;
+
+    font-size: 9px;
+    font-weight: 900;
+}
+
+.dashboard-button span {
+    font-size: 16px;
+}
+
+
+/* =========================================
+   AI DASHBOARD
+========================================= */
+
+.ai-dashboard {
+    position: relative;
+
+    padding: 28px;
+
+    min-height: 430px;
+
+    border-radius: 16px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #09150f,
+            #040a06
+        );
+
+    border:
+        1px solid rgba(185, 239, 73, 0.12);
+
+    box-shadow:
+        0 30px 90px rgba(0, 0, 0, 0.3);
+
+    overflow: hidden;
+}
+
+.ai-dashboard::before {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background-image:
+        linear-gradient(
+            rgba(185, 239, 73, 0.025) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            90deg,
+            rgba(185, 239, 73, 0.025) 1px,
+            transparent 1px
+        );
+
+    background-size: 40px 40px;
+
+    pointer-events: none;
+}
+
+.dashboard-top {
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    padding-bottom: 22px;
+
+    border-bottom:
+        1px solid rgba(255, 255, 255, 0.06);
+}
+
+.dashboard-top small {
+    display: block;
+
+    color: #536158;
+
+    font-size: 7px;
+
+    letter-spacing: 2px;
+}
+
+.dashboard-top strong {
+    display: block;
+
+    margin-top: 4px;
+
+    color: #d6ded9;
+
+    font-size: 11px;
+
+    letter-spacing: 1px;
+}
+
+.live-indicator {
+    color: #b9ef49;
+
+    font-size: 7px;
+    font-weight: 800;
+
+    letter-spacing: 1px;
+}
+
+
+/* =========================================
+   STATUS
+========================================= */
+
+.analysis-status {
+    position: relative;
+
+    margin-top: 28px;
+
+    display: grid;
+
+    gap: 4px;
+}
+
+.status-row {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 15px;
+
+    border-radius: 6px;
+
+    background:
+        rgba(255, 255, 255, 0.025);
+}
+
+.status-row span {
+    color: #647169;
+
+    font-size: 8px;
+
+    letter-spacing: 0.5px;
+}
+
+.status-row strong {
+    color: #b9ef49;
+
+    font-size: 8px;
+}
+
+
+/* =========================================
+   SIGNAL AREA
+========================================= */
+
+.signal-area {
+    position: relative;
+
+    margin-top: 30px;
+}
+
+.signal-area > span {
+    color: #536158;
+
+    font-size: 7px;
+
+    letter-spacing: 1px;
+}
+
+.signal-bars {
+    height: 75px;
+
+    margin-top: 13px;
+
+    display: flex;
+
+    align-items: flex-end;
+
+    gap: 5px;
+}
+
+.signal-bars i {
+    flex: 1;
+
+    display: block;
+
+    height: 20%;
+
+    border-radius: 2px 2px 0 0;
+
+    background:
+        rgba(185, 239, 73, 0.65);
+
+    animation:
+        signalMove 2.5s ease-in-out infinite;
+}
+
+.signal-bars i:nth-child(2) {
+    height: 38%;
+    animation-delay: 0.1s;
+}
+
+.signal-bars i:nth-child(3) {
+    height: 27%;
+    animation-delay: 0.2s;
+}
+
+.signal-bars i:nth-child(4) {
+    height: 55%;
+    animation-delay: 0.3s;
+}
+
+.signal-bars i:nth-child(5) {
+    height: 42%;
+    animation-delay: 0.4s;
+}
+
+.signal-bars i:nth-child(6) {
+    height: 70%;
+    animation-delay: 0.5s;
+}
+
+.signal-bars i:nth-child(7) {
+    height: 48%;
+    animation-delay: 0.6s;
+}
+
+.signal-bars i:nth-child(8) {
+    height: 80%;
+    animation-delay: 0.7s;
+}
+
+.signal-bars i:nth-child(9) {
+    height: 60%;
+    animation-delay: 0.8s;
+}
+
+.signal-bars i:nth-child(10) {
+    height: 92%;
+    animation-delay: 0.9s;
+}
+
+.signal-bars i:nth-child(11) {
+    height: 72%;
+    animation-delay: 1s;
+}
+
+.signal-bars i:nth-child(12) {
+    height: 100%;
+    animation-delay: 1.1s;
+}
+
+@keyframes signalMove {
+
+    0%,
+    100% {
+        opacity: 0.55;
+        transform: scaleY(0.75);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scaleY(1);
+    }
+}
+
+
+/* =========================================
+   DASHBOARD FOOTER
+========================================= */
+
+.dashboard-footer {
+    position: absolute;
+
+    left: 28px;
+    right: 28px;
+    bottom: 22px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    padding-top: 17px;
+
+    border-top:
+        1px solid rgba(255, 255, 255, 0.06);
+}
+
+.dashboard-footer span {
+    color: #536158;
+
+    font-size: 7px;
+
+    letter-spacing: 1px;
+}
+
+
+/* =========================================
+   RESEARCH SECTION
+========================================= */
+
+.research-section {
+    padding: 110px 0;
+
+    background: #050c08;
+}
+
+.research-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 14px;
+}
+
+.research-card {
+    min-height: 250px;
+
+    padding: 27px;
+
+    border-radius: 12px;
+
+    background: #09140e;
+
+    border:
+        1px solid rgba(255, 255, 255, 0.05);
+
+    transition: 0.3s ease;
+}
+
+.research-card:hover {
+    transform: translateY(-6px);
+
+    border-color:
+        rgba(185, 239, 73, 0.18);
+}
+
+.research-icon {
+    font-size: 8px !important;
+}
+
+.research-card h3 {
+    margin-top: 30px;
+
+    font-size: 17px;
+}
+
+.research-card p {
+    margin-top: 10px;
+
+    color: #69766e;
+
+    font-size: 10px;
+}
+
+
+/* =========================================
+   DISCLAIMER
+========================================= */
+
+.ai-disclaimer {
+    padding: 75px 0;
+
+    background: #08120d;
+}
+
+.disclaimer-box {
+    display: grid;
+
+    grid-template-columns: 70px 1fr;
+
+    gap: 25px;
+
+    padding: 32px;
+
+    border-radius: 13px;
+
+    background: #09150f;
+
+    border:
+        1px solid rgba(255, 196, 77, 0.12);
+}
+
+.disclaimer-icon {
+    width: 48px;
+    height: 48px;
+
+    display: grid;
+
+    place-items: center;
+
+    border-radius: 50%;
+
+    background:
+        rgba(185, 239, 73, 0.08);
+
+    color: #b9ef49;
+
+    font-size: 9px;
+    font-weight: 900;
+}
+
+.disclaimer-box h2 {
+    margin-top: 9px;
+
+    font-size: 22px;
+}
+
+.disclaimer-box p {
+    max-width: 900px;
+
+    margin-top: 13px;
+
+    color: #68756e;
+
+    font-size: 10px;
+}
+
+
+/* =========================================
+   CTA
+========================================= */
+
+.ai-cta {
+    padding: 120px 20px;
+
+    text-align: center;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(185, 239, 73, 0.09),
+            transparent 42%
+        ),
+        #08120d;
+}
+
+.cta-content {
+    max-width: 760px;
+
+    margin: auto;
+}
+
+.cta-content h2 {
+    margin-top: 15px;
+
+    font-size: clamp(38px, 5vw, 58px);
+
+    line-height: 1.05;
+
+    letter-spacing: -2px;
+}
+
+.cta-content h2 strong {
+    color: #b9ef49;
+}
+
+.cta-content p {
+    max-width: 560px;
+
+    margin: 18px auto 28px;
+
+    color: #748078;
+
+    font-size: 12px;
+}
+
+.cta-button {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 13px;
+
+    padding: 15px 22px;
+
+    border-radius: 7px;
+
+    background: #b9ef49;
+
+    color: #061008;
+
+    font-size: 10px;
+
+    font-weight: 900;
+
+    transition: 0.3s ease;
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+}
+
+.cta-button span {
+    font-size: 16px;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+    background: #030805;
+
+    border-top:
+        1px solid rgba(255, 255, 255, 0.06);
+}
+
+.footer-container {
+    width: min(1200px, 92%);
+
+    margin: auto;
+
+    padding: 60px 0;
+
+    display: grid;
+
+    grid-template-columns: 2fr 1fr 1fr;
+
+    gap: 60px;
+}
+
+.footer-brand img {
+    width: 145px;
+}
+
+.footer-brand p {
+    max-width: 350px;
+
+    margin-top: 14px;
+
+    color: #505c55;
+
+    font-size: 10px;
+}
+
+.footer-column {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+.footer-column h4 {
+    margin-bottom: 5px;
+
+    font-size: 9px;
+}
+
+.footer-column a {
+    color: #5e6a63;
+
+    font-size: 10px;
+
+    transition: 0.3s ease;
+}
+
+.footer-column a:hover {
+    color: #b9ef49;
+}
+
+.footer-bottom {
+    width: min(1200px, 92%);
+
+    margin: auto;
+
+    padding: 20px 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+
+    border-top:
+        1px solid rgba(255, 255, 255, 0.06);
+
+    color: #455149;
+
+    font-size: 8px;
+}
+
+
+/* =========================================
+   WHATSAPP
+========================================= */
+
+.whatsapp-button {
+    position: fixed;
+
+    right: 24px;
+    bottom: 24px;
+
+    z-index: 999;
+
+    width: 58px;
+    height: 58px;
+
+    display: grid;
+
+    place-items: center;
+
+    border-radius: 50%;
+
+    background: #25d366;
+
+    color: #ffffff;
+
+    font-size: 22px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.4);
+
+    animation:
+        whatsappPulse 2s infinite;
+}
+
+@keyframes whatsappPulse {
+
+    0% {
+        box-shadow:
+            0 0 0 0 rgba(37, 211, 102, 0.45);
+    }
+
+    70% {
+        box-shadow:
+            0 0 0 15px rgba(37, 211, 102, 0);
+    }
+
+    100% {
+        box-shadow:
+            0 0 0 0 rgba(37, 211, 102, 0);
+    }
+}
+
+
+/* =========================================
+   REVEAL ANIMATION
+========================================= */
+
+.reveal {
+    opacity: 0;
+
+    transform: translateY(25px);
+
+    transition:
+        opacity 0.7s ease,
+        transform 0.7s ease;
+}
+
+.reveal.visible {
+    opacity: 1;
+
+    transform: translateY(0);
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1050px) {
+
+    .nav-links {
+        gap: 14px;
+    }
+
+    .nav-links a {
+        font-size: 9px;
+    }
+
+    .system-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE NAVIGATION
+========================================= */
+
+@media (max-width: 850px) {
+
+    .nav-links,
+    .nav-button {
+        display: none;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    .nav-links.active {
+
+        position: absolute;
+
+        top: 82px;
+        left: 0;
+
+        width: 100%;
+
+        padding: 25px;
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 20px;
+
+        background: #061009;
+
+        border-bottom:
+            1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .intro-grid {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+    .research-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+/* =========================================
+   PHONE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .nav-container {
+        min-height: 72px;
+    }
+
+    .logo img {
+        width: 125px;
+    }
+
+    .ai-hero {
+        min-height: 650px;
+    }
+
+    .hero-content {
+        margin-top: 55px;
+    }
+
+    .hero-content h1 {
+        font-size: 45px;
+
+        letter-spacing: -2.5px;
+    }
+
+    .hero-content p {
+        font-size: 12px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+    .primary-button,
+    .secondary-button {
+        width: 100%;
+    }
+
+    .ai-intro,
+    .ai-system,
+    .dashboard-section,
+    .research-section {
+        padding: 75px 0;
+    }
+
+    .intro-heading h2,
+    .section-heading h2,
+    .dashboard-content h2 {
+        font-size: 36px;
+    }
+
+    .system-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .system-card {
+        min-height: 320px;
+    }
+
+    .ai-dashboard {
+        min-height: 410px;
+
+        padding: 20px;
+    }
+
+    .dashboard-footer {
+        left: 20px;
+        right: 20px;
+    }
+
+    .research-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .research-card {
+        min-height: auto;
+    }
+
+    .disclaimer-box {
+        grid-template-columns: 1fr;
+
+        gap: 15px;
+
+        padding: 25px;
+    }
+
+    .ai-cta {
+        padding: 85px 20px;
+    }
+
+    .cta-content h2 {
+        font-size: 37px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+
+        padding: 50px 0;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        padding-bottom: 25px;
+    }
+
+    .whatsapp-button {
+        right: 18px;
+        bottom: 18px;
+
+        width: 54px;
+        height: 54px;
+    }
+
+}
+
+
+/* =========================================
+   SMALL PHONES
+========================================= */
+
+@media (max-width: 380px) {
+
+    .hero-content h1 {
+        font-size: 39px;
+    }
+
+    .system-card h3 {
+        font-size: 16px;
+    }
+
+    .status-row {
+        padding: 12px;
+    }
+
+}
+   </style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================
+     NAVIGATION
+========================================= -->
+
+<header class="navbar">
+
+    <div class="nav-container">
+
+
+        <a
+            href="index.html"
+            class="logo"
+        >
+
+            <img
+                src="/ChatGPT Image Aug 16, 2026, 07_22_34 PM.png"
+                alt="Goldenice International Logo"
+            >
+
+        </a>
+
+
+        <nav
+            class="nav-links"
+            id="navLinks"
+        >
+
+            <a href="/index.html">
+                Home
+            </a>
+
+            <a href="/about.html">
+                About
+            </a>
+
+            <a href="/market.html">
+                Markets
+            </a>
+
+            <a href="/investment-plans.html">
+                Investment Plans
+            </a>
+
+            <a
+                href="ai-insights.html"
+                class="active"
+            >
+                AI Insights
+            </a>
+
+            <a href="/contact.html">
+                Contact
+            </a>
+
+        </nav>
+
+
+        <a
+            href="https://wa.me/2347068609938?text=Hello%20Goldenice%20International,%20I%20would%20like%20to%20learn%20more%20about%20your%20AI-assisted%20market%20research."
+            target="_blank"
+            class="nav-button"
+        >
+            Talk to Us
+        </a>
+
+
+        <button
+            class="menu-button"
+            id="menuButton"
+            aria-label="Open navigation menu"
+        >
+            ☰
+        </button>
+
+    </div>
+
+</header>
+
+
+
+<!-- =========================================
+     HERO
+========================================= -->
+
+<section class="ai-hero">
+
+    <div class="ai-grid"></div>
+
+    <div class="ai-glow"></div>
+
+
+    <div class="hero-content">
+
+        <span class="hero-label">
+            AI-ASSISTED MARKET RESEARCH
+        </span>
+
+
+        <h1>
+
+            Intelligence
+            For A
+            <span>
+                Changing Market.
+            </span>
+
+        </h1>
+
+
+        <p>
+
+            Goldenice International uses technology and
+            AI-assisted research to help organize market
+            information, identify patterns and support
+            deeper human analysis.
+
+        </p>
+
+
+        <div class="hero-buttons">
+
+            <a
+                href="#ai-system"
+                class="primary-button"
+            >
+                Explore AI Research
+                <span>↓</span>
+            </a>
+
+
+            <a
+                href="https://wa.me/2347068609938?text=Hello%20Goldenice%20International,%20I%20would%20like%20to%20learn%20more%20about%20your%20AI-assisted%20market%20research."
+                target="_blank"
+                class="secondary-button"
+            >
+                Speak With Us
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     AI INTRO
+========================================= -->
+
+<section class="ai-intro">
+
+    <div class="container">
+
+        <div class="intro-grid">
+
+
+            <div class="intro-heading">
+
+                <span>
+                    THE GOLDENICE APPROACH
+                </span>
+
+
+                <h2>
+
+                    Data.
+                    Intelligence.
+                    <strong>
+                        Human Judgment.
+                    </strong>
+
+                </h2>
+
+            </div>
+
+
+            <div class="intro-text">
+
+                <p>
+
+                    Financial markets generate enormous amounts
+                    of information every day. AI-assisted tools
+                    can help researchers organize that information
+                    and identify areas that deserve further
+                    investigation.
+
+                </p>
+
+
+                <p>
+
+                    At Goldenice International, technology is
+                    positioned as a research support system,
+                    while investment decisions require appropriate
+                    human review and consideration of risk.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     AI SYSTEM
+========================================= -->
+
+<section
+    class="ai-system"
+    id="ai-system"
+>
+
+    <div class="container">
+
+
+        <div class="section-heading">
+
+            <span>
+                HOW IT WORKS
+            </span>
+
+
+            <h2>
+
+                Our AI-Assisted
+                <strong>
+                    Research Process.
+                </strong>
+
+            </h2>
+
+
+            <p>
+
+                A technology-driven workflow designed to help
+                researchers process information more efficiently.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="system-grid">
+
+
+            <!-- DATA -->
+
+            <article class="system-card">
+
+                <div class="system-number">
+                    01
+                </div>
+
+
+                <div class="system-icon">
+                    DATA
+                </div>
+
+
+                <h3>
+                    Market Information
+                </h3>
+
+
+                <p>
+
+                    Relevant market information and sector
+                    developments are collected for analysis.
+
+                </p>
+
+
+                <div class="system-line"></div>
+
+
+                <span class="system-status">
+                    INFORMATION
+                </span>
+
+            </article>
+
+
+
+            <!-- ANALYSIS -->
+
+            <article class="system-card featured">
+
+                <div class="system-number">
+                    02
+                </div>
+
+
+                <div class="system-icon">
+                    AI
+                </div>
+
+
+                <h3>
+                    AI-Assisted Analysis
+                </h3>
+
+
+                <p>
+
+                    AI tools can help organize information,
+                    compare patterns and highlight areas for
+                    further research.
+
+                </p>
+
+
+                <div class="system-line"></div>
+
+
+                <span class="system-status">
+                    PROCESSING
+                </span>
+
+            </article>
+
+
+
+            <!-- REVIEW -->
+
+            <article class="system-card">
+
+                <div class="system-number">
+                    03
+                </div>
+
+
+                <div class="system-icon">
+                    ✓
+                </div>
+
+
+                <h3>
+                    Human Review
+                </h3>
+
+
+                <p>
+
+                    Findings are reviewed with appropriate
+                    context rather than relying solely on
+                    automated signals.
+
+                </p>
+
+
+                <div class="system-line"></div>
+
+
+                <span class="system-status">
+                    REVIEW
+                </span>
+
+            </article>
+
+
+
+            <!-- DECISION -->
+
+            <article class="system-card">
+
+                <div class="system-number">
+                    04
+                </div>
+
+
+                <div class="system-icon">
+                    →
+                </div>
+
+
+                <h3>
+                    Investment Discussion
+                </h3>
+
+
+                <p>
+
+                    Relevant information can then support
+                    conversations about potential opportunities,
+                    objectives and risks.
+
+                </p>
+
+
+                <div class="system-line"></div>
+
+
+                <span class="system-status">
+                    DISCUSSION
+                </span>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     AI DASHBOARD
+========================================= -->
+
+<section class="dashboard-section">
+
+    <div class="container">
+
+        <div class="dashboard-grid">
+
+
+            <div class="dashboard-content">
+
+                <span>
+                    GOLDENICE AI RESEARCH
+                </span>
+
+
+                <h2>
+
+                    A Smarter Way
+                    To Organize
+                    <strong>
+                        Market Signals.
+                    </strong>
+
+                </h2>
+
+
+                <p>
+
+                    The purpose of AI-assisted research is not
+                    to promise certainty. It is to help transform
+                    large amounts of information into structured
+                    research that can be evaluated by people.
+
+                </p>
+
+
+                <a
+                    href="https://wa.me/2347068609938?text=Hello%20Goldenice%20International,%20I%20would%20like%20to%20discuss%20your%20AI-assisted%20market%20research."
+                    target="_blank"
+                    class="dashboard-button"
+                >
+                    Discuss AI Research
+                    <span>→</span>
+                </a>
+
+            </div>
+
+
+
+            <div class="ai-dashboard">
+
+
+                <div class="dashboard-top">
+
+                    <div>
+
+                        <small>
+                            GOLDENICE
+                        </small>
+
+                        <strong>
+                            MARKET INTELLIGENCE
+                        </strong>
+
+                    </div>
+
+
+                    <span class="live-indicator">
+                        ● RESEARCH
+                    </span>
+
+                </div>
+
+
+
+                <div class="analysis-status">
+
+                    <div class="status-row">
+
+                        <span>
+                            GLOBAL MARKETS
+                        </span>
+
+                        <strong>
+                            MONITORING
+                        </strong>
+
+                    </div>
+
+
+                    <div class="status-row">
+
+                        <span>
+                            SECTOR ACTIVITY
+                        </span>
+
+                        <strong>
+                            ANALYZING
+                        </strong>
+
+                    </div>
+
+
+                    <div class="status-row">
+
+                        <span>
+                            MARKET SIGNALS
+                        </span>
+
+                        <strong>
+                            REVIEWING
+                        </strong>
+
+                    </div>
+
+
+                    <div class="status-row">
+
+                        <span>
+                            HUMAN ANALYSIS
+                        </span>
+
+                        <strong>
+                            REQUIRED
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="signal-area">
+
+                    <span>
+                        RESEARCH ACTIVITY
+                    </span>
+
+
+                    <div class="signal-bars">
+
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="dashboard-footer">
+
+                    <span>
+                        AI ASSISTED
+                    </span>
+
+                    <span>
+                        HUMAN REVIEW
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     RESEARCH AREAS
+========================================= -->
+
+<section class="research-section">
+
+    <div class="container">
+
+
+        <div class="section-heading">
+
+            <span>
+                RESEARCH AREAS
+            </span>
+
+
+            <h2>
+
+                What Can
+                <strong>
+                    AI Help Analyze?
+                </strong>
+
+            </h2>
+
+        </div>
+
+
+
+        <div class="research-grid">
+
+
+            <div class="research-card">
+
+                <div class="research-icon">
+                    01
+                </div>
+
+
+                <h3>
+                    Market Trends
+                </h3>
+
+
+                <p>
+
+                    Organizing market movements and identifying
+                    patterns that may deserve closer examination.
+
+                </p>
+
+            </div>
+
+
+
+            <div class="research-card">
+
+                <div class="research-icon">
+                    02
+                </div>
+
+
+                <h3>
+                    Sector Activity
+                </h3>
+
+
+                <p>
+
+                    Comparing developments across technology,
+                    finance, energy, healthcare and other sectors.
+
+                </p>
+
+            </div>
+
+
+
+            <div class="research-card">
+
+                <div class="research-icon">
+                    03
+                </div>
+
+
+                <h3>
+                    Company Information
+                </h3>
+
+
+                <p>
+
+                    Structuring publicly available company and
+                    market information for further research.
+
+                </p>
+
+            </div>
+
+
+
+            <div class="research-card">
+
+                <div class="research-icon">
+                    04
+                </div>
+
+
+                <h3>
+                    Global Signals
+                </h3>
+
+
+                <p>
+
+                    Examining developments across major global
+                    markets and economic environments.
+
+                </p>
+
+            </div>
+
+
+
+            <div class="research-card">
+
+                <div class="research-icon">
+                    05
+                </div>
+
+
+                <h3>
+                    Risk Factors
+                </h3>
+
+
+                <p>
+
+                    Helping researchers identify information
+                    that may require additional risk analysis.
+
+                </p>
+
+            </div>
+
+
+
+            <div class="research-card">
+
+                <div class="research-icon">
+                    06
+                </div>
+
+
+                <h3>
+                    Research Summaries
+                </h3>
+
+
+                <p>
+
+                    Turning complex information into clearer
+                    summaries for further human evaluation.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     AI DISCLAIMER
+========================================= -->
+
+<section class="ai-disclaimer">
+
+    <div class="container">
+
+        <div class="disclaimer-box">
+
+            <div class="disclaimer-icon">
+                AI
+            </div>
+
+
+            <div>
+
+                <span>
+                    IMPORTANT INFORMATION
+                </span>
+
+
+                <h2>
+                    AI Does Not Guarantee Investment Results.
+                </h2>
+
+
+                <p>
+
+                    AI-assisted research is a technology tool
+                    used to organize and analyze information.
+                    It cannot eliminate uncertainty, predict
+                    market movements with certainty or guarantee
+                    investment returns.
+
+                </p>
+
+
+                <p>
+
+                    All investment decisions involve risk.
+                    Investors should independently consider
+                    relevant information, terms, risks and
+                    applicable requirements before committing
+                    capital.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     FINAL CTA
+========================================= -->
+
+<section class="ai-cta">
+
+    <div class="cta-content">
+
+        <span>
+            GOLDENICE INTERNATIONAL
+        </span>
+
+
+        <h2>
+
+            Want To Explore
+            <strong>
+                AI-Assisted Research?
+            </strong>
+
+        </h2>
+
+
+        <p>
+
+            Speak directly with the Goldenice International
+            team through WhatsApp.
+
+        </p>
+
+
+        <a
+            href="https://wa.me/2347068609938?text=Hello%20Goldenice%20International,%20I%20would%20like%20to%20learn%20more%20about%20AI-assisted%20market%20research."
+            target="_blank"
+            class="cta-button"
+        >
+            Chat With Goldenice
+            <span>→</span>
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     FOOTER
+========================================= -->
+
+<footer>
+
+    <div class="footer-container">
+
+
+        <div class="footer-brand">
+
+            <img
+                src="/ChatGPT Image Aug 16, 2026, 07_22_34 PM.png"
+                alt="Goldenice International"
+            >
+
+
+            <p>
+
+                Global market research and investment
+                opportunities through Goldenice International.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="footer-column">
+
+            <h4>
+                NAVIGATION
+            </h4>
+
+
+            <a href="/index.html">
+                Home
+            </a>
+
+
+            <a href="/about.html">
+                About
+            </a>
+
+
+            <a href="/market.html">
+                Markets
+            </a>
+
+
+            <a href="/investment-plans.html">
+                Investment Plans
+            </a>
+
+        </div>
+
+
+
+        <div class="footer-column">
+
+            <h4>
+                EXPLORE
+            </h4>
+
+
+            <a href="ai-insights.html">
+                AI Insights
+            </a>
+
+
+            <a href="/how-it-works.html">
+                How It Works
+            </a>
+
+
+            <a href="/faq.html">
+                FAQ
+            </a>
+
+
+            <a href="/contact.html">
+                Contact
+            </a>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="footer-bottom">
+
+        <p>
+
+            ©
+            <span id="year"></span>
+            Goldenice International.
+            All rights reserved.
+
+        </p>
+
+
+        <p>
+            Investment involves risk.
+        </p>
+
+    </div>
+
+</footer>
+
+
+
+<!-- =========================================
+     FLOATING WHATSAPP
+========================================= -->
+
+<a
+    href="https://wa.me/2347068609938?text=Hello%20Goldenice%20International,%20I%20would%20like%20more%20information."
+    target="_blank"
+    class="whatsapp-button"
+    aria-label="Chat with Goldenice International on WhatsApp"
+>
+    ◉
+</a>
+
+
+
+<script>
+    /* =========================================
+   GOLDENICE INTERNATIONAL
+   AI INSIGHTS JAVASCRIPT
+========================================= */
+
+
+/* =========================================
+   MOBILE NAVIGATION
+========================================= */
+
+const menuButton = document.getElementById("menuButton");
+const navLinks = document.getElementById("navLinks");
+
+if (menuButton && navLinks) {
+
+    menuButton.addEventListener("click", () => {
+
+        navLinks.classList.toggle("active");
+
+        const isOpen =
+            navLinks.classList.contains("active");
+
+        menuButton.setAttribute(
+            "aria-expanded",
+            isOpen
+        );
+
+    });
+
+}
+
+
+/* =========================================
+   CLOSE MOBILE MENU
+========================================= */
+
+const navigationLinks =
+    document.querySelectorAll(".nav-links a");
+
+navigationLinks.forEach((link) => {
+
+    link.addEventListener("click", () => {
+
+        if (navLinks) {
+            navLinks.classList.remove("active");
+        }
+
+        if (menuButton) {
+            menuButton.setAttribute(
+                "aria-expanded",
+                "false"
+            );
+        }
+
+    });
+
+});
+
+
+/* =========================================
+   NAVBAR SCROLL EFFECT
+========================================= */
+
+const navbar =
+    document.querySelector(".navbar");
+
+function updateNavbar() {
+
+    if (!navbar) return;
+
+    if (window.scrollY > 40) {
+
+        navbar.style.background =
+            "rgba(3, 8, 5, 0.98)";
+
+        navbar.style.boxShadow =
+            "0 10px 35px rgba(0, 0, 0, 0.20)";
+
+    } else {
+
+        navbar.style.background =
+            "rgba(5, 11, 8, 0.92)";
+
+        navbar.style.boxShadow =
+            "none";
+
+    }
+
+}
+
+window.addEventListener(
+    "scroll",
+    updateNavbar,
+    { passive: true }
+);
+
+updateNavbar();
+
+
+/* =========================================
+   SMOOTH INTERNAL LINKS
+========================================= */
+
+const internalLinks =
+    document.querySelectorAll(
+        'a[href^="#"]'
+    );
+
+internalLinks.forEach((link) => {
+
+    link.addEventListener("click", (event) => {
+
+        const targetId =
+            link.getAttribute("href");
+
+        if (!targetId || targetId === "#") {
+            return;
+        }
+
+        const target =
+            document.querySelector(targetId);
+
+        if (!target) {
+            return;
+        }
+
+        event.preventDefault();
+
+        target.scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+        });
+
+    });
+
+});
+
+
+/* =========================================
+   SCROLL REVEAL ANIMATION
+========================================= */
+
+const revealElements =
+    document.querySelectorAll(
+        ".system-card, .research-card, .dashboard-content, .ai-dashboard, .disclaimer-box"
+    );
+
+
+if ("IntersectionObserver" in window) {
+
+    const revealObserver =
+        new IntersectionObserver(
+            (entries, observer) => {
+
+                entries.forEach((entry) => {
+
+                    if (
+                        entry.isIntersecting
+                    ) {
+
+                        entry.target.classList.add(
+                            "visible"
+                        );
+
+                        observer.unobserve(
+                            entry.target
+                        );
+
+                    }
+
+                });
+
+            },
+            {
+                threshold: 0.12
+            }
+        );
+
+
+    revealElements.forEach((element) => {
+
+        element.classList.add("reveal");
+
+        revealObserver.observe(element);
+
+    });
+
+} else {
+
+    revealElements.forEach((element) => {
+
+        element.classList.add("visible");
+
+    });
+
+}
+
+
+/* =========================================
+   AI SIGNAL ANIMATION
+========================================= */
+
+const signalBars =
+    document.querySelectorAll(
+        ".signal-bars i"
+    );
+
+
+function randomizeSignals() {
+
+    signalBars.forEach((bar, index) => {
+
+        const minimum = 20;
+        const maximum = 100;
+
+        const height =
+            Math.floor(
+                Math.random() *
+                (maximum - minimum + 1)
+            ) + minimum;
+
+        bar.style.height =
+            `${height}%`;
+
+        bar.style.animationDelay =
+            `${index * 0.08}s`;
+
+    });
+
+}
+
+
+/*
+   The dashboard is visual only.
+   These values are NOT live stock-market
+   predictions or investment signals.
+*/
+
+if (signalBars.length > 0) {
+
+    randomizeSignals();
+
+    setInterval(
+        randomizeSignals,
+        3500
+    );
+
+}
+
+
+/* =========================================
+   RESEARCH STATUS ANIMATION
+========================================= */
+
+const statusItems =
+    document.querySelectorAll(
+        ".status-row strong"
+    );
+
+
+const statusMessages = [
+    "MONITORING",
+    "ANALYZING",
+    "REVIEWING",
+    "REQUIRED"
+];
+
+
+let statusIndex = 0;
+
+
+function updateResearchStatus() {
+
+    if (!statusItems.length) {
+        return;
+    }
+
+    statusItems.forEach((item, index) => {
+
+        item.style.opacity = "0.55";
+
+        setTimeout(() => {
+
+            item.style.opacity = "1";
+
+        }, index * 150);
+
+    });
+
+    statusIndex++;
+
+    if (
+        statusIndex >=
+        statusMessages.length
+    ) {
+
+        statusIndex = 0;
+
+    }
+
+}
+
+
+setInterval(
+    updateResearchStatus,
+    4000
+);
+
+
+/* =========================================
+   WHATSAPP TRACKING
+========================================= */
+
+const whatsappLinks =
+    document.querySelectorAll(
+        'a[href*="wa.me"]'
+    );
+
+
+whatsappLinks.forEach((link) => {
+
+    link.addEventListener(
+        "click",
+        () => {
+
+            console.log(
+                "Goldenice International WhatsApp enquiry initiated."
+            );
+
+        }
+    );
+
+});
+
+
+/* =========================================
+   CURRENT YEAR
+========================================= */
+
+const yearElement =
+    document.getElementById("year");
+
+
+if (yearElement) {
+
+    yearElement.textContent =
+        new Date().getFullYear();
+
+}
+
+
+/* =========================================
+   AI RESEARCH BUTTON
+========================================= */
+
+const researchButton =
+    document.querySelector(
+        'a[href="#ai-system"]'
+    );
+
+
+if (researchButton) {
+
+    researchButton.addEventListener(
+        "click",
+        () => {
+
+            console.log(
+                "AI research section opened."
+            );
+
+        }
+    );
+
+}
+
+
+/* =========================================
+   PAGE VISIBILITY
+========================================= */
+
+document.addEventListener(
+    "visibilitychange",
+    () => {
+
+        if (
+            document.visibilityState ===
+            "visible"
+        ) {
+
+            console.log(
+                "Goldenice AI Insights page active."
+            );
+
+        }
+
+    }
+);
+
+
+/* =========================================
+   ACCESSIBILITY
+========================================= */
+
+if (menuButton) {
+
+    menuButton.setAttribute(
+        "aria-expanded",
+        "false"
+    );
+
+}
+
+
+/* =========================================
+   PAGE READY
+========================================= */
+
+document.addEventListener(
+    "DOMContentLoaded",
+    () => {
+
+        console.log(
+            "Goldenice International AI Insights loaded successfully."
+        );
+
+    }
+);
+</script>
+
+</body>
+
+</html>

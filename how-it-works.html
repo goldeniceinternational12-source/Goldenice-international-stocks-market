@@ -1,0 +1,2494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        How It Works | Goldenice International
+    </title>
+
+    <meta
+        name="description"
+        content="Learn how Goldenice International's investment enquiry and client process works, from exploring opportunities to speaking directly with our team."
+    >
+
+    <meta
+        name="keywords"
+        content="Goldenice International, how it works, investment process, global investment, stock market investment"
+    >
+
+    <meta
+        name="robots"
+        content="index, follow"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <style>
+        /* =========================================
+   GOLDENICE INTERNATIONAL
+   HOW IT WORKS PAGE
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background: #050b08;
+    color: #ffffff;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+/* =========================================
+   NAVBAR
+========================================= */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    z-index: 1000;
+
+    background: rgba(5, 11, 8, 0.93);
+
+    backdrop-filter: blur(18px);
+
+    border-bottom:
+        1px solid rgba(255, 255, 255, 0.06);
+}
+
+.nav-container {
+    width: min(1200px, 92%);
+
+    min-height: 82px;
+
+    margin: auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 25px;
+}
+
+.logo img {
+    width: 155px;
+}
+
+.nav-links {
+    display: flex;
+
+    align-items: center;
+
+    gap: 24px;
+}
+
+.nav-links a {
+    color: #89958e;
+
+    font-size: 10px;
+
+    transition: 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #b9ef49;
+}
+
+.nav-button {
+    padding: 12px 18px;
+
+    border-radius: 7px;
+
+    background: #b9ef49;
+
+    color: #061008;
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    transition: 0.3s ease;
+}
+
+.nav-button:hover {
+    transform: translateY(-2px);
+}
+
+.menu-button {
+    display: none;
+
+    border: none;
+
+    background: transparent;
+
+    color: #ffffff;
+
+    font-size: 27px;
+
+    cursor: pointer;
+}
+
+
+/* =========================================
+   CONTAINER
+========================================= */
+
+.container {
+    width: min(1200px, 92%);
+
+    margin: auto;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.process-hero {
+    position: relative;
+
+    min-height: 700px;
+
+    display: flex;
+
+    align-items: center;
+
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at 78% 45%,
+            rgba(185, 239, 73, 0.13),
+            transparent 30%
+        ),
+        #050c08;
+}
+
+.hero-grid {
+    position: absolute;
+
+    inset: 0;
+
+    opacity: 0.45;
+
+    background-image:
+        linear-gradient(
+            rgba(185, 239, 73, 0.035) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            90deg,
+            rgba(185, 239, 73, 0.035) 1px,
+            transparent 1px
+        );
+
+    background-size: 65px 65px;
+
+    mask-image:
+        linear-gradient(
+            to bottom,
+            black,
+            transparent
+        );
+}
+
+.hero-glow {
+    position: absolute;
+
+    width: 480px;
+    height: 480px;
+
+    right: -160px;
+    top: 130px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(185, 239, 73, 0.13),
+            transparent 68%
+        );
+
+    filter: blur(8px);
+}
+
+.hero-content {
+    position: relative;
+
+    z-index: 2;
+
+    width: min(1200px, 92%);
+
+    margin: 80px auto 0;
+}
+
+.hero-label {
+    display: inline-block;
+
+    padding: 8px 13px;
+
+    border:
+        1px solid rgba(185, 239, 73, 0.25);
+
+    border-radius: 30px;
+
+    color: #b9ef49;
+
+    font-size: 9px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+}
+
+.hero-content h1 {
+    max-width: 850px;
+
+    margin-top: 25px;
+
+    font-size: clamp(48px, 7vw, 80px);
+
+    line-height: 0.98;
+
+    letter-spacing: -4px;
+}
+
+.hero-content h1 span {
+    color: #b9ef49;
+}
+
+.hero-content p {
+    max-width: 650px;
+
+    margin-top: 28px;
+
+    color: #7d8a82;
+
+    font-size: 13px;
+}
+
+.hero-buttons {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-top: 32px;
+}
+
+.primary-button,
+.secondary-button {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 11px;
+
+    padding: 14px 20px;
+
+    border-radius: 7px;
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    transition: 0.3s ease;
+}
+
+.primary-button {
+    background: #b9ef49;
+
+    color: #061008;
+}
+
+.primary-button:hover {
+    transform: translateY(-3px);
+}
+
+.primary-button span {
+    font-size: 17px;
+}
+
+.secondary-button {
+    border:
+        1px solid rgba(255, 255, 255, 0.12);
+
+    color: #a1aca5;
+}
+
+.secondary-button:hover {
+    border-color:
+        rgba(185, 239, 73, 0.3);
+
+    color: #b9ef49;
+}
+
+
+/* =========================================
+   INTRO
+========================================= */
+
+.process-intro {
+    padding: 105px 0;
+
+    background: #08120d;
+
+    border-top:
+        1px solid rgba(255, 255, 255, 0.04);
+}
+
+.intro-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 0.9fr;
+
+    gap: 90px;
+}
+
+.section-label,
+.section-heading > span,
+.step-content > span,
+.whatsapp-content > span,
+.important-box > div:last-child > span,
+.cta-content > span {
+    color: #b9ef49;
+
+    font-size: 9px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+}
+
+.intro-grid h2 {
+    max-width: 600px;
+
+    margin-top: 15px;
+
+    font-size: clamp(38px, 4vw, 55px);
+
+    line-height: 1.04;
+
+    letter-spacing: -2.5px;
+}
+
+.intro-grid h2 strong {
+    color: #b9ef49;
+}
+
+.intro-grid p {
+    margin-bottom: 20px;
+
+    color: #748078;
+
+    font-size: 12px;
+}
+
+
+/* =========================================
+   PROCESS SECTION
+========================================= */
+
+.process-section {
+    padding: 110px 0;
+
+    background: #050c08;
+}
+
+.section-heading {
+    max-width: 700px;
+
+    margin-bottom: 55px;
+}
+
+.section-heading h2 {
+    margin-top: 14px;
+
+    font-size: clamp(38px, 4vw, 54px);
+
+    line-height: 1.05;
+
+    letter-spacing: -2px;
+}
+
+.section-heading h2 strong {
+    color: #b9ef49;
+}
+
+.section-heading p {
+    max-width: 590px;
+
+    margin-top: 17px;
+
+    color: #748078;
+
+    font-size: 12px;
+}
+
+
+/* =========================================
+   TIMELINE
+========================================= */
+
+.timeline {
+    position: relative;
+
+    display: grid;
+
+    gap: 14px;
+}
+
+.timeline::before {
+    content: "";
+
+    position: absolute;
+
+    top: 20px;
+    bottom: 20px;
+
+    left: 31px;
+
+    width: 1px;
+
+    background:
+        linear-gradient(
+            to bottom,
+            rgba(185, 239, 73, 0.5),
+            rgba(185, 239, 73, 0.05)
+        );
+}
+
+.process-card {
+    position: relative;
+
+    display: grid;
+
+    grid-template-columns:
+        62px 120px 1fr;
+
+    align-items: center;
+
+    gap: 25px;
+
+    min-height: 165px;
+
+    padding: 27px 30px;
+
+    border-radius: 13px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #0a1710,
+            #071009
+        );
+
+    border:
+        1px solid rgba(255, 255, 255, 0.055);
+
+    transition: 0.35s ease;
+}
+
+.process-card:hover {
+    transform: translateX(5px);
+
+    border-color:
+        rgba(185, 239, 73, 0.2);
+}
+
+.step-number {
+    position: relative;
+
+    z-index: 2;
+
+    width: 45px;
+    height: 45px;
+
+    display: grid;
+
+    place-items: center;
+
+    border-radius: 50%;
+
+    background: #071009;
+
+    border:
+        1px solid rgba(185, 239, 73, 0.3);
+
+    color: #b9ef49;
+
+    font-size: 9px;
+
+    font-weight: 900;
+}
+
+.step-icon {
+    width: 100px;
+    height: 70px;
+
+    display: grid;
+
+    place-items: center;
+
+    border-radius: 10px;
+
+    background:
+        rgba(185, 239, 73, 0.06);
+
+    border:
+        1px solid rgba(185, 239, 73, 0.1);
+
+    color: #b9ef49;
+
+    font-size: 8px;
+
+    font-weight: 900;
+
+    letter-spacing: 1px;
+}
+
+.step-content h3 {
+    margin-top: 7px;
+
+    font-size: 18px;
+}
+
+.step-content p {
+    max-width: 650px;
+
+    margin-top: 8px;
+
+    color: #69766e;
+
+    font-size: 10px;
+}
+
+.step-content a {
+    display: inline-block;
+
+    margin-top: 13px;
+
+    color: #b9ef49;
+
+    font-size: 9px;
+
+    font-weight: 800;
+
+    transition: 0.3s ease;
+}
+
+.step-content a:hover {
+    transform: translateX(4px);
+}
+
+
+/* =========================================
+   WHATSAPP SECTION
+========================================= */
+
+.whatsapp-section {
+    padding: 100px 0;
+
+    background: #08120d;
+}
+
+.whatsapp-card {
+    position: relative;
+
+    display: grid;
+
+    grid-template-columns: 70px 1fr auto;
+
+    align-items: center;
+
+    gap: 28px;
+
+    padding: 40px;
+
+    border-radius: 15px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #102017,
+            #08110c
+        );
+
+    border:
+        1px solid rgba(185, 239, 73, 0.15);
+
+    overflow: hidden;
+}
+
+.whatsapp-card::after {
+    content: "";
+
+    position: absolute;
+
+    width: 300px;
+    height: 300px;
+
+    right: -150px;
+    top: -150px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(185, 239, 73, 0.1),
+            transparent 70%
+        );
+}
+
+.whatsapp-icon {
+    position: relative;
+
+    z-index: 2;
+
+    width: 60px;
+    height: 60px;
+
+    display: grid;
+
+    place-items: center;
+
+    border-radius: 50%;
+
+    background: #25d366;
+
+    color: white;
+
+    font-size: 10px;
+
+    font-weight: 900;
+}
+
+.whatsapp-content {
+    position: relative;
+
+    z-index: 2;
+}
+
+.whatsapp-content h2 {
+    margin-top: 9px;
+
+    font-size: clamp(25px, 3vw, 37px);
+
+    line-height: 1.1;
+
+    letter-spacing: -1px;
+}
+
+.whatsapp-content p {
+    max-width: 650px;
+
+    margin-top: 12px;
+
+    color: #718078;
+
+    font-size: 10px;
+}
+
+.whatsapp-cta {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-top: 20px;
+
+    padding: 13px 18px;
+
+    border-radius: 7px;
+
+    background: #b9ef49;
+
+    color: #061008;
+
+    font-size: 9px;
+
+    font-weight: 900;
+}
+
+.whatsapp-cta span {
+    font-size: 16px;
+}
+
+.whatsapp-number {
+    position: relative;
+
+    z-index: 2;
+
+    text-align: right;
+}
+
+.whatsapp-number small {
+    display: block;
+
+    color: #55635b;
+
+    font-size: 7px;
+
+    letter-spacing: 2px;
+}
+
+.whatsapp-number strong {
+    display: block;
+
+    margin-top: 5px;
+
+    color: #b9ef49;
+
+    font-size: 12px;
+}
+
+
+/* =========================================
+   IMPORTANT SECTION
+========================================= */
+
+.important-section {
+    padding: 80px 0;
+
+    background: #050c08;
+}
+
+.important-box {
+    display: grid;
+
+    grid-template-columns: 65px 1fr;
+
+    gap: 25px;
+
+    padding: 32px;
+
+    border-radius: 13px;
+
+    background: #09140e;
+
+    border:
+        1px solid rgba(255, 196, 77, 0.12);
+}
+
+.important-icon {
+    width: 48px;
+    height: 48px;
+
+    display: grid;
+
+    place-items: center;
+
+    border-radius: 50%;
+
+    background:
+        rgba(185, 239, 73, 0.08);
+
+    color: #b9ef49;
+
+    font-size: 18px;
+
+    font-weight: 900;
+}
+
+.important-box h2 {
+    margin-top: 9px;
+
+    font-size: 22px;
+}
+
+.important-box p {
+    max-width: 900px;
+
+    margin-top: 12px;
+
+    color: #69766e;
+
+    font-size: 10px;
+}
+
+
+/* =========================================
+   FINAL CTA
+========================================= */
+
+.final-cta {
+    padding: 120px 20px;
+
+    text-align: center;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(185, 239, 73, 0.08),
+            transparent 43%
+        ),
+        #08120d;
+}
+
+.cta-content {
+    max-width: 760px;
+
+    margin: auto;
+}
+
+.cta-content h2 {
+    margin-top: 15px;
+
+    font-size: clamp(38px, 5vw, 58px);
+
+    line-height: 1.04;
+
+    letter-spacing: -2px;
+}
+
+.cta-content h2 strong {
+    color: #b9ef49;
+}
+
+.cta-content p {
+    max-width: 550px;
+
+    margin: 18px auto 28px;
+
+    color: #748078;
+
+    font-size: 12px;
+}
+
+.cta-button {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 13px;
+
+    padding: 15px 22px;
+
+    border-radius: 7px;
+
+    background: #b9ef49;
+
+    color: #061008;
+
+    font-size: 10px;
+
+    font-weight: 900;
+
+    transition: 0.3s ease;
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+}
+
+.cta-button span {
+    font-size: 16px;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+    background: #030805;
+
+    border-top:
+        1px solid rgba(255, 255, 255, 0.06);
+}
+
+.footer-container {
+    width: min(1200px, 92%);
+
+    margin: auto;
+
+    padding: 60px 0;
+
+    display: grid;
+
+    grid-template-columns: 2fr 1fr 1fr;
+
+    gap: 60px;
+}
+
+.footer-brand img {
+    width: 145px;
+}
+
+.footer-brand p {
+    max-width: 350px;
+
+    margin-top: 14px;
+
+    color: #505c55;
+
+    font-size: 10px;
+}
+
+.footer-column {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+.footer-column h4 {
+    margin-bottom: 5px;
+
+    font-size: 9px;
+}
+
+.footer-column a {
+    color: #5e6a63;
+
+    font-size: 10px;
+
+    transition: 0.3s ease;
+}
+
+.footer-column a:hover {
+    color: #b9ef49;
+}
+
+.footer-bottom {
+    width: min(1200px, 92%);
+
+    margin: auto;
+
+    padding: 20px 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    border-top:
+        1px solid rgba(255, 255, 255, 0.06);
+
+    color: #455149;
+
+    font-size: 8px;
+}
+
+
+/* =========================================
+   FLOATING WHATSAPP
+========================================= */
+
+.whatsapp-button {
+    position: fixed;
+
+    right: 24px;
+    bottom: 24px;
+
+    z-index: 999;
+
+    width: 58px;
+    height: 58px;
+
+    display: grid;
+
+    place-items: center;
+
+    border-radius: 50%;
+
+    background: #25d366;
+
+    color: #ffffff;
+
+    font-size: 22px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.4);
+
+    animation:
+        whatsappPulse 2s infinite;
+}
+
+@keyframes whatsappPulse {
+
+    0% {
+        box-shadow:
+            0 0 0 0 rgba(37, 211, 102, 0.45);
+    }
+
+    70% {
+        box-shadow:
+            0 0 0 15px rgba(37, 211, 102, 0);
+    }
+
+    100% {
+        box-shadow:
+            0 0 0 0 rgba(37, 211, 102, 0);
+    }
+}
+
+
+/* =========================================
+   REVEAL ANIMATION
+========================================= */
+
+.reveal {
+    opacity: 0;
+
+    transform: translateY(25px);
+
+    transition:
+        opacity 0.7s ease,
+        transform 0.7s ease;
+}
+
+.reveal.visible {
+    opacity: 1;
+
+    transform: translateY(0);
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1050px) {
+
+    .nav-links {
+        gap: 13px;
+    }
+
+    .nav-links a {
+        font-size: 8px;
+    }
+
+    .process-card {
+        grid-template-columns:
+            55px 100px 1fr;
+
+        gap: 18px;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE NAV
+========================================= */
+
+@media (max-width: 850px) {
+
+    .nav-links,
+    .nav-button {
+        display: none;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    .nav-links.active {
+
+        position: absolute;
+
+        top: 82px;
+        left: 0;
+
+        width: 100%;
+
+        padding: 25px;
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 20px;
+
+        background: #061009;
+
+        border-bottom:
+            1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .intro-grid {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+    .whatsapp-card {
+        grid-template-columns: 60px 1fr;
+    }
+
+    .whatsapp-number {
+        grid-column: 2;
+
+        text-align: left;
+    }
+
+}
+
+
+/* =========================================
+   PHONE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .nav-container {
+        min-height: 72px;
+    }
+
+    .logo img {
+        width: 125px;
+    }
+
+    .process-hero {
+        min-height: 650px;
+    }
+
+    .hero-content {
+        margin-top: 55px;
+    }
+
+    .hero-content h1 {
+        font-size: 45px;
+
+        letter-spacing: -2.5px;
+    }
+
+    .hero-content p {
+        font-size: 12px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+    .primary-button,
+    .secondary-button {
+        width: 100%;
+    }
+
+    .process-intro,
+    .process-section,
+    .whatsapp-section,
+    .important-section {
+        padding: 75px 0;
+    }
+
+    .intro-grid h2,
+    .section-heading h2 {
+        font-size: 36px;
+    }
+
+    .timeline::before {
+        display: none;
+    }
+
+    .process-card {
+        grid-template-columns: 1fr;
+
+        gap: 15px;
+
+        padding: 25px;
+
+        min-height: auto;
+    }
+
+    .step-number {
+        width: 43px;
+        height: 43px;
+    }
+
+    .step-icon {
+        width: 100%;
+
+        height: 55px;
+    }
+
+    .whatsapp-card {
+        grid-template-columns: 1fr;
+
+        padding: 27px;
+    }
+
+    .whatsapp-number {
+        grid-column: auto;
+    }
+
+    .important-box {
+        grid-template-columns: 1fr;
+
+        padding: 25px;
+    }
+
+    .final-cta {
+        padding: 85px 20px;
+    }
+
+    .cta-content h2 {
+        font-size: 37px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+
+        padding: 50px 0;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        padding-bottom: 25px;
+    }
+
+    .whatsapp-button {
+        right: 18px;
+        bottom: 18px;
+
+        width: 54px;
+        height: 54px;
+    }
+
+}
+
+
+/* =========================================
+   SMALL PHONES
+========================================= */
+
+@media (max-width: 380px) {
+
+    .hero-content h1 {
+        font-size: 39px;
+    }
+
+    .process-card h3 {
+        font-size: 17px;
+    }
+
+    .whatsapp-content h2 {
+        font-size: 24px;
+    }
+
+}
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================
+     NAVIGATION
+========================================= -->
+
+<header class="navbar">
+
+    <div class="nav-container">
+
+
+        <a
+            href="index.html"
+            class="logo"
+        >
+
+            <img
+                src="/ChatGPT Image Aug 16, 2026, 07_22_34 PM.png"
+                alt="Goldenice International Logo"
+            >
+
+        </a>
+
+
+        <nav
+            class="nav-links"
+            id="navLinks"
+        >
+
+            <a href="/index.html">
+                Home
+            </a>
+
+            <a href="/about.html">
+                About
+            </a>
+
+            <a href="/market.html">
+                Markets
+            </a>
+
+            <a href="/investment-plans.html">
+                Investment Plans
+            </a>
+
+            <a href="/ai-insights.html">
+                AI Insights
+            </a>
+
+            <a
+                href="how-it-works.html"
+                class="active"
+            >
+                How It Works
+            </a>
+
+        </nav>
+
+
+        <a
+            href="https://wa.me/2347068609938?text=Hello%20Goldenice%20International,%20I%20would%20like%20to%20learn%20more%20about%20your%20investment%20process."
+            target="_blank"
+            class="nav-button"
+        >
+            Talk to Us
+        </a>
+
+
+        <button
+            class="menu-button"
+            id="menuButton"
+            aria-label="Open navigation menu"
+        >
+            ☰
+        </button>
+
+    </div>
+
+</header>
+
+
+
+<!-- =========================================
+     HERO
+========================================= -->
+
+<section class="process-hero">
+
+    <div class="hero-grid"></div>
+
+    <div class="hero-glow"></div>
+
+
+    <div class="hero-content">
+
+        <span class="hero-label">
+            THE GOLDENICE PROCESS
+        </span>
+
+
+        <h1>
+
+            A Clearer Path
+            From <span>
+            Research
+            </span>
+            To Discussion.
+
+        </h1>
+
+
+        <p>
+
+            Explore our approach, understand the available
+            opportunities and speak directly with the
+            Goldenice International team before making
+            any investment decision.
+
+        </p>
+
+
+        <div class="hero-buttons">
+
+            <a
+                href="#process"
+                class="primary-button"
+            >
+                See The Process
+                <span>↓</span>
+            </a>
+
+
+            <a
+                href="https://wa.me/2347068609938?text=Hello%20Goldenice%20International,%20I%20would%20like%20to%20discuss%20the%20investment%20process."
+                target="_blank"
+                class="secondary-button"
+            >
+                Chat With Us
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     INTRO
+========================================= -->
+
+<section class="process-intro">
+
+    <div class="container">
+
+        <div class="intro-grid">
+
+
+            <div>
+
+                <span class="section-label">
+                    SIMPLE. DIRECT. TRANSPARENT.
+                </span>
+
+
+                <h2>
+
+                    Understand
+                    Before You
+                    <strong>
+                        Commit.
+                    </strong>
+
+                </h2>
+
+            </div>
+
+
+            <div>
+
+                <p>
+
+                    Goldenice International is designed around
+                    direct communication. Our website provides
+                    information about our approach, markets and
+                    investment opportunities.
+
+                </p>
+
+
+                <p>
+
+                    When you are ready to ask questions, the
+                    conversation moves directly to our team
+                    through WhatsApp.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     PROCESS
+========================================= -->
+
+<section
+    class="process-section"
+    id="process"
+>
+
+    <div class="container">
+
+
+        <div class="section-heading">
+
+            <span>
+                STEP-BY-STEP
+            </span>
+
+
+            <h2>
+
+                How The
+                <strong>
+                    Process Works.
+                </strong>
+
+            </h2>
+
+
+            <p>
+
+                A simple digital journey designed to help
+                prospective clients understand the process
+                before contacting our team.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="timeline">
+
+
+            <!-- STEP 01 -->
+
+            <article class="process-card">
+
+                <div class="step-number">
+                    01
+                </div>
+
+
+                <div class="step-icon">
+                    EXPLORE
+                </div>
+
+
+                <div class="step-content">
+
+                    <span>
+                        DISCOVER
+                    </span>
+
+
+                    <h3>
+                        Explore Goldenice
+                    </h3>
+
+
+                    <p>
+
+                        Learn about Goldenice International,
+                        our approach, market areas and the
+                        investment opportunities presented
+                        on our website.
+
+                    </p>
+
+
+                    <a href="/about.html">
+                        Learn About Us →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- STEP 02 -->
+
+            <article class="process-card">
+
+                <div class="step-number">
+                    02
+                </div>
+
+
+                <div class="step-icon">
+                    MARKET
+                </div>
+
+
+                <div class="step-content">
+
+                    <span>
+                        RESEARCH
+                    </span>
+
+
+                    <h3>
+                        Explore Market Areas
+                    </h3>
+
+
+                    <p>
+
+                        Review the markets and sectors that
+                        Goldenice presents as areas of interest,
+                        including global equities and other
+                        financial markets.
+
+                    </p>
+
+
+                    <a href="/market.html">
+                        View Markets →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- STEP 03 -->
+
+            <article class="process-card">
+
+                <div class="step-number">
+                    03
+                </div>
+
+
+                <div class="step-icon">
+                    AI
+                </div>
+
+
+                <div class="step-content">
+
+                    <span>
+                        INTELLIGENCE
+                    </span>
+
+
+                    <h3>
+                        Review AI-Assisted Insights
+                    </h3>
+
+
+                    <p>
+
+                        Explore how technology and AI-assisted
+                        research can help organize information
+                        and support market analysis.
+
+                    </p>
+
+
+                    <a href="/ai-insights.html">
+                        Explore AI Insights →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- STEP 04 -->
+
+            <article class="process-card">
+
+                <div class="step-number">
+                    04
+                </div>
+
+
+                <div class="step-icon">
+                    PLAN
+                </div>
+
+
+                <div class="step-content">
+
+                    <span>
+                        OPPORTUNITY
+                    </span>
+
+
+                    <h3>
+                        Review Investment Options
+                    </h3>
+
+
+                    <p>
+
+                        Review the investment options presented
+                        by Goldenice and understand their stated
+                        terms, timeframe and associated risks.
+
+                    </p>
+
+
+                    <a href="/investment-plans.html">
+                        View Investment Plans →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- STEP 05 -->
+
+            <article class="process-card">
+
+                <div class="step-number">
+                    05
+                </div>
+
+
+                <div class="step-icon">
+                    CHAT
+                </div>
+
+
+                <div class="step-content">
+
+                    <span>
+                        COMMUNICATION
+                    </span>
+
+
+                    <h3>
+                        Speak With Our Team
+                    </h3>
+
+
+                    <p>
+
+                        Questions can be sent directly to
+                        Goldenice International through WhatsApp
+                        for further discussion and clarification.
+
+                    </p>
+
+
+                    <a
+                        href="https://wa.me/2347068609938?text=Hello%20Goldenice%20International,%20I%20have%20reviewed%20your%20website%20and%20would%20like%20to%20discuss%20an%20investment%20opportunity."
+                        target="_blank"
+                    >
+                        Start WhatsApp Chat →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- STEP 06 -->
+
+            <article class="process-card">
+
+                <div class="step-number">
+                    06
+                </div>
+
+
+                <div class="step-icon">
+                    REVIEW
+                </div>
+
+
+                <div class="step-content">
+
+                    <span>
+                        DUE DILIGENCE
+                    </span>
+
+
+                    <h3>
+                        Make An Informed Decision
+                    </h3>
+
+
+                    <p>
+
+                        Before committing capital, prospective
+                        investors should review relevant terms,
+                        risks, requirements and applicable
+                        information carefully.
+
+                    </p>
+
+
+                    <a
+                        href="https://wa.me/2347068609938?text=Hello%20Goldenice%20International,%20I%20would%20like%20to%20ask%20some%20questions%20before%20making%20an%20investment%20decision."
+                        target="_blank"
+                    >
+                        Ask Questions →
+                    </a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     WHATSAPP EXPERIENCE
+========================================= -->
+
+<section class="whatsapp-section">
+
+    <div class="container">
+
+        <div class="whatsapp-card">
+
+
+            <div class="whatsapp-icon">
+                WA
+            </div>
+
+
+            <div class="whatsapp-content">
+
+                <span>
+                    DIRECT COMMUNICATION
+                </span>
+
+
+                <h2>
+                    One Conversation Can Start The Journey.
+                </h2>
+
+
+                <p>
+
+                    No complicated account dashboard is required
+                    on this website. When you need more information,
+                    you can contact the Goldenice International team
+                    directly through WhatsApp.
+
+                </p>
+
+
+                <a
+                    href="https://wa.me/2347068609938?text=Hello%20Goldenice%20International,%20I%20would%20like%20more%20information%20about%20your%20investment opportunities."
+                    target="_blank"
+                    class="whatsapp-cta"
+                >
+                    Open WhatsApp
+                    <span>→</span>
+                </a>
+
+            </div>
+
+
+            <div class="whatsapp-number">
+
+                <small>
+                    WHATSAPP
+                </small>
+
+                <strong>
+                    +234 706 860 9938
+                </strong>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     IMPORTANT INFORMATION
+========================================= -->
+
+<section class="important-section">
+
+    <div class="container">
+
+        <div class="important-box">
+
+
+            <div class="important-icon">
+                !
+            </div>
+
+
+            <div>
+
+                <span>
+                    IMPORTANT
+                </span>
+
+
+                <h2>
+                    Understand The Risks Before Investing.
+                </h2>
+
+
+                <p>
+
+                    Investment markets can rise and fall and
+                    investment outcomes are not guaranteed.
+                    Information presented on this website should
+                    not be interpreted as a promise of future
+                    performance.
+
+                </p>
+
+
+                <p>
+
+                    Prospective investors should independently
+                    consider their circumstances, verify relevant
+                    information and seek appropriate professional
+                    advice where necessary.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     FINAL CTA
+========================================= -->
+
+<section class="final-cta">
+
+    <div class="cta-content">
+
+        <span>
+            GOLDENICE INTERNATIONAL
+        </span>
+
+
+        <h2>
+
+            Ready To
+            <strong>
+                Start A Conversation?
+            </strong>
+
+        </h2>
+
+
+        <p>
+
+            Contact our team directly through WhatsApp
+            to ask questions and learn more.
+
+        </p>
+
+
+        <a
+            href="https://wa.me/2347068609938?text=Hello%20Goldenice%20International,%20I%20am interested in learning more about your investment opportunities."
+            target="_blank"
+            class="cta-button"
+        >
+            Talk To Goldenice
+            <span>→</span>
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     FOOTER
+========================================= -->
+
+<footer>
+
+    <div class="footer-container">
+
+
+        <div class="footer-brand">
+
+            <img
+                src="/ChatGPT Image Aug 16, 2026, 07_22_34 PM.png"
+                alt="Goldenice International Logo"
+            >
+
+
+            <p>
+
+                Global investment information and
+                market research through Goldenice International.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="footer-column">
+
+            <h4>
+                COMPANY
+            </h4>
+
+            <a href="/index.html">
+                Home
+            </a>
+
+            <a href="/about.html">
+                About
+            </a>
+
+            <a href="/market.html">
+                Markets
+            </a>
+
+            <a href="/contact.html">
+                Contact
+            </a>
+
+        </div>
+
+
+
+        <div class="footer-column">
+
+            <h4>
+                RESOURCES
+            </h4>
+
+            <a href="/investment-plans.html">
+                Investment Plans
+            </a>
+
+            <a href="/ai-insights.html">
+                AI Insights
+            </a>
+
+            <a href="how-it-works.html">
+                How It Works
+            </a>
+
+            <a href="/faq.html">
+                FAQ
+            </a>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="footer-bottom">
+
+        <p>
+
+            ©
+            <span id="year"></span>
+            Goldenice International.
+            All rights reserved.
+
+        </p>
+
+
+        <p>
+            Investment involves risk.
+        </p>
+
+    </div>
+
+</footer>
+
+
+
+<!-- =========================================
+     FLOATING WHATSAPP
+========================================= -->
+
+<a
+    href="https://wa.me/2347068609938?text=Hello%20Goldenice%20International,%20I%20would%20like%20more%20information."
+    target="_blank"
+    class="whatsapp-button"
+    aria-label="Chat with Goldenice International on WhatsApp"
+>
+    ◉
+</a>
+
+
+
+<script>
+    /* =========================================
+   GOLDENICE INTERNATIONAL
+   HOW IT WORKS JAVASCRIPT
+========================================= */
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    /* =====================================
+       MOBILE NAVIGATION
+    ===================================== */
+
+    const menuButton =
+        document.getElementById("menuButton");
+
+    const navLinks =
+        document.getElementById("navLinks");
+
+
+    if (menuButton && navLinks) {
+
+        menuButton.addEventListener("click", () => {
+
+            navLinks.classList.toggle("active");
+
+            const opened =
+                navLinks.classList.contains("active");
+
+            menuButton.setAttribute(
+                "aria-expanded",
+                opened ? "true" : "false"
+            );
+
+        });
+
+    }
+
+
+    /* =====================================
+       CLOSE MENU AFTER LINK CLICK
+    ===================================== */
+
+    const navItems =
+        document.querySelectorAll(".nav-links a");
+
+    navItems.forEach((item) => {
+
+        item.addEventListener("click", () => {
+
+            if (navLinks) {
+                navLinks.classList.remove("active");
+            }
+
+            if (menuButton) {
+                menuButton.setAttribute(
+                    "aria-expanded",
+                    "false"
+                );
+            }
+
+        });
+
+    });
+
+
+    /* =====================================
+       NAVBAR SCROLL EFFECT
+    ===================================== */
+
+    const navbar =
+        document.querySelector(".navbar");
+
+
+    function updateNavbar() {
+
+        if (!navbar) return;
+
+        if (window.scrollY > 50) {
+
+            navbar.style.background =
+                "rgba(3, 8, 5, 0.98)";
+
+            navbar.style.boxShadow =
+                "0 10px 35px rgba(0, 0, 0, 0.25)";
+
+        } else {
+
+            navbar.style.background =
+                "rgba(5, 11, 8, 0.93)";
+
+            navbar.style.boxShadow =
+                "none";
+
+        }
+
+    }
+
+
+    window.addEventListener(
+        "scroll",
+        updateNavbar,
+        { passive: true }
+    );
+
+    updateNavbar();
+
+
+    /* =====================================
+       SMOOTH SCROLL
+    ===================================== */
+
+    const internalLinks =
+        document.querySelectorAll(
+            'a[href^="#"]'
+        );
+
+
+    internalLinks.forEach((link) => {
+
+        link.addEventListener("click", (event) => {
+
+            const targetID =
+                link.getAttribute("href");
+
+
+            if (
+                !targetID ||
+                targetID === "#"
+            ) {
+                return;
+            }
+
+
+            const target =
+                document.querySelector(targetID);
+
+
+            if (!target) {
+                return;
+            }
+
+
+            event.preventDefault();
+
+
+            target.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+
+        });
+
+    });
+
+
+    /* =====================================
+       SCROLL REVEAL
+    ===================================== */
+
+    const revealElements =
+        document.querySelectorAll(
+            ".process-card, .whatsapp-card, .important-box, .section-heading"
+        );
+
+
+    if ("IntersectionObserver" in window) {
+
+        const revealObserver =
+            new IntersectionObserver(
+                (entries, observer) => {
+
+                    entries.forEach((entry) => {
+
+                        if (
+                            entry.isIntersecting
+                        ) {
+
+                            entry.target.classList.add(
+                                "visible"
+                            );
+
+                            observer.unobserve(
+                                entry.target
+                            );
+
+                        }
+
+                    });
+
+                },
+                {
+                    threshold: 0.12
+                }
+            );
+
+
+        revealElements.forEach((element) => {
+
+            element.classList.add("reveal");
+
+            revealObserver.observe(element);
+
+        });
+
+    } else {
+
+        revealElements.forEach((element) => {
+
+            element.classList.add("visible");
+
+        });
+
+    }
+
+
+    /* =====================================
+       WHATSAPP LINKS
+    ===================================== */
+
+    const whatsappLinks =
+        document.querySelectorAll(
+            'a[href*="wa.me"]'
+        );
+
+
+    whatsappLinks.forEach((link) => {
+
+        link.addEventListener("click", () => {
+
+            console.log(
+                "Goldenice International WhatsApp enquiry started."
+            );
+
+        });
+
+    });
+
+
+    /* =====================================
+       PROCESS CARD INTERACTION
+    ===================================== */
+
+    const processCards =
+        document.querySelectorAll(
+            ".process-card"
+        );
+
+
+    processCards.forEach((card) => {
+
+        card.addEventListener(
+            "mouseenter",
+            () => {
+
+                card.style.transform =
+                    "translateX(5px)";
+
+            }
+        );
+
+
+        card.addEventListener(
+            "mouseleave",
+            () => {
+
+                card.style.transform =
+                    "translateX(0)";
+
+            }
+        );
+
+    });
+
+
+    /* =====================================
+       CURRENT YEAR
+    ===================================== */
+
+    const year =
+        document.getElementById("year");
+
+
+    if (year) {
+
+        year.textContent =
+            new Date().getFullYear();
+
+    }
+
+
+    /* =====================================
+       ACCESSIBILITY
+    ===================================== */
+
+    if (menuButton) {
+
+        menuButton.setAttribute(
+            "aria-expanded",
+            "false"
+        );
+
+    }
+
+
+    /* =====================================
+       PAGE READY MESSAGE
+    ===================================== */
+
+    console.log(
+        "Goldenice International — How It Works page loaded."
+    );
+
+});
+</script>
+
+</body>
+
+</html>

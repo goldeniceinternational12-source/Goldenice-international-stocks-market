@@ -1,0 +1,2693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Global Markets | Goldenice International</title>
+
+    <meta
+        name="description"
+        content="Explore the global markets, sectors and investment areas followed by Goldenice International."
+    >
+
+    <meta
+        name="keywords"
+        content="Goldenice International, global markets, stock market, technology stocks, financial markets, AI investment research"
+    >
+
+    <meta name="robots" content="index, follow">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background: #050b08;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+/* =====================================
+   NAVIGATION
+===================================== */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    z-index: 1000;
+
+    background: rgba(5, 11, 8, 0.92);
+
+    backdrop-filter: blur(18px);
+
+    border-bottom:
+        1px solid rgba(255,255,255,0.06);
+}
+
+.nav-container {
+    width: min(1200px, 92%);
+
+    min-height: 82px;
+
+    margin: auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 25px;
+}
+
+.logo img {
+    width: 155px;
+}
+
+.nav-links {
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+}
+
+.nav-links a {
+    color: #89958e;
+
+    font-size: 11px;
+
+    transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #b9ef49;
+}
+
+.nav-button {
+    padding: 12px 18px;
+
+    border-radius: 7px;
+
+    background: #b9ef49;
+
+    color: #061008;
+
+    font-size: 10px;
+
+    font-weight: 800;
+}
+
+.menu-button {
+    display: none;
+
+    border: none;
+
+    background: transparent;
+
+    color: #fff;
+
+    font-size: 27px;
+
+    cursor: pointer;
+}
+
+
+/* =====================================
+   HERO
+===================================== */
+
+.markets-hero {
+    position: relative;
+
+    min-height: 680px;
+
+    display: flex;
+
+    align-items: center;
+
+    overflow: hidden;
+
+    background: #050c08;
+}
+
+.hero-grid {
+    position: absolute;
+
+    inset: 0;
+
+    opacity: 0.4;
+
+    background-image:
+        linear-gradient(
+            rgba(185,239,73,0.035) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            90deg,
+            rgba(185,239,73,0.035) 1px,
+            transparent 1px
+        );
+
+    background-size: 60px 60px;
+}
+
+.hero-glow {
+    position: absolute;
+
+    width: 600px;
+    height: 600px;
+
+    right: -180px;
+    top: 60px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(185,239,73,0.12),
+            transparent 65%
+        );
+
+    filter: blur(20px);
+}
+
+.hero-content {
+    position: relative;
+
+    z-index: 2;
+
+    width: min(1200px, 92%);
+
+    margin: 80px auto 0;
+}
+
+.hero-label {
+    display: inline-block;
+
+    padding: 8px 13px;
+
+    border: 1px solid
+        rgba(185,239,73,0.22);
+
+    border-radius: 30px;
+
+    color: #b9ef49;
+
+    font-size: 9px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+}
+
+.hero-content h1 {
+    max-width: 850px;
+
+    margin-top: 25px;
+
+    font-size: clamp(48px, 7vw, 82px);
+
+    line-height: 0.98;
+
+    letter-spacing: -4px;
+}
+
+.hero-content h1 span {
+    color: #b9ef49;
+}
+
+.hero-content p {
+    max-width: 600px;
+
+    margin-top: 25px;
+
+    color: #7f8c85;
+
+    font-size: 14px;
+}
+
+.hero-buttons {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-top: 30px;
+}
+
+.primary-button,
+.secondary-button {
+    padding: 14px 19px;
+
+    border-radius: 7px;
+
+    font-size: 10px;
+
+    font-weight: 800;
+}
+
+.primary-button {
+    display: inline-flex;
+
+    gap: 12px;
+
+    align-items: center;
+
+    background: #b9ef49;
+
+    color: #061008;
+}
+
+.primary-button span {
+    font-size: 17px;
+}
+
+.secondary-button {
+    border: 1px solid
+        rgba(255,255,255,0.12);
+
+    color: #a4afa9;
+}
+
+
+/* =====================================
+   OVERVIEW
+===================================== */
+
+.market-overview {
+    padding: 80px 0;
+
+    background: #08120d;
+}
+
+.container {
+    width: min(1200px, 92%);
+
+    margin: auto;
+}
+
+.overview-top {
+    display: flex;
+
+    align-items: flex-end;
+
+    justify-content: space-between;
+
+    gap: 30px;
+
+    margin-bottom: 35px;
+}
+
+.overview-top > div:first-child > span,
+.indices-heading span,
+.section-heading > span,
+.ai-market-content > span,
+.markets-cta span {
+    color: #b9ef49;
+
+    font-size: 9px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+}
+
+.overview-top h2 {
+    margin-top: 12px;
+
+    font-size: 40px;
+
+    line-height: 1;
+}
+
+.overview-top h2 strong,
+.indices-heading h2 strong,
+.section-heading h2 strong,
+.ai-market-content h2 strong,
+.markets-cta h2 strong {
+    color: #b9ef49;
+}
+
+.market-status {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    color: #718078;
+
+    font-size: 10px;
+}
+
+.status-dot {
+    width: 7px;
+    height: 7px;
+
+    border-radius: 50%;
+
+    background: #b9ef49;
+
+    box-shadow:
+        0 0 12px rgba(185,239,73,0.6);
+}
+
+.market-ticker {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    border: 1px solid
+        rgba(255,255,255,0.06);
+
+    border-radius: 12px;
+
+    overflow: hidden;
+}
+
+.ticker-item {
+    padding: 25px;
+
+    border-right: 1px solid
+        rgba(255,255,255,0.06);
+}
+
+.ticker-item:last-child {
+    border-right: none;
+}
+
+.ticker-item small {
+    display: block;
+
+    color: #59655e;
+
+    font-size: 8px;
+
+    letter-spacing: 1px;
+}
+
+.ticker-item strong {
+    display: block;
+
+    margin-top: 7px;
+
+    font-size: 18px;
+}
+
+.positive {
+    display: inline-block;
+
+    margin-top: 6px;
+
+    color: #b9ef49;
+
+    font-size: 8px;
+}
+
+
+/* =====================================
+   SECTIONS
+===================================== */
+
+.section {
+    padding: 110px 0;
+}
+
+.sectors {
+    background: #050c08;
+}
+
+.section-heading {
+    max-width: 700px;
+
+    margin-bottom: 55px;
+}
+
+.section-heading h2 {
+    margin-top: 13px;
+
+    font-size: clamp(35px, 4vw, 52px);
+
+    line-height: 1.05;
+
+    letter-spacing: -2px;
+}
+
+.section-heading p {
+    margin-top: 17px;
+
+    color: #748078;
+
+    font-size: 13px;
+}
+
+
+/* =====================================
+   SECTOR CARDS
+===================================== */
+
+.sector-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 15px;
+}
+
+.sector-card {
+    position: relative;
+
+    min-height: 330px;
+
+    padding: 30px;
+
+    overflow: hidden;
+
+    border-radius: 14px;
+
+    background: #09150f;
+
+    border: 1px solid
+        rgba(255,255,255,0.06);
+
+    transition:
+        transform 0.35s ease,
+        border-color 0.35s ease;
+}
+
+.sector-card::before {
+    content: "";
+
+    position: absolute;
+
+    width: 180px;
+    height: 180px;
+
+    right: -80px;
+    bottom: -80px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(185,239,73,0.1),
+            transparent 70%
+        );
+}
+
+.sector-card:hover {
+    transform: translateY(-7px);
+
+    border-color:
+        rgba(185,239,73,0.25);
+}
+
+.sector-card.featured {
+    background:
+        linear-gradient(
+            145deg,
+            #11271a,
+            #08130d
+        );
+}
+
+.sector-top {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+.sector-icon {
+    width: 47px;
+    height: 47px;
+
+    display: grid;
+
+    place-items: center;
+
+    border-radius: 9px;
+
+    background:
+        rgba(185,239,73,0.08);
+
+    color: #b9ef49;
+
+    font-size: 16px;
+
+    font-weight: 800;
+}
+
+.sector-number {
+    color: #3d4c44;
+
+    font-size: 10px;
+
+    font-weight: 800;
+}
+
+.sector-card h3 {
+    margin-top: 50px;
+
+    font-size: 19px;
+}
+
+.sector-card p {
+    margin-top: 10px;
+
+    color: #6e7b74;
+
+    font-size: 11px;
+}
+
+.sector-tags {
+    position: absolute;
+
+    left: 30px;
+    bottom: 27px;
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 6px;
+}
+
+.sector-tags span {
+    padding: 5px 8px;
+
+    border-radius: 4px;
+
+    background:
+        rgba(255,255,255,0.035);
+
+    color: #647169;
+
+    font-size: 7px;
+}
+
+
+/* =====================================
+   INDICES
+===================================== */
+
+.indices-section {
+    padding: 105px 0;
+
+    background: #08120d;
+}
+
+.indices-heading {
+    display: grid;
+
+    grid-template-columns: 1fr 0.7fr;
+
+    gap: 80px;
+
+    align-items: end;
+
+    margin-bottom: 45px;
+}
+
+.indices-heading h2 {
+    margin-top: 12px;
+
+    font-size: clamp(35px, 4vw, 48px);
+
+    line-height: 1.05;
+}
+
+.indices-heading p {
+    color: #75827b;
+
+    font-size: 12px;
+}
+
+.indices-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 12px;
+}
+
+.index-card {
+    padding: 23px;
+
+    min-height: 240px;
+
+    border-radius: 12px;
+
+    background: #071009;
+
+    border: 1px solid
+        rgba(255,255,255,0.06);
+}
+
+.index-header {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+.index-header span {
+    color: #5f6c65;
+
+    font-size: 7px;
+
+    letter-spacing: 1px;
+}
+
+.index-header b {
+    padding: 5px 7px;
+
+    border-radius: 4px;
+
+    background: rgba(185,239,73,0.07);
+
+    color: #b9ef49;
+
+    font-size: 7px;
+}
+
+.index-card h3 {
+    margin-top: 28px;
+
+    font-size: 18px;
+}
+
+.index-card p {
+    margin-top: 4px;
+
+    color: #5f6c65;
+
+    font-size: 9px;
+}
+
+.mini-chart {
+    height: 65px;
+
+    margin-top: 28px;
+
+    display: flex;
+
+    align-items: flex-end;
+
+    gap: 5px;
+}
+
+.mini-chart span {
+    flex: 1;
+
+    display: block;
+
+    border-radius: 2px 2px 0 0;
+
+    background:
+        rgba(185,239,73,0.25);
+}
+
+.mini-chart span:nth-child(1) {
+    height: 30%;
+}
+
+.mini-chart span:nth-child(2) {
+    height: 48%;
+}
+
+.mini-chart span:nth-child(3) {
+    height: 38%;
+}
+
+.mini-chart span:nth-child(4) {
+    height: 65%;
+}
+
+.mini-chart span:nth-child(5) {
+    height: 54%;
+}
+
+.mini-chart span:nth-child(6) {
+    height: 80%;
+}
+
+.mini-chart span:nth-child(7) {
+    height: 92%;
+}
+
+
+/* =====================================
+   AI RESEARCH
+===================================== */
+
+.ai-market-section {
+    padding: 110px 0;
+
+    background: #050c08;
+}
+
+.ai-market-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 0.9fr;
+
+    gap: 100px;
+
+    align-items: center;
+}
+
+.ai-market-content h2 {
+    margin-top: 14px;
+
+    max-width: 600px;
+
+    font-size: clamp(36px, 4vw, 52px);
+
+    line-height: 1.05;
+
+    letter-spacing: -2px;
+}
+
+.ai-market-content p {
+    max-width: 580px;
+
+    margin-top: 18px;
+
+    color: #748078;
+
+    font-size: 12px;
+}
+
+.ai-button {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-top: 28px;
+
+    padding: 13px 17px;
+
+    border-radius: 7px;
+
+    background: #b9ef49;
+
+    color: #061008;
+
+    font-size: 10px;
+
+    font-weight: 800;
+}
+
+.research-dashboard {
+    padding: 28px;
+
+    border-radius: 16px;
+
+    background: #08130d;
+
+    border: 1px solid
+        rgba(255,255,255,0.06);
+
+    box-shadow:
+        0 30px 80px rgba(0,0,0,0.3);
+}
+
+.dashboard-header {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding-bottom: 20px;
+
+    border-bottom:
+        1px solid rgba(255,255,255,0.06);
+}
+
+.dashboard-header span {
+    color: #b9ef49;
+
+    font-size: 9px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+}
+
+.dashboard-header small {
+    color: #4d5b53;
+
+    font-size: 7px;
+}
+
+.dashboard-line {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 20px 0;
+
+    border-bottom:
+        1px solid rgba(255,255,255,0.04);
+}
+
+.dashboard-line span {
+    color: #68766e;
+
+    font-size: 9px;
+}
+
+.dashboard-line b {
+    color: #b9ef49;
+
+    font-size: 8px;
+}
+
+.dashboard-progress {
+    height: 4px;
+
+    margin-top: 22px;
+
+    overflow: hidden;
+
+    border-radius: 20px;
+
+    background: #15221b;
+}
+
+.progress-bar {
+    width: 0%;
+
+    height: 100%;
+
+    border-radius: inherit;
+
+    background: #b9ef49;
+
+    transition: width 2s ease;
+}
+
+
+/* =====================================
+   CTA
+===================================== */
+
+.markets-cta {
+    padding: 120px 20px;
+
+    text-align: center;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(185,239,73,0.09),
+            transparent 42%
+        ),
+
+        #08120d;
+}
+
+.cta-inner {
+    max-width: 750px;
+
+    margin: auto;
+}
+
+.markets-cta h2 {
+    margin-top: 15px;
+
+    font-size: clamp(37px, 5vw, 57px);
+
+    line-height: 1.05;
+
+    letter-spacing: -2px;
+}
+
+.markets-cta p {
+    max-width: 550px;
+
+    margin: 18px auto 28px;
+
+    color: #748078;
+
+    font-size: 12px;
+}
+
+.cta-button {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 13px;
+
+    padding: 15px 21px;
+
+    border-radius: 7px;
+
+    background: #b9ef49;
+
+    color: #061008;
+
+    font-size: 10px;
+
+    font-weight: 900;
+}
+
+.cta-button span {
+    font-size: 16px;
+}
+
+
+/* =====================================
+   FOOTER
+===================================== */
+
+footer {
+    background: #030805;
+
+    border-top:
+        1px solid rgba(255,255,255,0.06);
+}
+
+.footer-container {
+    width: min(1200px, 92%);
+
+    margin: auto;
+
+    padding: 60px 0;
+
+    display: grid;
+
+    grid-template-columns: 2fr 1fr 1fr;
+
+    gap: 60px;
+}
+
+.footer-brand img {
+    width: 145px;
+}
+
+.footer-brand p {
+    max-width: 350px;
+
+    margin-top: 14px;
+
+    color: #505c55;
+
+    font-size: 10px;
+}
+
+.footer-column {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+.footer-column h4 {
+    margin-bottom: 5px;
+
+    font-size: 9px;
+}
+
+.footer-column a {
+    color: #5e6a63;
+
+    font-size: 10px;
+
+    transition: 0.3s;
+}
+
+.footer-column a:hover {
+    color: #b9ef49;
+}
+
+.footer-bottom {
+    width: min(1200px, 92%);
+
+    margin: auto;
+
+    padding: 20px 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    border-top:
+        1px solid rgba(255,255,255,0.06);
+
+    color: #455149;
+
+    font-size: 8px;
+}
+
+
+/* =====================================
+   WHATSAPP
+===================================== */
+
+.whatsapp {
+    position: fixed;
+
+    right: 24px;
+    bottom: 24px;
+
+    z-index: 999;
+
+    width: 58px;
+    height: 58px;
+
+    display: grid;
+
+    place-items: center;
+
+    border-radius: 50%;
+
+    background: #25d366;
+
+    color: #ffffff;
+
+    font-size: 23px;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,0.4);
+
+    animation: whatsappPulse 2s infinite;
+}
+
+@keyframes whatsappPulse {
+
+    0% {
+        box-shadow:
+            0 0 0 0 rgba(37,211,102,0.45);
+    }
+
+    70% {
+        box-shadow:
+            0 0 0 15px rgba(37,211,102,0);
+    }
+
+    100% {
+        box-shadow:
+            0 0 0 0 rgba(37,211,102,0);
+    }
+}
+
+
+/* =====================================
+   SCROLL REVEAL
+===================================== */
+
+.reveal {
+    opacity: 0;
+
+    transform: translateY(25px);
+
+    transition:
+        opacity 0.7s ease,
+        transform 0.7s ease;
+}
+
+.reveal.visible {
+    opacity: 1;
+
+    transform: translateY(0);
+}
+
+
+/* =====================================
+   TABLET
+===================================== */
+
+@media (max-width: 1000px) {
+
+    .nav-links {
+        gap: 14px;
+    }
+
+    .nav-links a {
+        font-size: 9px;
+    }
+
+    .sector-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .indices-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .market-ticker {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .ticker-item:nth-child(2) {
+        border-right: none;
+    }
+
+    .ticker-item:nth-child(-n+2) {
+        border-bottom:
+            1px solid rgba(255,255,255,0.06);
+    }
+
+}
+
+
+/* =====================================
+   TABLET / SMALL LAPTOP
+===================================== */
+
+@media (max-width: 850px) {
+
+    .nav-links,
+    .nav-button {
+        display: none;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    .nav-links.active {
+        position: absolute;
+
+        top: 82px;
+        left: 0;
+
+        width: 100%;
+
+        padding: 25px;
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 20px;
+
+        background: #061009;
+
+        border-bottom:
+            1px solid rgba(255,255,255,0.08);
+    }
+
+    .ai-market-grid {
+        grid-template-columns: 1fr;
+
+        gap: 55px;
+    }
+
+    .indices-heading {
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+    }
+
+}
+
+
+/* =====================================
+   PHONE
+===================================== */
+
+@media (max-width: 600px) {
+
+    .nav-container {
+        min-height: 72px;
+    }
+
+    .logo img {
+        width: 125px;
+    }
+
+    .markets-hero {
+        min-height: 600px;
+    }
+
+    .hero-content {
+        margin-top: 60px;
+    }
+
+    .hero-content h1 {
+        font-size: 46px;
+
+        letter-spacing: -2.5px;
+    }
+
+    .hero-content p {
+        font-size: 12px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+    .primary-button,
+    .secondary-button {
+        text-align: center;
+
+        justify-content: center;
+    }
+
+    .market-overview,
+    .section,
+    .indices-section,
+    .ai-market-section {
+        padding: 75px 0;
+    }
+
+    .overview-top {
+        align-items: flex-start;
+
+        flex-direction: column;
+    }
+
+    .overview-top h2 {
+        font-size: 34px;
+    }
+
+    .market-ticker {
+        grid-template-columns: 1fr;
+    }
+
+    .ticker-item {
+        border-right: none;
+
+        border-bottom:
+            1px solid rgba(255,255,255,0.06);
+    }
+
+    .ticker-item:last-child {
+        border-bottom: none;
+    }
+
+    .sector-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .sector-card {
+        min-height: 310px;
+    }
+
+    .indices-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .ai-market-content h2 {
+        font-size: 38px;
+    }
+
+    .research-dashboard {
+        padding: 20px;
+    }
+
+    .markets-cta {
+        padding: 85px 20px;
+    }
+
+    .markets-cta h2 {
+        font-size: 38px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+
+        padding: 50px 0;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        padding-bottom: 25px;
+    }
+
+    .whatsapp {
+        right: 18px;
+        bottom: 18px;
+
+        width: 54px;
+        height: 54px;
+    }
+
+}
+    </style>
+</head>
+
+<body>
+
+<!-- =====================================
+     NAVIGATION
+===================================== -->
+
+<header class="navbar">
+
+    <div class="nav-container">
+
+        <a href="index.html" class="logo">
+            <img
+                src="/ChatGPT Image Aug 16, 2026, 07_22_34 PM.png"
+                alt="Goldenice International Logo"
+            >
+        </a>
+
+        <nav class="nav-links" id="navLinks">
+
+            <a href="/index.html">
+                Home
+            </a>
+
+            <a href="/about.html">
+                About
+            </a>
+
+            <a href="markets.html" class="active">
+                Markets
+            </a>
+
+            <a href="/investment-plans.html">
+                Investment Plans
+            </a>
+
+            <a href="/ai-insights.html">
+                AI Insights
+            </a>
+
+            <a href="/contact.html">
+                Contact
+            </a>
+
+        </nav>
+
+        <a
+            href="https://wa.me/2347068609938?text=Hello%20Goldenice%20International,%20I%20would%20like%20to%20learn%20more%20about%20your%20global%20markets."
+            target="_blank"
+            class="nav-button"
+        >
+            Talk to Us
+        </a>
+
+        <button
+            class="menu-button"
+            id="menuButton"
+            aria-label="Open navigation menu"
+        >
+            ☰
+        </button>
+
+    </div>
+
+</header>
+
+
+<!-- =====================================
+     HERO
+===================================== -->
+
+<section class="markets-hero">
+
+    <div class="hero-grid"></div>
+
+    <div class="hero-glow"></div>
+
+    <div class="hero-content">
+
+        <div class="hero-label">
+            GLOBAL MARKETS
+        </div>
+
+        <h1>
+            Explore The
+            <span>Markets</span>
+            That Shape The World.
+        </h1>
+
+        <p>
+            Goldenice International follows major global
+            industries and market sectors to research potential
+            investment opportunities.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a
+                href="https://wa.me/2347068609938?text=Hello%20Goldenice%20International,%20I%20would%20like%20to%20discuss%20the%20markets."
+                target="_blank"
+                class="primary-button"
+            >
+                Discuss an Opportunity
+                <span>→</span>
+            </a>
+
+            <a
+                href="#sectors"
+                class="secondary-button"
+            >
+                Explore Markets
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================
+     MARKET OVERVIEW
+===================================== -->
+
+<section class="market-overview">
+
+    <div class="container">
+
+        <div class="overview-top">
+
+            <div>
+
+                <span>
+                    MARKET OVERVIEW
+                </span>
+
+                <h2>
+                    A Global
+                    <strong>Perspective.</strong>
+                </h2>
+
+            </div>
+
+            <div class="market-status">
+
+                <span class="status-dot"></span>
+
+                <span>
+                    Research Focus
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="market-ticker">
+
+            <div class="ticker-item">
+
+                <small>
+                    GLOBAL TECHNOLOGY
+                </small>
+
+                <strong>
+                    Technology
+                </strong>
+
+                <span class="positive">
+                    Research Sector
+                </span>
+
+            </div>
+
+
+            <div class="ticker-item">
+
+                <small>
+                    FINANCIAL SERVICES
+                </small>
+
+                <strong>
+                    Finance
+                </strong>
+
+                <span class="positive">
+                    Research Sector
+                </span>
+
+            </div>
+
+
+            <div class="ticker-item">
+
+                <small>
+                    ENERGY
+                </small>
+
+                <strong>
+                    Energy
+                </strong>
+
+                <span class="positive">
+                    Research Sector
+                </span>
+
+            </div>
+
+
+            <div class="ticker-item">
+
+                <small>
+                    HEALTHCARE
+                </small>
+
+                <strong>
+                    Healthcare
+                </strong>
+
+                <span class="positive">
+                    Research Sector
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================
+     SECTORS
+===================================== -->
+
+<section
+    class="section sectors"
+    id="sectors"
+>
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span>
+                MARKETS WE FOLLOW
+            </span>
+
+            <h2>
+                Global Sectors.
+                <strong>Multiple Opportunities.</strong>
+            </h2>
+
+            <p>
+                Our research can cover different industries,
+                allowing our team to examine market developments
+                from multiple perspectives.
+            </p>
+
+        </div>
+
+
+        <div class="sector-grid">
+
+            <!-- TECHNOLOGY -->
+
+            <article class="sector-card featured">
+
+                <div class="sector-top">
+
+                    <div class="sector-icon">
+                        AI
+                    </div>
+
+                    <span class="sector-number">
+                        01
+                    </span>
+
+                </div>
+
+                <h3>
+                    Technology & AI
+                </h3>
+
+                <p>
+                    Research into technology companies,
+                    artificial intelligence, software,
+                    semiconductors and digital innovation.
+                </p>
+
+                <div class="sector-tags">
+
+                    <span>
+                        AI
+                    </span>
+
+                    <span>
+                        Software
+                    </span>
+
+                    <span>
+                        Semiconductors
+                    </span>
+
+                </div>
+
+            </article>
+
+
+            <!-- FINANCE -->
+
+            <article class="sector-card">
+
+                <div class="sector-top">
+
+                    <div class="sector-icon">
+                        $
+                    </div>
+
+                    <span class="sector-number">
+                        02
+                    </span>
+
+                </div>
+
+                <h3>
+                    Financial Services
+                </h3>
+
+                <p>
+                    Financial institutions, payment companies,
+                    banking and other financial market sectors.
+                </p>
+
+                <div class="sector-tags">
+
+                    <span>
+                        Banking
+                    </span>
+
+                    <span>
+                        Payments
+                    </span>
+
+                    <span>
+                        Finance
+                    </span>
+
+                </div>
+
+            </article>
+
+
+            <!-- ENERGY -->
+
+            <article class="sector-card">
+
+                <div class="sector-top">
+
+                    <div class="sector-icon">
+                        ⚡
+                    </div>
+
+                    <span class="sector-number">
+                        03
+                    </span>
+
+                </div>
+
+                <h3>
+                    Energy
+                </h3>
+
+                <p>
+                    Traditional and emerging energy markets,
+                    infrastructure and energy technologies.
+                </p>
+
+                <div class="sector-tags">
+
+                    <span>
+                        Energy
+                    </span>
+
+                    <span>
+                        Infrastructure
+                    </span>
+
+                    <span>
+                        Innovation
+                    </span>
+
+                </div>
+
+            </article>
+
+
+            <!-- HEALTHCARE -->
+
+            <article class="sector-card">
+
+                <div class="sector-top">
+
+                    <div class="sector-icon">
+                        +
+                    </div>
+
+                    <span class="sector-number">
+                        04
+                    </span>
+
+                </div>
+
+                <h3>
+                    Healthcare
+                </h3>
+
+                <p>
+                    Healthcare companies, biotechnology,
+                    pharmaceuticals and medical innovation.
+                </p>
+
+                <div class="sector-tags">
+
+                    <span>
+                        Healthcare
+                    </span>
+
+                    <span>
+                        Biotech
+                    </span>
+
+                    <span>
+                        Pharma
+                    </span>
+
+                </div>
+
+            </article>
+
+
+            <!-- CONSUMER -->
+
+            <article class="sector-card">
+
+                <div class="sector-top">
+
+                    <div class="sector-icon">
+                        ◇
+                    </div>
+
+                    <span class="sector-number">
+                        05
+                    </span>
+
+                </div>
+
+                <h3>
+                    Consumer Markets
+                </h3>
+
+                <p>
+                    Consumer brands, retail, e-commerce and
+                    changing global consumption patterns.
+                </p>
+
+                <div class="sector-tags">
+
+                    <span>
+                        Retail
+                    </span>
+
+                    <span>
+                        E-Commerce
+                    </span>
+
+                    <span>
+                        Brands
+                    </span>
+
+                </div>
+
+            </article>
+
+
+            <!-- INDUSTRIAL -->
+
+            <article class="sector-card">
+
+                <div class="sector-top">
+
+                    <div class="sector-icon">
+                        ◫
+                    </div>
+
+                    <span class="sector-number">
+                        06
+                    </span>
+
+                </div>
+
+                <h3>
+                    Industrial & Infrastructure
+                </h3>
+
+                <p>
+                    Industrial companies, infrastructure,
+                    logistics and global development.
+                </p>
+
+                <div class="sector-tags">
+
+                    <span>
+                        Industry
+                    </span>
+
+                    <span>
+                        Logistics
+                    </span>
+
+                    <span>
+                        Infrastructure
+                    </span>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================
+     GLOBAL INDICES
+===================================== -->
+
+<section class="indices-section">
+
+    <div class="container">
+
+        <div class="indices-heading">
+
+            <div>
+
+                <span>
+                    GLOBAL MARKET INDICES
+                </span>
+
+                <h2>
+                    Markets Across
+                    <strong>Major Economies.</strong>
+                </h2>
+
+            </div>
+
+            <p>
+                Examples of major market benchmarks that can
+                be monitored when researching global market
+                conditions.
+            </p>
+
+        </div>
+
+
+        <div class="indices-grid">
+
+            <div class="index-card">
+
+                <div class="index-header">
+
+                    <span>
+                        UNITED STATES
+                    </span>
+
+                    <b>
+                        US
+                    </b>
+
+                </div>
+
+                <h3>
+                    S&P 500
+                </h3>
+
+                <p>
+                    Large-cap U.S. equities
+                </p>
+
+                <div class="mini-chart">
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </div>
+
+            </div>
+
+
+            <div class="index-card">
+
+                <div class="index-header">
+
+                    <span>
+                        UNITED STATES
+                    </span>
+
+                    <b>
+                        US
+                    </b>
+
+                </div>
+
+                <h3>
+                    NASDAQ
+                </h3>
+
+                <p>
+                    Technology-heavy market
+                </p>
+
+                <div class="mini-chart">
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </div>
+
+            </div>
+
+
+            <div class="index-card">
+
+                <div class="index-header">
+
+                    <span>
+                        UNITED KINGDOM
+                    </span>
+
+                    <b>
+                        UK
+                    </b>
+
+                </div>
+
+                <h3>
+                    FTSE 100
+                </h3>
+
+                <p>
+                    Major UK-listed companies
+                </p>
+
+                <div class="mini-chart">
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </div>
+
+            </div>
+
+
+            <div class="index-card">
+
+                <div class="index-header">
+
+                    <span>
+                        GERMANY
+                    </span>
+
+                    <b>
+                        DE
+                    </b>
+
+                </div>
+
+                <h3>
+                    DAX
+                </h3>
+
+                <p>
+                    Major German companies
+                </p>
+
+                <div class="mini-chart">
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================
+     AI RESEARCH
+===================================== -->
+
+<section class="ai-market-section">
+
+    <div class="container">
+
+        <div class="ai-market-grid">
+
+            <div class="ai-market-content">
+
+                <span>
+                    AI-ASSISTED RESEARCH
+                </span>
+
+                <h2>
+                    Turning Market
+                    Data Into
+                    <strong>Better Questions.</strong>
+                </h2>
+
+                <p>
+                    Technology and AI-assisted tools can help
+                    organize large amounts of market information
+                    and identify patterns that deserve further
+                    human analysis.
+                </p>
+
+                <p>
+                    AI is a research support tool. It does not
+                    eliminate investment risk or guarantee a
+                    particular outcome.
+                </p>
+
+                <a
+                    href="/ai-insights.html"
+                    class="ai-button"
+                >
+                    Explore AI Insights
+                    <span>→</span>
+                </a>
+
+            </div>
+
+
+            <div class="research-dashboard">
+
+                <div class="dashboard-header">
+
+                    <span>
+                        GOLDENICE RESEARCH
+                    </span>
+
+                    <small>
+                        AI ASSISTED
+                    </small>
+
+                </div>
+
+
+                <div class="dashboard-line">
+
+                    <span>
+                        MARKET DATA
+                    </span>
+
+                    <b>
+                        ANALYZING
+                    </b>
+
+                </div>
+
+
+                <div class="dashboard-line">
+
+                    <span>
+                        SECTOR TRENDS
+                    </span>
+
+                    <b>
+                        REVIEWING
+                    </b>
+
+                </div>
+
+
+                <div class="dashboard-line">
+
+                    <span>
+                        GLOBAL SIGNALS
+                    </span>
+
+                    <b>
+                        MONITORING
+                    </b>
+
+                </div>
+
+
+                <div class="dashboard-line">
+
+                    <span>
+                        HUMAN REVIEW
+                    </span>
+
+                    <b>
+                        REQUIRED
+                    </b>
+
+                </div>
+
+
+                <div class="dashboard-progress">
+
+                    <div
+                        class="progress-bar"
+                        id="progressBar"
+                    ></div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================
+     WHATSAPP CTA
+===================================== -->
+
+<section class="markets-cta">
+
+    <div class="cta-inner">
+
+        <span>
+            GOLDENICE INTERNATIONAL
+        </span>
+
+        <h2>
+            Interested In A
+            <strong>Global Market Opportunity?</strong>
+        </h2>
+
+        <p>
+            Speak directly with Goldenice International
+            through WhatsApp to learn more.
+        </p>
+
+        <a
+            href="https://wa.me/2347068609938?text=Hello%20Goldenice%20International,%20I%20would%20like%20to%20learn%20more%20about%20your%20investment%20opportunities."
+            target="_blank"
+            class="cta-button"
+        >
+            Chat With Goldenice
+            <span>→</span>
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================
+     FOOTER
+===================================== -->
+
+<footer>
+
+    <div class="footer-container">
+
+        <div class="footer-brand">
+
+            <img
+                src="/ChatGPT Image Aug 16, 2026, 07_22_34 PM.png"
+                alt="Goldenice International"
+            >
+
+            <p>
+                Technology-driven global investment research
+                focused on markets, sectors and opportunities.
+            </p>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>
+                NAVIGATION
+            </h4>
+
+            <a href="/index.html">
+                Home
+            </a>
+
+            <a href="/about.html">
+                About
+            </a>
+
+            <a href="markets.html">
+                Markets
+            </a>
+
+            <a href="/investment-plans.html">
+                Investment Plans
+            </a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>
+                CONTACT
+            </h4>
+
+            <a
+                href="https://wa.me/2347068609938"
+                target="_blank"
+            >
+                WhatsApp
+            </a>
+
+            <a href="/ai-insights.html">
+                AI Insights
+            </a>
+
+            <a href="/contact.html">
+                Contact
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+            © <span id="year"></span>
+            Goldenice International.
+            All rights reserved.
+        </p>
+
+        <p>
+            Investment involves risk.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<!-- =====================================
+     FLOATING WHATSAPP
+===================================== -->
+
+<a
+    href="https://wa.me/2347068609938?text=Hello%20Goldenice%20International,%20I%20would%20like%20more%20information."
+    target="_blank"
+    class="whatsapp"
+    aria-label="Chat with Goldenice International"
+>
+    ◉
+</a>
+
+
+<script>
+    /* =====================================
+   GOLDENICE INTERNATIONAL
+   MARKETS PAGE JAVASCRIPT
+===================================== */
+
+
+/* =====================================
+   MOBILE MENU
+===================================== */
+
+const menuButton =
+    document.getElementById("menuButton");
+
+const navLinks =
+    document.getElementById("navLinks");
+
+
+if (menuButton && navLinks) {
+
+    menuButton.addEventListener("click", () => {
+
+        navLinks.classList.toggle("active");
+
+    });
+
+}
+
+
+/* =====================================
+   CLOSE MOBILE MENU
+===================================== */
+
+document
+    .querySelectorAll(".nav-links a")
+    .forEach(link => {
+
+        link.addEventListener("click", () => {
+
+            navLinks.classList.remove("active");
+
+        });
+
+    });
+
+
+/* =====================================
+   NAVBAR SCROLL
+===================================== */
+
+const navbar =
+    document.querySelector(".navbar");
+
+
+window.addEventListener("scroll", () => {
+
+    if (window.scrollY > 40) {
+
+        navbar.style.background =
+            "rgba(3, 8, 5, 0.97)";
+
+    } else {
+
+        navbar.style.background =
+            "rgba(5, 11, 8, 0.92)";
+
+    }
+
+});
+
+
+/* =====================================
+   SCROLL REVEAL
+===================================== */
+
+const elements =
+    document.querySelectorAll(
+        ".sector-card, .index-card, .ticker-item, .research-dashboard"
+    );
+
+
+const observer =
+    new IntersectionObserver(
+
+        entries => {
+
+            entries.forEach(entry => {
+
+                if (entry.isIntersecting) {
+
+                    entry.target.classList.add(
+                        "visible"
+                    );
+
+                    observer.unobserve(
+                        entry.target
+                    );
+
+                }
+
+            });
+
+        },
+
+        {
+            threshold: 0.12
+        }
+
+    );
+
+
+elements.forEach(element => {
+
+    element.classList.add("reveal");
+
+    observer.observe(element);
+
+});
+
+
+/* =====================================
+   AI RESEARCH PROGRESS
+===================================== */
+
+const progressBar =
+    document.getElementById("progressBar");
+
+
+let progressStarted = false;
+
+
+function startResearchAnimation() {
+
+    if (
+        progressStarted ||
+        !progressBar
+    ) {
+        return;
+    }
+
+    progressStarted = true;
+
+    let progress = 0;
+
+    const interval =
+        setInterval(() => {
+
+            progress += 2;
+
+            progressBar.style.width =
+                progress + "%";
+
+            if (progress >= 78) {
+
+                clearInterval(interval);
+
+            }
+
+        }, 35);
+
+}
+
+
+/* =====================================
+   WATCH AI DASHBOARD
+===================================== */
+
+const dashboard =
+    document.querySelector(
+        ".research-dashboard"
+    );
+
+
+if (dashboard) {
+
+    const dashboardObserver =
+        new IntersectionObserver(
+
+            entries => {
+
+                entries.forEach(entry => {
+
+                    if (entry.isIntersecting) {
+
+                        startResearchAnimation();
+
+                        dashboardObserver.unobserve(
+                            dashboard
+                        );
+
+                    }
+
+                });
+
+            },
+
+            {
+                threshold: 0.3
+            }
+
+        );
+
+    dashboardObserver.observe(
+        dashboard
+    );
+
+}
+
+
+/* =====================================
+   CARD HOVER EFFECT
+===================================== */
+
+const cards =
+    document.querySelectorAll(
+        ".sector-card"
+    );
+
+
+cards.forEach(card => {
+
+    card.addEventListener(
+        "mouseenter",
+        () => {
+
+            card.style.transform =
+                "translateY(-7px)";
+
+        }
+    );
+
+    card.addEventListener(
+        "mouseleave",
+        () => {
+
+            card.style.transform =
+                "translateY(0)";
+
+        }
+    );
+
+});
+
+
+/* =====================================
+   CURRENT YEAR
+===================================== */
+
+const year =
+    document.getElementById("year");
+
+
+if (year) {
+
+    year.textContent =
+        new Date().getFullYear();
+
+}
+
+
+/* =====================================
+   WHATSAPP TRACKING
+===================================== */
+
+const whatsappLinks =
+    document.querySelectorAll(
+        'a[href*="wa.me"]'
+    );
+
+
+whatsappLinks.forEach(link => {
+
+    link.addEventListener("click", () => {
+
+        console.log(
+            "Goldenice International WhatsApp enquiry initiated."
+        );
+
+    });
+
+});
+
+
+/* =====================================
+   CONSOLE MESSAGE
+===================================== */
+
+console.log(
+    "Goldenice International Markets page loaded."
+);
+</script>
+
+</body>
+</html>
