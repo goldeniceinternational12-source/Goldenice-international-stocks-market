@@ -2,6 +2,8 @@
 
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
+    <!-- MAIN WEBSITE PAGES -->
+
     <url>
         <loc>https://goldenice-international-stocks-mark.vercel.app/</loc>
     </url>
@@ -34,6 +36,9 @@
         <loc>https://goldenice-international-stocks-mark.vercel.app/contact.html</loc>
     </url>
 
+
+    <!-- LEGAL / TRUST PAGES -->
+
     <url>
         <loc>https://goldenice-international-stocks-mark.vercel.app/risk-disclosure.html</loc>
     </url>
@@ -44,6 +49,53 @@
 
     <url>
         <loc>https://goldenice-international-stocks-mark.vercel.app/terms.html</loc>
+    </url>
+
+
+    <!-- ARTICLES -->
+
+    <url>
+        <loc>https://goldenice-international-stocks-mark.vercel.app/articles.html</loc>
+    </url>
+
+    <url>
+        <loc>https://goldenice-international-stocks-mark.vercel.app/ai-investment-analysis.html</loc>
+    </url>
+
+    <url>
+        <loc>https://goldenice-international-stocks-mark.vercel.app/global-investment-opportunities.html</loc>
+    </url>
+
+    <url>
+        <loc>https://goldenice-international-stocks-mark.vercel.app/investment-risk-management.html</loc>
+    </url>
+
+    <url>
+        <loc>https://goldenice-international-stocks-mark.vercel.app/market-research-investors.html</loc>
+    </url>
+
+    <url>
+        <loc>https://goldenice-international-stocks-mark.vercel.app/stock-investment-for-beginners.html</loc>
+    </url>
+
+    <url>
+        <loc>https://goldenice-international-stocks-mark.vercel.app/stock-market-analysis.html</loc>
+    </url>
+
+    <url>
+        <loc>https://goldenice-international-stocks-mark.vercel.app/stock-market-investing-guide.html</loc>
+    </url>
+
+    <url>
+        <loc>https://goldenice-international-stocks-mark.vercel.app/long-term-investment-strategy.html</loc>
+    </url>
+
+    <url>
+        <loc>https://goldenice-international-stocks-mark.vercel.app/investment-portfolio-diversification.html</loc>
+    </url>
+
+    <url>
+        <loc>https://goldenice-international-stocks-mark.vercel.app/diversification-investment-strategy.html</loc>
     </url>
 
 </urlset>

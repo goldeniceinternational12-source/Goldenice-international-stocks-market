@@ -3,6 +3,10 @@
 
 <head>
 
+    <!-- =========================================
+         BASIC DOCUMENT META
+    ========================================= -->
+
     <meta charset="UTF-8">
 
     <meta
@@ -10,19 +14,166 @@
         content="width=device-width, initial-scale=1.0"
     >
 
+    <meta
+        http-equiv="X-UA-Compatible"
+        content="IE=edge"
+    >
+
+
+    <!-- =========================================
+         PRIMARY SEO
+    ========================================= -->
+
     <title>
         Risk Disclosure | Goldenice International
     </title>
 
     <meta
         name="description"
-        content="Read the investment risk disclosure for Goldenice International, including market risks, potential losses, investment decisions and important considerations."
+        content="Read the Goldenice International risk disclosure covering investment risks, market volatility, potential losses, AI-driven analysis, and important considerations before making investment decisions."
+    >
+
+    <meta
+        name="keywords"
+        content="Goldenice International risk disclosure, investment risk disclosure, investment risks, market risk, financial risk, investment losses, AI investment risk, market volatility"
+    >
+
+    <meta
+        name="author"
+        content="Goldenice International"
     >
 
     <meta
         name="robots"
-        content="index, follow"
+        content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
     >
+
+    <meta
+        name="googlebot"
+        content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    >
+
+
+    <!-- =========================================
+         CANONICAL URL
+    ========================================= -->
+
+    <link
+        rel="canonical"
+        href="https://goldeniceinternational.com/risk-disclosure.html"
+    >
+
+
+    <!-- =========================================
+         FAVICON
+         gin.jpeg = Goldenice International logo
+    ========================================= -->
+
+    <link
+        rel="icon"
+        type="image/jpeg"
+        href="gin.jpeg"
+    >
+
+    <link
+        rel="apple-touch-icon"
+        href="gin.jpeg"
+    >
+
+
+    <!-- =========================================
+         THEME / BRAND
+    ========================================= -->
+
+    <meta
+        name="theme-color"
+        content="#050b08"
+    >
+
+    <meta
+        name="color-scheme"
+        content="dark"
+    >
+
+
+    <!-- =========================================
+         OPEN GRAPH / FACEBOOK / LINK SHARING
+    ========================================= -->
+
+    <meta
+        property="og:type"
+        content="website"
+    >
+
+    <meta
+        property="og:title"
+        content="Risk Disclosure | Goldenice International"
+    >
+
+    <meta
+        property="og:description"
+        content="Understand the investment risks, market volatility, potential losses and important considerations associated with investment decisions at Goldenice International."
+    >
+
+    <meta
+        property="og:url"
+        content="https://goldeniceinternational.com/risk-disclosure.html"
+    >
+
+    <meta
+        property="og:site_name"
+        content="Goldenice International"
+    >
+
+    <meta
+        property="og:image"
+        content="https://goldeniceinternational.com/gin.jpeg"
+    >
+
+    <meta
+        property="og:image:alt"
+        content="Goldenice International"
+    >
+
+    <meta
+        property="og:locale"
+        content="en_US"
+    >
+
+
+    <!-- =========================================
+         X / TWITTER CARD
+    ========================================= -->
+
+    <meta
+        name="twitter:card"
+        content="summary_large_image"
+    >
+
+    <meta
+        name="twitter:title"
+        content="Risk Disclosure | Goldenice International"
+    >
+
+    <meta
+        name="twitter:description"
+        content="Read the Goldenice International risk disclosure covering market risks, potential losses, investment decisions and important considerations."
+    >
+
+    <meta
+        name="twitter:image"
+        content="https://goldeniceinternational.com/gin.jpeg"
+    >
+
+    <meta
+        name="twitter:image:alt"
+        content="Goldenice International"
+    >
+
+
+    <!-- =========================================
+         PERFORMANCE — GOOGLE FONTS
+    ========================================= -->
 
     <link
         rel="preconnect"
@@ -40,1077 +191,1128 @@
         rel="stylesheet"
     >
 
-   <style>
-    /* =========================================
-   GOLDENICE INTERNATIONAL
-   RISK DISCLOSURE PAGE
-========================================= */
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    font-family: "Inter", sans-serif;
-    background: #050b08;
-    color: #ffffff;
-    line-height: 1.6;
-    overflow-x: hidden;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-img {
-    max-width: 100%;
-    display: block;
-}
-
-button,
-input,
-select,
-textarea {
-    font: inherit;
-}
-
-
-/* =========================================
-   NAVIGATION
-========================================= */
-
-.navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-
-    background: rgba(5, 11, 8, 0.94);
-
-    backdrop-filter: blur(18px);
-
-    border-bottom:
-        1px solid rgba(255, 255, 255, 0.06);
-
-    transition: 0.3s ease;
-}
-
-.nav-container {
-    width: min(1200px, 92%);
-    min-height: 82px;
-
-    margin: auto;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    gap: 25px;
-}
-
-.logo img {
-    width: 155px;
-}
-
-.nav-links {
-    display: flex;
-    align-items: center;
-    gap: 21px;
-}
-
-.nav-links a {
-    color: #89958e;
-    font-size: 10px;
-
-    transition: 0.3s ease;
-}
-
-.nav-links a:hover,
-.nav-links a.active {
-    color: #b9ef49;
-}
-
-.nav-button {
-    padding: 12px 18px;
-
-    border-radius: 7px;
-
-    background: #b9ef49;
-    color: #061008;
-
-    font-size: 10px;
-    font-weight: 800;
-
-    transition: 0.3s ease;
-}
-
-.nav-button:hover {
-    transform: translateY(-2px);
-}
-
-.menu-button {
-    display: none;
-
-    border: none;
-    background: transparent;
-
-    color: #ffffff;
-
-    font-size: 27px;
-
-    cursor: pointer;
-}
-
-
-/* =========================================
-   GLOBAL CONTAINER
-========================================= */
-
-.container {
-    width: min(1150px, 92%);
-    margin: auto;
-}
-
-
-/* =========================================
-   HERO
-========================================= */
-
-.risk-hero {
-    position: relative;
-
-    min-height: 610px;
-
-    display: flex;
-    align-items: center;
-
-    overflow: hidden;
-
-    background:
-        radial-gradient(
-            circle at 78% 40%,
-            rgba(185, 239, 73, 0.11),
-            transparent 34%
-        ),
-        #050c08;
-}
-
-.hero-grid {
-    position: absolute;
-    inset: 0;
-
-    opacity: 0.35;
-
-    background-image:
-        linear-gradient(
-            rgba(185, 239, 73, 0.035) 1px,
-            transparent 1px
-        ),
-        linear-gradient(
-            90deg,
-            rgba(185, 239, 73, 0.035) 1px,
-            transparent 1px
-        );
-
-    background-size: 65px 65px;
-
-    mask-image:
-        linear-gradient(
-            to bottom,
-            black,
-            transparent
-        );
-}
-
-.hero-glow {
-    position: absolute;
-
-    width: 500px;
-    height: 500px;
-
-    right: -170px;
-    top: 80px;
-
-    border-radius: 50%;
-
-    background:
-        radial-gradient(
-            circle,
-            rgba(185, 239, 73, 0.12),
-            transparent 70%
-        );
-}
-
-.hero-content {
-    position: relative;
-    z-index: 2;
-
-    width: min(1150px, 92%);
-
-    margin: 65px auto 0;
-}
-
-.hero-label {
-    display: inline-block;
-
-    padding: 8px 13px;
-
-    border:
-        1px solid rgba(185, 239, 73, 0.25);
-
-    border-radius: 30px;
-
-    color: #b9ef49;
-
-    font-size: 9px;
-    font-weight: 800;
-
-    letter-spacing: 2px;
-}
-
-.hero-content h1 {
-    max-width: 900px;
-
-    margin-top: 25px;
-
-    font-size: clamp(50px, 7vw, 80px);
-
-    line-height: 0.98;
-
-    letter-spacing: -4px;
-}
-
-.hero-content h1 span {
-    color: #b9ef49;
-}
-
-.hero-content p {
-    max-width: 690px;
-
-    margin-top: 27px;
-
-    color: #7d8a82;
-
-    font-size: 12px;
-}
-
-
-/* =========================================
-   WARNING
-========================================= */
-
-.warning-section {
-    padding: 70px 0;
-
-    background: #08120d;
-}
-
-.warning-box {
-    display: grid;
-
-    grid-template-columns: 60px 1fr;
-
-    gap: 24px;
-
-    padding: 30px;
-
-    border-radius: 13px;
-
-    background:
-        linear-gradient(
-            145deg,
-            #0b1810,
-            #071009
-        );
-
-    border:
-        1px solid rgba(185, 239, 73, 0.15);
-}
-
-.warning-icon {
-    width: 48px;
-    height: 48px;
-
-    display: grid;
-    place-items: center;
-
-    border-radius: 50%;
-
-    background:
-        rgba(185, 239, 73, 0.09);
-
-    color: #b9ef49;
-
-    font-size: 19px;
-    font-weight: 900;
-}
-
-.warning-box span,
-.section-heading > span,
-.ai-risk-box > div > span,
-.returns-box > span,
-.cta-card span {
-    color: #b9ef49;
-
-    font-size: 9px;
-    font-weight: 800;
-
-    letter-spacing: 2px;
-}
-
-.warning-box h2 {
-    margin-top: 7px;
-
-    font-size: 23px;
-}
-
-.warning-box p {
-    max-width: 850px;
-
-    margin-top: 10px;
-
-    color: #69766e;
-
-    font-size: 10px;
-}
-
-
-/* =========================================
-   RISK SECTION
-========================================= */
-
-.risk-section {
-    padding: 110px 0;
-
-    background: #050c08;
-}
-
-.section-heading {
-    max-width: 720px;
-
-    margin-bottom: 50px;
-}
-
-.section-heading h2 {
-    margin-top: 13px;
-
-    font-size: clamp(40px, 5vw, 57px);
-
-    line-height: 1.05;
-
-    letter-spacing: -2.5px;
-}
-
-.section-heading h2 strong {
-    color: #b9ef49;
-}
-
-.section-heading p {
-    max-width: 650px;
-
-    margin-top: 18px;
-
-    color: #707c74;
-
-    font-size: 11px;
-}
-
-
-/* =========================================
-   RISK CARDS
-========================================= */
-
-.risk-grid {
-    display: grid;
-
-    grid-template-columns:
-        repeat(4, 1fr);
-
-    gap: 14px;
-}
-
-.risk-card {
-    min-height: 275px;
-
-    padding: 27px;
-
-    border-radius: 13px;
-
-    background:
-        linear-gradient(
-            145deg,
-            #0a1710,
-            #071009
-        );
-
-    border:
-        1px solid rgba(255, 255, 255, 0.06);
-
-    transition: 0.35s ease;
-}
-
-.risk-card:hover {
-    transform: translateY(-5px);
-
-    border-color:
-        rgba(185, 239, 73, 0.2);
-}
-
-.risk-number {
-    color: #b9ef49;
-
-    font-size: 9px;
-    font-weight: 800;
-
-    letter-spacing: 1px;
-
-    margin-bottom: 45px;
-}
-
-.risk-card h3 {
-    font-size: 18px;
-
-    letter-spacing: -0.4px;
-}
-
-.risk-card p {
-    margin-top: 11px;
-
-    color: #69766e;
-
-    font-size: 10px;
-}
-
-
-/* =========================================
-   AI RISK SECTION
-========================================= */
-
-.ai-risk-section {
-    padding: 95px 0;
-
-    background: #08120d;
-}
-
-.ai-risk-box {
-    display: grid;
-
-    grid-template-columns: 65px 1fr;
-
-    gap: 25px;
-
-    padding: 35px;
-
-    border-radius: 14px;
-
-    background:
-        linear-gradient(
-            145deg,
-            #0b1810,
-            #071009
-        );
-
-    border:
-        1px solid rgba(185, 239, 73, 0.13);
-}
-
-.ai-symbol {
-    width: 52px;
-    height: 52px;
-
-    display: grid;
-    place-items: center;
-
-    border-radius: 12px;
-
-    background:
-        rgba(185, 239, 73, 0.08);
-
-    border:
-        1px solid rgba(185, 239, 73, 0.15);
-
-    color: #b9ef49;
-
-    font-size: 11px;
-    font-weight: 900;
-}
-
-.ai-risk-box h2 {
-    margin-top: 8px;
-
-    font-size: 25px;
-
-    letter-spacing: -0.8px;
-}
-
-.ai-risk-box p {
-    max-width: 900px;
-
-    margin-top: 12px;
-
-    color: #69766e;
-
-    font-size: 10px;
-}
-
-.ai-risk-box a {
-    display: inline-block;
-
-    margin-top: 16px;
-
-    color: #b9ef49;
-
-    font-size: 9px;
-
-    font-weight: 800;
-}
-
-
-/* =========================================
-   RESPONSIBILITY
-========================================= */
-
-.responsibility-section {
-    padding: 110px 0;
-
-    background: #050c08;
-}
-
-.responsibility-content {
-    max-width: 850px;
-
-    display: grid;
-
-    gap: 17px;
-
-    margin-top: 5px;
-}
-
-.responsibility-content p {
-    padding: 19px 22px;
-
-    border-left:
-        2px solid rgba(185, 239, 73, 0.3);
-
-    background:
-        rgba(255, 255, 255, 0.015);
-
-    color: #77837c;
-
-    font-size: 11px;
-}
-
-
-/* =========================================
-   RETURNS SECTION
-========================================= */
-
-.returns-section {
-    padding: 85px 0;
-
-    background: #08120d;
-}
-
-.returns-box {
-    padding: 45px;
-
-    border-radius: 14px;
-
-    text-align: center;
-
-    background:
-        linear-gradient(
-            145deg,
-            rgba(185, 239, 73, 0.08),
-            rgba(185, 239, 73, 0.025)
-        );
-
-    border:
-        1px solid rgba(185, 239, 73, 0.14);
-}
-
-.returns-box h2 {
-    max-width: 850px;
-
-    margin: 14px auto 0;
-
-    font-size: clamp(30px, 4vw, 45px);
-
-    line-height: 1.08;
-
-    letter-spacing: -1.8px;
-}
-
-.returns-box p {
-    max-width: 780px;
-
-    margin: 17px auto 0;
-
-    color: #6e7b73;
-
-    font-size: 10px;
-}
-
-
-/* =========================================
-   CONTACT CTA
-========================================= */
-
-.contact-cta {
-    padding: 100px 0;
-
-    background: #050c08;
-}
-
-.cta-card {
-    display: flex;
-
-    align-items: center;
-
-    justify-content: space-between;
-
-    gap: 40px;
-
-    padding: 40px;
-
-    border-radius: 14px;
-
-    background:
-        linear-gradient(
-            110deg,
-            #0b1810,
-            #071009
-        );
-
-    border:
-        1px solid rgba(255, 255, 255, 0.06);
-}
-
-.cta-card h2 {
-    margin-top: 8px;
-
-    font-size: clamp(27px, 4vw, 40px);
-
-    letter-spacing: -1.5px;
-}
-
-.cta-card p {
-    max-width: 600px;
-
-    margin-top: 10px;
-
-    color: #68756d;
-
-    font-size: 10px;
-}
-
-.cta-button {
-    flex-shrink: 0;
-
-    display: inline-flex;
-
-    align-items: center;
-
-    gap: 12px;
-
-    padding: 15px 21px;
-
-    border-radius: 7px;
-
-    background: #b9ef49;
-
-    color: #061008;
-
-    font-size: 10px;
-
-    font-weight: 900;
-
-    transition: 0.3s ease;
-}
-
-.cta-button:hover {
-    transform: translateY(-3px);
-}
-
-.cta-button span {
-    color: #061008;
-
-    font-size: 16px;
-}
-
-
-/* =========================================
-   FOOTER
-========================================= */
-
-footer {
-    background: #030805;
-
-    border-top:
-        1px solid rgba(255, 255, 255, 0.06);
-}
-
-.footer-container {
-    width: min(1150px, 92%);
-
-    margin: auto;
-
-    padding: 60px 0;
-
-    display: grid;
-
-    grid-template-columns: 2fr 1fr 1fr;
-
-    gap: 60px;
-}
-
-.footer-brand img {
-    width: 145px;
-}
-
-.footer-brand p {
-    max-width: 350px;
-
-    margin-top: 14px;
-
-    color: #505c55;
-
-    font-size: 10px;
-}
-
-.footer-column {
-    display: flex;
-
-    flex-direction: column;
-
-    gap: 10px;
-}
-
-.footer-column h4 {
-    margin-bottom: 5px;
-
-    font-size: 9px;
-}
-
-.footer-column a {
-    color: #5e6a63;
-
-    font-size: 10px;
-
-    transition: 0.3s ease;
-}
-
-.footer-column a:hover {
-    color: #b9ef49;
-}
-
-.footer-bottom {
-    width: min(1150px, 92%);
-
-    margin: auto;
-
-    padding: 20px 0;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: space-between;
-
-    gap: 20px;
-
-    border-top:
-        1px solid rgba(255, 255, 255, 0.06);
-
-    color: #455149;
-
-    font-size: 8px;
-}
-
-
-/* =========================================
-   FLOATING WHATSAPP
-========================================= */
-
-.whatsapp-button {
-    position: fixed;
-
-    right: 24px;
-    bottom: 24px;
-
-    z-index: 999;
-
-    width: 58px;
-    height: 58px;
-
-    display: grid;
-    place-items: center;
-
-    border-radius: 50%;
-
-    background: #25d366;
-
-    color: #ffffff;
-
-    font-size: 22px;
-
-    box-shadow:
-        0 10px 30px rgba(0, 0, 0, 0.4);
-
-    animation:
-        whatsappPulse 2s infinite;
-}
-
-@keyframes whatsappPulse {
-
-    0% {
-        box-shadow:
-            0 0 0 0 rgba(37, 211, 102, 0.45);
+    <!-- =========================================
+         STRUCTURED DATA — ORGANIZATION
+    ========================================= -->
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Goldenice International",
+        "url": "https://goldeniceinternational.com/",
+        "logo": "https://goldeniceinternational.com/gin.jpeg"
     }
+    </script>
 
-    70% {
-        box-shadow:
-            0 0 0 15px rgba(37, 211, 102, 0);
+
+    <!-- =========================================
+         STRUCTURED DATA — WEBPAGE
+    ========================================= -->
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Risk Disclosure | Goldenice International",
+        "url": "https://goldeniceinternational.com/risk-disclosure.html",
+        "description": "Goldenice International risk disclosure covering investment risks, market volatility, potential losses, AI-driven analysis and important investment considerations.",
+        "isPartOf": {
+            "@type": "WebSite",
+            "name": "Goldenice International",
+            "url": "https://goldeniceinternational.com/"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Goldenice International",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://goldeniceinternational.com/gin.jpeg"
+            }
+        }
     }
+    </script>
 
-    100% {
-        box-shadow:
-            0 0 0 0 rgba(37, 211, 102, 0);
-    }
 
-}
+    <!-- =========================================
+         STYLES
+    ========================================= -->
 
+    <style>
 
-/* =========================================
-   SCROLL REVEAL
-========================================= */
+        /* =========================================
+           GOLDENICE INTERNATIONAL
+           RISK DISCLOSURE PAGE
+        ========================================= */
 
-.reveal {
-    opacity: 0;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    transform: translateY(25px);
+        html {
+            scroll-behavior: smooth;
+        }
 
-    transition:
-        opacity 0.7s ease,
-        transform 0.7s ease;
-}
+        body {
+            font-family: "Inter", sans-serif;
+            background: #050b08;
+            color: #ffffff;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
 
-.reveal.visible {
-    opacity: 1;
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
 
-    transform: translateY(0);
-}
+        img {
+            max-width: 100%;
+            display: block;
+        }
 
+        button,
+        input,
+        select,
+        textarea {
+            font: inherit;
+        }
 
-/* =========================================
-   TABLET
-========================================= */
 
-@media (max-width: 1050px) {
+        /* =========================================
+           NAVIGATION
+        ========================================= */
 
-    .nav-links {
-        gap: 12px;
-    }
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
 
-    .nav-links a {
-        font-size: 8px;
-    }
+            background: rgba(5, 11, 8, 0.94);
 
-    .risk-grid {
-        grid-template-columns:
-            repeat(2, 1fr);
-    }
+            backdrop-filter: blur(18px);
 
-}
+            border-bottom:
+                1px solid rgba(255, 255, 255, 0.06);
 
+            transition: 0.3s ease;
+        }
 
-/* =========================================
-   MOBILE NAVIGATION
-========================================= */
+        .nav-container {
+            width: min(1200px, 92%);
+            min-height: 82px;
 
-@media (max-width: 850px) {
+            margin: auto;
 
-    .nav-links,
-    .nav-button {
-        display: none;
-    }
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
 
-    .menu-button {
-        display: block;
-    }
+            gap: 25px;
+        }
 
-    .nav-links.active {
+        .logo img {
+            width: 155px;
+        }
 
-        position: absolute;
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 21px;
+        }
 
-        top: 82px;
-        left: 0;
+        .nav-links a {
+            color: #89958e;
+            font-size: 10px;
 
-        width: 100%;
+            transition: 0.3s ease;
+        }
 
-        padding: 25px;
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: #b9ef49;
+        }
 
-        display: flex;
+        .nav-button {
+            padding: 12px 18px;
 
-        flex-direction: column;
+            border-radius: 7px;
 
-        align-items: flex-start;
+            background: #b9ef49;
+            color: #061008;
 
-        gap: 20px;
+            font-size: 10px;
+            font-weight: 800;
 
-        background: #061009;
+            transition: 0.3s ease;
+        }
 
-        border-bottom:
-            1px solid rgba(255, 255, 255, 0.08);
-    }
+        .nav-button:hover {
+            transform: translateY(-2px);
+        }
 
-    .cta-card {
-        flex-direction: column;
+        .menu-button {
+            display: none;
 
-        align-items: flex-start;
-    }
+            border: none;
+            background: transparent;
 
-}
+            color: #ffffff;
 
+            font-size: 27px;
 
-/* =========================================
-   PHONE
-========================================= */
+            cursor: pointer;
+        }
 
-@media (max-width: 600px) {
 
-    .nav-container {
-        min-height: 72px;
-    }
+        /* =========================================
+           GLOBAL CONTAINER
+        ========================================= */
 
-    .logo img {
-        width: 125px;
-    }
+        .container {
+            width: min(1150px, 92%);
+            margin: auto;
+        }
 
-    .risk-hero {
-        min-height: 590px;
-    }
 
-    .hero-content {
-        margin-top: 55px;
-    }
+        /* =========================================
+           HERO
+        ========================================= */
 
-    .hero-content h1 {
-        font-size: 44px;
+        .risk-hero {
+            position: relative;
 
-        letter-spacing: -2.5px;
-    }
+            min-height: 610px;
 
-    .hero-content p {
-        font-size: 11px;
-    }
+            display: flex;
+            align-items: center;
 
-    .warning-section,
-    .risk-section,
-    .ai-risk-section,
-    .responsibility-section,
-    .returns-section,
-    .contact-cta {
-        padding: 75px 0;
-    }
+            overflow: hidden;
 
-    .warning-box {
-        grid-template-columns: 1fr;
+            background:
+                radial-gradient(
+                    circle at 78% 40%,
+                    rgba(185, 239, 73, 0.11),
+                    transparent 34%
+                ),
+                #050c08;
+        }
 
-        padding: 25px;
-    }
+        .hero-grid {
+            position: absolute;
+            inset: 0;
 
-    .risk-grid {
-        grid-template-columns: 1fr;
-    }
+            opacity: 0.35;
 
-    .risk-card {
-        min-height: auto;
+            background-image:
+                linear-gradient(
+                    rgba(185, 239, 73, 0.035) 1px,
+                    transparent 1px
+                ),
+                linear-gradient(
+                    90deg,
+                    rgba(185, 239, 73, 0.035) 1px,
+                    transparent 1px
+                );
 
-        padding: 26px;
-    }
+            background-size: 65px 65px;
 
-    .risk-number {
-        margin-bottom: 30px;
-    }
+            mask-image:
+                linear-gradient(
+                    to bottom,
+                    black,
+                    transparent
+                );
+        }
 
-    .ai-risk-box {
-        grid-template-columns: 1fr;
+        .hero-glow {
+            position: absolute;
 
-        padding: 27px;
-    }
+            width: 500px;
+            height: 500px;
 
-    .returns-box {
-        padding: 30px 22px;
-    }
+            right: -170px;
+            top: 80px;
 
-    .cta-card {
-        padding: 28px;
-    }
+            border-radius: 50%;
 
-    .cta-button {
-        width: 100%;
+            background:
+                radial-gradient(
+                    circle,
+                    rgba(185, 239, 73, 0.12),
+                    transparent 70%
+                );
+        }
 
-        justify-content: center;
-    }
+        .hero-content {
+            position: relative;
+            z-index: 2;
 
-    .footer-container {
-        grid-template-columns: 1fr;
+            width: min(1150px, 92%);
 
-        gap: 35px;
+            margin: 65px auto 0;
+        }
 
-        padding: 50px 0;
-    }
+        .hero-label {
+            display: inline-block;
 
-    .footer-bottom {
-        flex-direction: column;
+            padding: 8px 13px;
 
-        align-items: flex-start;
+            border:
+                1px solid rgba(185, 239, 73, 0.25);
 
-        padding-bottom: 25px;
-    }
+            border-radius: 30px;
 
-    .whatsapp-button {
-        right: 18px;
-        bottom: 18px;
+            color: #b9ef49;
 
-        width: 54px;
-        height: 54px;
-    }
+            font-size: 9px;
+            font-weight: 800;
 
-}
+            letter-spacing: 2px;
+        }
 
+        .hero-content h1 {
+            max-width: 900px;
 
-/* =========================================
-   SMALL PHONES
-========================================= */
+            margin-top: 25px;
 
-@media (max-width: 380px) {
+            font-size: clamp(50px, 7vw, 80px);
 
-    .hero-content h1 {
-        font-size: 38px;
-    }
+            line-height: 0.98;
 
-    .section-heading h2 {
-        font-size: 34px;
-    }
+            letter-spacing: -4px;
+        }
 
-    .warning-box,
-    .ai-risk-box,
-    .cta-card {
-        padding: 22px;
-    }
+        .hero-content h1 span {
+            color: #b9ef49;
+        }
 
-}
-   </style>
+        .hero-content p {
+            max-width: 690px;
+
+            margin-top: 27px;
+
+            color: #7d8a82;
+
+            font-size: 12px;
+        }
+
+
+        /* =========================================
+           WARNING
+        ========================================= */
+
+        .warning-section {
+            padding: 70px 0;
+
+            background: #08120d;
+        }
+
+        .warning-box {
+            display: grid;
+
+            grid-template-columns: 60px 1fr;
+
+            gap: 24px;
+
+            padding: 30px;
+
+            border-radius: 13px;
+
+            background:
+                linear-gradient(
+                    145deg,
+                    #0b1810,
+                    #071009
+                );
+
+            border:
+                1px solid rgba(185, 239, 73, 0.15);
+        }
+
+        .warning-icon {
+            width: 48px;
+            height: 48px;
+
+            display: grid;
+            place-items: center;
+
+            border-radius: 50%;
+
+            background:
+                rgba(185, 239, 73, 0.09);
+
+            color: #b9ef49;
+
+            font-size: 19px;
+            font-weight: 900;
+        }
+
+        .warning-box span,
+        .section-heading > span,
+        .ai-risk-box > div > span,
+        .returns-box > span,
+        .cta-card span {
+            color: #b9ef49;
+
+            font-size: 9px;
+            font-weight: 800;
+
+            letter-spacing: 2px;
+        }
+
+        .warning-box h2 {
+            margin-top: 7px;
+
+            font-size: 23px;
+        }
+
+        .warning-box p {
+            max-width: 850px;
+
+            margin-top: 10px;
+
+            color: #69766e;
+
+            font-size: 10px;
+        }
+
+
+        /* =========================================
+           RISK SECTION
+        ========================================= */
+
+        .risk-section {
+            padding: 110px 0;
+
+            background: #050c08;
+        }
+
+        .section-heading {
+            max-width: 720px;
+
+            margin-bottom: 50px;
+        }
+
+        .section-heading h2 {
+            margin-top: 13px;
+
+            font-size: clamp(40px, 5vw, 57px);
+
+            line-height: 1.05;
+
+            letter-spacing: -2.5px;
+        }
+
+        .section-heading h2 strong {
+            color: #b9ef49;
+        }
+
+        .section-heading p {
+            max-width: 650px;
+
+            margin-top: 18px;
+
+            color: #707c74;
+
+            font-size: 11px;
+        }
+
+
+        /* =========================================
+           RISK CARDS
+        ========================================= */
+
+        .risk-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(4, 1fr);
+
+            gap: 14px;
+        }
+
+        .risk-card {
+            min-height: 275px;
+
+            padding: 27px;
+
+            border-radius: 13px;
+
+            background:
+                linear-gradient(
+                    145deg,
+                    #0a1710,
+                    #071009
+                );
+
+            border:
+                1px solid rgba(255, 255, 255, 0.06);
+
+            transition: 0.35s ease;
+        }
+
+        .risk-card:hover {
+            transform: translateY(-5px);
+
+            border-color:
+                rgba(185, 239, 73, 0.2);
+        }
+
+        .risk-number {
+            color: #b9ef49;
+
+            font-size: 9px;
+            font-weight: 800;
+
+            letter-spacing: 1px;
+
+            margin-bottom: 45px;
+        }
+
+        .risk-card h3 {
+            font-size: 18px;
+
+            letter-spacing: -0.4px;
+        }
+
+        .risk-card p {
+            margin-top: 11px;
+
+            color: #69766e;
+
+            font-size: 10px;
+        }
+
+
+        /* =========================================
+           AI RISK SECTION
+        ========================================= */
+
+        .ai-risk-section {
+            padding: 95px 0;
+
+            background: #08120d;
+        }
+
+        .ai-risk-box {
+            display: grid;
+
+            grid-template-columns: 65px 1fr;
+
+            gap: 25px;
+
+            padding: 35px;
+
+            border-radius: 14px;
+
+            background:
+                linear-gradient(
+                    145deg,
+                    #0b1810,
+                    #071009
+                );
+
+            border:
+                1px solid rgba(185, 239, 73, 0.13);
+        }
+
+        .ai-symbol {
+            width: 52px;
+            height: 52px;
+
+            display: grid;
+            place-items: center;
+
+            border-radius: 12px;
+
+            background:
+                rgba(185, 239, 73, 0.08);
+
+            border:
+                1px solid rgba(185, 239, 73, 0.15);
+
+            color: #b9ef49;
+
+            font-size: 11px;
+            font-weight: 900;
+        }
+
+        .ai-risk-box h2 {
+            margin-top: 8px;
+
+            font-size: 25px;
+
+            letter-spacing: -0.8px;
+        }
+
+        .ai-risk-box p {
+            max-width: 900px;
+
+            margin-top: 12px;
+
+            color: #69766e;
+
+            font-size: 10px;
+        }
+
+        .ai-risk-box a {
+            display: inline-block;
+
+            margin-top: 16px;
+
+            color: #b9ef49;
+
+            font-size: 9px;
+
+            font-weight: 800;
+        }
+
+
+        /* =========================================
+           RESPONSIBILITY
+        ========================================= */
+
+        .responsibility-section {
+            padding: 110px 0;
+
+            background: #050c08;
+        }
+
+        .responsibility-content {
+            max-width: 850px;
+
+            display: grid;
+
+            gap: 17px;
+
+            margin-top: 5px;
+        }
+
+        .responsibility-content p {
+            padding: 19px 22px;
+
+            border-left:
+                2px solid rgba(185, 239, 73, 0.3);
+
+            background:
+                rgba(255, 255, 255, 0.015);
+
+            color: #77837c;
+
+            font-size: 11px;
+        }
+
+
+        /* =========================================
+           RETURNS SECTION
+        ========================================= */
+
+        .returns-section {
+            padding: 85px 0;
+
+            background: #08120d;
+        }
+
+        .returns-box {
+            padding: 45px;
+
+            border-radius: 14px;
+
+            text-align: center;
+
+            background:
+                linear-gradient(
+                    145deg,
+                    rgba(185, 239, 73, 0.08),
+                    rgba(185, 239, 73, 0.025)
+                );
+
+            border:
+                1px solid rgba(185, 239, 73, 0.14);
+        }
+
+        .returns-box h2 {
+            max-width: 850px;
+
+            margin: 14px auto 0;
+
+            font-size: clamp(30px, 4vw, 45px);
+
+            line-height: 1.08;
+
+            letter-spacing: -1.8px;
+        }
+
+        .returns-box p {
+            max-width: 780px;
+
+            margin: 17px auto 0;
+
+            color: #6e7b73;
+
+            font-size: 10px;
+        }
+
+
+        /* =========================================
+           CONTACT CTA
+        ========================================= */
+
+        .contact-cta {
+            padding: 100px 0;
+
+            background: #050c08;
+        }
+
+        .cta-card {
+            display: flex;
+
+            align-items: center;
+
+            justify-content: space-between;
+
+            gap: 40px;
+
+            padding: 40px;
+
+            border-radius: 14px;
+
+            background:
+                linear-gradient(
+                    110deg,
+                    #0b1810,
+                    #071009
+                );
+
+            border:
+                1px solid rgba(255, 255, 255, 0.06);
+        }
+
+        .cta-card h2 {
+            margin-top: 8px;
+
+            font-size: clamp(27px, 4vw, 40px);
+
+            letter-spacing: -1.5px;
+        }
+
+        .cta-card p {
+            max-width: 600px;
+
+            margin-top: 10px;
+
+            color: #68756d;
+
+            font-size: 10px;
+        }
+
+        .cta-button {
+            flex-shrink: 0;
+
+            display: inline-flex;
+
+            align-items: center;
+
+            gap: 12px;
+
+            padding: 15px 21px;
+
+            border-radius: 7px;
+
+            background: #b9ef49;
+
+            color: #061008;
+
+            font-size: 10px;
+
+            font-weight: 900;
+
+            transition: 0.3s ease;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+        }
+
+        .cta-button span {
+            color: #061008;
+
+            font-size: 16px;
+        }
+
+
+        /* =========================================
+           FOOTER
+        ========================================= */
+
+        footer {
+            background: #030805;
+
+            border-top:
+                1px solid rgba(255, 255, 255, 0.06);
+        }
+
+        .footer-container {
+            width: min(1150px, 92%);
+
+            margin: auto;
+
+            padding: 60px 0;
+
+            display: grid;
+
+            grid-template-columns: 2fr 1fr 1fr;
+
+            gap: 60px;
+        }
+
+        .footer-brand img {
+            width: 145px;
+        }
+
+        .footer-brand p {
+            max-width: 350px;
+
+            margin-top: 14px;
+
+            color: #505c55;
+
+            font-size: 10px;
+        }
+
+        .footer-column {
+            display: flex;
+
+            flex-direction: column;
+
+            gap: 10px;
+        }
+
+        .footer-column h4 {
+            margin-bottom: 5px;
+
+            font-size: 9px;
+        }
+
+        .footer-column a {
+            color: #5e6a63;
+
+            font-size: 10px;
+
+            transition: 0.3s ease;
+        }
+
+        .footer-column a:hover {
+            color: #b9ef49;
+        }
+
+        .footer-bottom {
+            width: min(1150px, 92%);
+
+            margin: auto;
+
+            padding: 20px 0;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: space-between;
+
+            gap: 20px;
+
+            border-top:
+                1px solid rgba(255, 255, 255, 0.06);
+
+            color: #455149;
+
+            font-size: 8px;
+        }
+
+
+        /* =========================================
+           FLOATING WHATSAPP
+        ========================================= */
+
+        .whatsapp-button {
+            position: fixed;
+
+            right: 24px;
+            bottom: 24px;
+
+            z-index: 999;
+
+            width: 58px;
+            height: 58px;
+
+            display: grid;
+
+            place-items: center;
+
+            border-radius: 50%;
+
+            background: #25d366;
+
+            color: #ffffff;
+
+            font-size: 22px;
+
+            box-shadow:
+                0 10px 30px rgba(0, 0, 0, 0.4);
+
+            animation:
+                whatsappPulse 2s infinite;
+        }
+
+        @keyframes whatsappPulse {
+
+            0% {
+                box-shadow:
+                    0 0 0 0 rgba(37, 211, 102, 0.45);
+            }
+
+            70% {
+                box-shadow:
+                    0 0 0 15px rgba(37, 211, 102, 0);
+            }
+
+            100% {
+                box-shadow:
+                    0 0 0 0 rgba(37, 211, 102, 0);
+            }
+
+        }
+
+
+        /* =========================================
+           SCROLL REVEAL
+        ========================================= */
+
+        .reveal {
+            opacity: 0;
+
+            transform: translateY(25px);
+
+            transition:
+                opacity 0.7s ease,
+                transform 0.7s ease;
+        }
+
+        .reveal.visible {
+            opacity: 1;
+
+            transform: translateY(0);
+        }
+
+
+        /* =========================================
+           TABLET
+        ========================================= */
+
+        @media (max-width: 1050px) {
+
+            .nav-links {
+                gap: 12px;
+            }
+
+            .nav-links a {
+                font-size: 8px;
+            }
+
+            .risk-grid {
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+
+        }
+
+
+        /* =========================================
+           MOBILE NAVIGATION
+        ========================================= */
+
+        @media (max-width: 850px) {
+
+            .nav-links,
+            .nav-button {
+                display: none;
+            }
+
+            .menu-button {
+                display: block;
+            }
+
+            .nav-links.active {
+
+                position: absolute;
+
+                top: 82px;
+                left: 0;
+
+                width: 100%;
+
+                padding: 25px;
+
+                display: flex;
+
+                flex-direction: column;
+
+                align-items: flex-start;
+
+                gap: 20px;
+
+                background: #061009;
+
+                border-bottom:
+                    1px solid rgba(255, 255, 255, 0.08);
+            }
+
+            .cta-card {
+                flex-direction: column;
+
+                align-items: flex-start;
+            }
+
+        }
+
+
+        /* =========================================
+           PHONE
+        ========================================= */
+
+        @media (max-width: 600px) {
+
+            .nav-container {
+                min-height: 72px;
+            }
+
+            .logo img {
+                width: 125px;
+            }
+
+            .risk-hero {
+                min-height: 590px;
+            }
+
+            .hero-content {
+                margin-top: 55px;
+            }
+
+            .hero-content h1 {
+                font-size: 44px;
+
+                letter-spacing: -2.5px;
+            }
+
+            .hero-content p {
+                font-size: 11px;
+            }
+
+            .warning-section,
+            .risk-section,
+            .ai-risk-section,
+            .responsibility-section,
+            .returns-section,
+            .contact-cta {
+                padding: 75px 0;
+            }
+
+            .warning-box {
+                grid-template-columns: 1fr;
+
+                padding: 25px;
+            }
+
+            .risk-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .risk-card {
+                min-height: auto;
+
+                padding: 26px;
+            }
+
+            .risk-number {
+                margin-bottom: 30px;
+            }
+
+            .ai-risk-box {
+                grid-template-columns: 1fr;
+
+                padding: 27px;
+            }
+
+            .returns-box {
+                padding: 30px 22px;
+            }
+
+            .cta-card {
+                padding: 28px;
+            }
+
+            .cta-button {
+                width: 100%;
+
+                justify-content: center;
+            }
+
+            .footer-container {
+                grid-template-columns: 1fr;
+
+                gap: 35px;
+
+                padding: 50px 0;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+
+                align-items: flex-start;
+
+                padding-bottom: 25px;
+            }
+
+            .whatsapp-button {
+                right: 18px;
+                bottom: 18px;
+
+                width: 54px;
+                height: 54px;
+            }
+
+        }
+
+
+        /* =========================================
+           SMALL PHONES
+        ========================================= */
+
+        @media (max-width: 380px) {
+
+            .hero-content h1 {
+                font-size: 38px;
+            }
+
+            .section-heading h2 {
+                font-size: 34px;
+            }
+
+            .warning-box,
+            .ai-risk-box,
+            .cta-card {
+                padding: 22px;
+            }
+
+        }
+
+    </style>
 
 </head>
 
@@ -1118,1060 +1320,1053 @@ footer {
 <body>
 
 
-<!-- =========================================
-     NAVIGATION
-========================================= -->
+    <!-- =========================================
+         NAVIGATION
+    ========================================= -->
 
-<header class="navbar">
+    <header class="navbar">
 
-    <div class="nav-container">
+        <div class="nav-container">
 
-
-        <a
-            href="index.html"
-            class="logo"
-        >
-
-            <img
-                src="/ChatGPT Image Aug 16, 2026, 07_22_34 PM.png"
-                alt="Goldenice International Logo"
+            <a
+                href="/index.html"
+                class="logo"
             >
 
-        </a>
+                <img
+                    src="/gin.jpeg"
+                    alt="Goldenice International Logo"
+                >
 
-
-        <nav
-            class="nav-links"
-            id="navLinks"
-        >
-
-            <a href="/index.html">
-                Home
             </a>
 
-            <a href="/about.html">
-                About
+
+            <nav
+                class="nav-links"
+                id="navLinks"
+            >
+
+                <a href="/index.html">
+                    Home
+                </a>
+
+                <a href="/about.html">
+                    About
+                </a>
+
+                <a href="/market.html">
+                    Markets
+                </a>
+
+                <a href="/investment-plans.html">
+                    Investment Plans
+                </a>
+
+                <a href="/ai-insights.html">
+                    AI Insights
+                </a>
+
+                <a href="/how-it-works.html">
+                    How It Works
+                </a>
+
+                <a href="/faq.html">
+                    FAQ
+                </a>
+
+                <a href="/contact.html">
+                    Contact
+                </a>
+
+            </nav>
+
+
+            <a
+                href="https://wa.me/2347068609938?text=Hello%20Goldenice%20International%2C%20I%20would%20like%20more%20information"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="nav-button"
+            >
+                Talk to Us
             </a>
 
-            <a href="/market.html">
-                Markets
-            </a>
 
-            <a href="/investment-plans.html">
-                Investment Plans
-            </a>
-
-            <a href="/ai-insights.html">
-                AI Insights
-            </a>
-
-            <a href="/how-it-works.html">
-                How It Works
-            </a>
-
-            <a href="/faq.html">
-                FAQ
-            </a>
-
-            <a href="/contact.html">
-                Contact
-            </a>
-
-        </nav>
-
-
-        <a
-            href="https://wa.me/2347068609938?text=Hello%20Goldenice%20International,%20I%20would%20like%20more%20information."
-            target="_blank"
-            class="nav-button"
-        >
-            Talk to Us
-        </a>
-
-
-        <button
-            class="menu-button"
-            id="menuButton"
-            aria-label="Open navigation menu"
-            aria-expanded="false"
-        >
-            ☰
-        </button>
-
-    </div>
-
-</header>
-
-
-
-<!-- =========================================
-     HERO
-========================================= -->
-
-<section class="risk-hero">
-
-    <div class="hero-grid"></div>
-
-    <div class="hero-glow"></div>
-
-
-    <div class="hero-content">
-
-        <span class="hero-label">
-            IMPORTANT INFORMATION
-        </span>
-
-
-        <h1>
-
-            Investment
-            <span>
-                Risk Disclosure.
-            </span>
-
-        </h1>
-
-
-        <p>
-
-            Understanding investment risk is an
-            essential part of making informed financial
-            decisions. Please read this information
-            carefully before considering any investment.
-
-        </p>
-
-    </div>
-
-</section>
-
-
-
-<!-- =========================================
-     WARNING
-========================================= -->
-
-<section class="warning-section">
-
-    <div class="container">
-
-        <div class="warning-box">
-
-            <div class="warning-icon">
-                !
-            </div>
-
-
-            <div>
-
-                <span>
-                    PLEASE READ CAREFULLY
-                </span>
-
-
-                <h2>
-                    Investments involve risk.
-                </h2>
-
-
-                <p>
-
-                    The value of investments can rise or
-                    fall, and investors may lose some or
-                    all of the money they invest. Past
-                    performance is not a guarantee of
-                    future results.
-
-                </p>
-
-            </div>
+            <button
+                class="menu-button"
+                id="menuButton"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+            >
+                ☰
+            </button>
 
         </div>
 
-    </div>
-
-</section>
+    </header>
 
 
+    <!-- =========================================
+         HERO
+    ========================================= -->
 
-<!-- =========================================
-     RISK CONTENT
-========================================= -->
+    <section class="risk-hero">
 
-<section class="risk-section">
+        <div class="hero-grid"></div>
 
-    <div class="container">
+        <div class="hero-glow"></div>
 
 
-        <div class="section-heading">
+        <div class="hero-content">
 
-            <span>
-                RISK DISCLOSURE
+            <span class="hero-label">
+                IMPORTANT INFORMATION
             </span>
 
 
-            <h2>
+            <h1>
 
-                Know the
-                <strong>
-                    Risks.
-                </strong>
+                Investment
+                <span>
+                    Risk Disclosure.
+                </span>
 
-            </h2>
+            </h1>
 
 
             <p>
 
-                Before making an investment decision,
-                prospective investors should understand
-                the risks associated with financial markets
-                and investment products.
+                Understanding investment risk is an
+                essential part of making informed financial
+                decisions. Please read this information
+                carefully before considering any investment.
 
             </p>
 
         </div>
 
+    </section>
 
 
-        <div class="risk-grid">
+    <!-- =========================================
+         WARNING
+    ========================================= -->
 
+    <section class="warning-section">
 
-            <!-- MARKET RISK -->
+        <div class="container">
 
-            <article class="risk-card">
+            <div class="warning-box">
 
-                <div class="risk-number">
-                    01
+                <div class="warning-icon">
+                    !
                 </div>
 
 
-                <h3>
-                    Market Risk
-                </h3>
+                <div>
+
+                    <span>
+                        PLEASE READ CAREFULLY
+                    </span>
 
 
-                <p>
-
-                    Financial markets can be volatile.
-                    Share prices and other investment
-                    values may move up or down because
-                    of economic conditions, company
-                    performance, interest rates, political
-                    events and other factors.
-
-                </p>
-
-            </article>
+                    <h2>
+                        Investments involve risk.
+                    </h2>
 
 
+                    <p>
 
-            <!-- LOSS OF CAPITAL -->
+                        The value of investments can rise or
+                        fall, and investors may lose some or
+                        all of the money they invest. Past
+                        performance is not a guarantee of
+                        future results.
 
-            <article class="risk-card">
+                    </p>
 
-                <div class="risk-number">
-                    02
                 </div>
 
-
-                <h3>
-                    Loss of Capital
-                </h3>
-
-
-                <p>
-
-                    There is no guarantee that an investor
-                    will recover the amount invested.
-                    Depending on the investment and market
-                    conditions, investors may experience
-                    partial or significant losses.
-
-                </p>
-
-            </article>
-
-
-
-            <!-- VOLATILITY -->
-
-            <article class="risk-card">
-
-                <div class="risk-number">
-                    03
-                </div>
-
-
-                <h3>
-                    Volatility
-                </h3>
-
-
-                <p>
-
-                    Market prices can change rapidly.
-                    Short-term movements may be
-                    unpredictable and can affect the value
-                    of an investment significantly.
-
-                </p>
-
-            </article>
-
-
-
-            <!-- ECONOMIC RISK -->
-
-            <article class="risk-card">
-
-                <div class="risk-number">
-                    04
-                </div>
-
-
-                <h3>
-                    Economic Conditions
-                </h3>
-
-
-                <p>
-
-                    Inflation, interest rates, recessions,
-                    currency movements and other economic
-                    developments may affect financial
-                    markets and investment performance.
-
-                </p>
-
-            </article>
-
-
-
-            <!-- COMPANY RISK -->
-
-            <article class="risk-card">
-
-                <div class="risk-number">
-                    05
-                </div>
-
-
-                <h3>
-                    Company & Sector Risk
-                </h3>
-
-
-                <p>
-
-                    Individual companies and sectors may
-                    experience financial, operational,
-                    regulatory or competitive challenges
-                    that can affect investment values.
-
-                </p>
-
-            </article>
-
-
-
-            <!-- CURRENCY -->
-
-            <article class="risk-card">
-
-                <div class="risk-number">
-                    06
-                </div>
-
-
-                <h3>
-                    Currency Risk
-                </h3>
-
-
-                <p>
-
-                    Investors dealing with international
-                    investments may be affected by changes
-                    in exchange rates between currencies.
-
-                </p>
-
-            </article>
-
-
-
-            <!-- LIQUIDITY -->
-
-            <article class="risk-card">
-
-                <div class="risk-number">
-                    07
-                </div>
-
-
-                <h3>
-                    Liquidity Risk
-                </h3>
-
-
-                <p>
-
-                    Some investments may not always be
-                    immediately convertible into cash at
-                    the desired price. Market conditions
-                    can affect the ability to buy or sell.
-
-                </p>
-
-            </article>
-
-
-
-            <!-- REGULATORY -->
-
-            <article class="risk-card">
-
-                <div class="risk-number">
-                    08
-                </div>
-
-
-                <h3>
-                    Regulatory Risk
-                </h3>
-
-
-                <p>
-
-                    Changes in laws, regulations, tax rules
-                    or government policies may affect
-                    investment activities and outcomes.
-
-                </p>
-
-            </article>
+            </div>
 
         </div>
 
-    </div>
-
-</section>
+    </section>
 
 
+    <!-- =========================================
+         RISK CONTENT
+    ========================================= -->
 
-<!-- =========================================
-     AI DISCLAIMER
-========================================= -->
+    <section class="risk-section">
 
-<section class="ai-risk-section">
-
-    <div class="container">
-
-        <div class="ai-risk-box">
-
-            <div class="ai-symbol">
-                AI
-            </div>
+        <div class="container">
 
 
-            <div>
+            <div class="section-heading">
 
                 <span>
-                    AI-ASSISTED INSIGHTS
+                    RISK DISCLOSURE
                 </span>
 
 
                 <h2>
-                    AI recommendations are not guarantees.
+
+                    Know the
+                    <strong>
+                        Risks.
+                    </strong>
+
                 </h2>
 
 
                 <p>
 
-                    Any AI-assisted market information,
-                    analysis, observations or educational
-                    insights provided through this website
-                    are intended to support research and
-                    understanding. AI-generated information
-                    can contain errors, omissions or outdated
-                    information and should not be treated as
-                    a guarantee of investment performance.
+                    Before making an investment decision,
+                    prospective investors should understand
+                    the risks associated with financial markets
+                    and investment products.
+
+                </p>
+
+            </div>
+
+
+            <div class="risk-grid">
+
+
+                <!-- MARKET RISK -->
+
+                <article class="risk-card">
+
+                    <div class="risk-number">
+                        01
+                    </div>
+
+
+                    <h3>
+                        Market Risk
+                    </h3>
+
+
+                    <p>
+
+                        Financial markets can be volatile.
+                        Share prices and other investment
+                        values may move up or down because
+                        of economic conditions, company
+                        performance, interest rates, political
+                        events and other factors.
+
+                    </p>
+
+                </article>
+
+
+                <!-- LOSS OF CAPITAL -->
+
+                <article class="risk-card">
+
+                    <div class="risk-number">
+                        02
+                    </div>
+
+
+                    <h3>
+                        Loss of Capital
+                    </h3>
+
+
+                    <p>
+
+                        There is no guarantee that an investor
+                        will recover the amount invested.
+                        Depending on the investment and market
+                        conditions, investors may experience
+                        partial or significant losses.
+
+                    </p>
+
+                </article>
+
+
+                <!-- VOLATILITY -->
+
+                <article class="risk-card">
+
+                    <div class="risk-number">
+                        03
+                    </div>
+
+
+                    <h3>
+                        Volatility
+                    </h3>
+
+
+                    <p>
+
+                        Market prices can change rapidly.
+                        Short-term movements may be
+                        unpredictable and can affect the value
+                        of an investment significantly.
+
+                    </p>
+
+                </article>
+
+
+                <!-- ECONOMIC RISK -->
+
+                <article class="risk-card">
+
+                    <div class="risk-number">
+                        04
+                    </div>
+
+
+                    <h3>
+                        Economic Conditions
+                    </h3>
+
+
+                    <p>
+
+                        Inflation, interest rates, recessions,
+                        currency movements and other economic
+                        developments may affect financial
+                        markets and investment performance.
+
+                    </p>
+
+                </article>
+
+
+                <!-- COMPANY RISK -->
+
+                <article class="risk-card">
+
+                    <div class="risk-number">
+                        05
+                    </div>
+
+
+                    <h3>
+                        Company &amp; Sector Risk
+                    </h3>
+
+
+                    <p>
+
+                        Individual companies and sectors may
+                        experience financial, operational,
+                        regulatory or competitive challenges
+                        that can affect investment values.
+
+                    </p>
+
+                </article>
+
+
+                <!-- CURRENCY -->
+
+                <article class="risk-card">
+
+                    <div class="risk-number">
+                        06
+                    </div>
+
+
+                    <h3>
+                        Currency Risk
+                    </h3>
+
+
+                    <p>
+
+                        Investors dealing with international
+                        investments may be affected by changes
+                        in exchange rates between currencies.
+
+                    </p>
+
+                </article>
+
+
+                <!-- LIQUIDITY -->
+
+                <article class="risk-card">
+
+                    <div class="risk-number">
+                        07
+                    </div>
+
+
+                    <h3>
+                        Liquidity Risk
+                    </h3>
+
+
+                    <p>
+
+                        Some investments may not always be
+                        immediately convertible into cash at
+                        the desired price. Market conditions
+                        can affect the ability to buy or sell.
+
+                    </p>
+
+                </article>
+
+
+                <!-- REGULATORY -->
+
+                <article class="risk-card">
+
+                    <div class="risk-number">
+                        08
+                    </div>
+
+
+                    <h3>
+                        Regulatory Risk
+                    </h3>
+
+
+                    <p>
+
+                        Changes in laws, regulations, tax rules
+                        or government policies may affect
+                        investment activities and outcomes.
+
+                    </p>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================
+         AI DISCLAIMER
+    ========================================= -->
+
+    <section class="ai-risk-section">
+
+        <div class="container">
+
+            <div class="ai-risk-box">
+
+                <div class="ai-symbol">
+                    AI
+                </div>
+
+
+                <div>
+
+                    <span>
+                        AI-ASSISTED INSIGHTS
+                    </span>
+
+
+                    <h2>
+                        AI recommendations are not guarantees.
+                    </h2>
+
+
+                    <p>
+
+                        Any AI-assisted market information,
+                        analysis, observations or educational
+                        insights provided through this website
+                        are intended to support research and
+                        understanding. AI-generated information
+                        can contain errors, omissions or outdated
+                        information and should not be treated as
+                        a guarantee of investment performance.
+
+                    </p>
+
+
+                    <a href="/ai-insights.html">
+                        Explore AI Insights →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================
+         INVESTOR RESPONSIBILITY
+    ========================================= -->
+
+    <section class="responsibility-section">
+
+        <div class="container">
+
+
+            <div class="section-heading">
+
+                <span>
+                    INVESTOR RESPONSIBILITY
+                </span>
+
+
+                <h2>
+
+                    Make
+                    <strong>
+                        Informed Decisions.
+                    </strong>
+
+                </h2>
+
+            </div>
+
+
+            <div class="responsibility-content">
+
+                <p>
+
+                    Every investor has different financial
+                    circumstances, objectives, experience
+                    and tolerance for risk.
 
                 </p>
 
 
-                <a href="/ai-insights.html">
-                    Explore AI Insights →
+                <p>
+
+                    Before making an investment decision,
+                    you should carefully consider whether
+                    the investment is suitable for you.
+
+                </p>
+
+
+                <p>
+
+                    Where appropriate, consider obtaining
+                    independent financial, legal or tax advice
+                    from a qualified professional.
+
+                </p>
+
+
+                <p>
+
+                    Do not invest money that you cannot afford
+                    to lose.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================
+         NO GUARANTEED RETURNS
+    ========================================= -->
+
+    <section class="returns-section">
+
+        <div class="container">
+
+            <div class="returns-box">
+
+                <span>
+                    PERFORMANCE
+                </span>
+
+
+                <h2>
+                    No investment return should be treated as guaranteed.
+                </h2>
+
+
+                <p>
+
+                    Examples, projections, estimates or
+                    hypothetical outcomes displayed on this
+                    website are not promises of future results.
+                    Actual investment performance may differ
+                    substantially.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================
+         CONTACT CTA
+    ========================================= -->
+
+    <section class="contact-cta">
+
+        <div class="container">
+
+            <div class="cta-card">
+
+                <div>
+
+                    <span>
+                        HAVE QUESTIONS?
+                    </span>
+
+
+                    <h2>
+                        Speak with Goldenice International.
+                    </h2>
+
+
+                    <p>
+
+                        If you need clarification about the
+                        information on this page, contact our
+                        team directly.
+
+                    </p>
+
+                </div>
+
+
+                <a
+                    href="https://wa.me/2347068609938?text=Hello%20Goldenice%20International%2C%20I%20have%20questions%20about%20the%20investment%20risk%20disclosure"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="cta-button"
+                >
+
+                    Chat on WhatsApp
+
+                    <span>
+                        →
+                    </span>
+
                 </a>
 
             </div>
 
         </div>
 
-    </div>
-
-</section>
+    </section>
 
 
+    <!-- =========================================
+         FOOTER
+    ========================================= -->
 
-<!-- =========================================
-     INVESTOR RESPONSIBILITY
-========================================= -->
+    <footer>
 
-<section class="responsibility-section">
-
-    <div class="container">
-
-
-        <div class="section-heading">
-
-            <span>
-                INVESTOR RESPONSIBILITY
-            </span>
+        <div class="footer-container">
 
 
-            <h2>
+            <div class="footer-brand">
 
-                Make
-                <strong>
-                    Informed Decisions.
-                </strong>
-
-            </h2>
-
-        </div>
-
-
-        <div class="responsibility-content">
-
-            <p>
-
-                Every investor has different financial
-                circumstances, objectives, experience
-                and tolerance for risk.
-
-            </p>
-
-
-            <p>
-
-                Before making an investment decision,
-                you should carefully consider whether
-                the investment is suitable for you.
-
-            </p>
-
-
-            <p>
-
-                Where appropriate, consider obtaining
-                independent financial, legal or tax advice
-                from a qualified professional.
-
-            </p>
-
-
-            <p>
-
-                Do not invest money that you cannot afford
-                to lose.
-
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =========================================
-     NO GUARANTEED RETURNS
-========================================= -->
-
-<section class="returns-section">
-
-    <div class="container">
-
-        <div class="returns-box">
-
-            <span>
-                PERFORMANCE
-            </span>
-
-
-            <h2>
-                No investment return should be treated as guaranteed.
-            </h2>
-
-
-            <p>
-
-                Examples, projections, estimates or
-                hypothetical outcomes displayed on this
-                website are not promises of future results.
-                Actual investment performance may differ
-                substantially.
-
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =========================================
-     CONTACT CTA
-========================================= -->
-
-<section class="contact-cta">
-
-    <div class="container">
-
-        <div class="cta-card">
-
-            <div>
-
-                <span>
-                    HAVE QUESTIONS?
-                </span>
-
-
-                <h2>
-                    Speak with Goldenice International.
-                </h2>
+                <img
+                    src="/gin.jpeg"
+                    alt="Goldenice International Logo"
+                >
 
 
                 <p>
 
-                    If you need clarification about the
-                    information on this page, contact our
-                    team directly.
+                    Goldenice International provides
+                    investment and market information
+                    for a global audience.
 
                 </p>
 
             </div>
 
 
-            <a
-                href="https://wa.me/2347068609938?text=Hello%20Goldenice%20International,%20I%20have%20questions%20about%20the%20investment%20risk%20disclosure."
-                target="_blank"
-                class="cta-button"
-            >
+            <div class="footer-column">
 
-                Chat on WhatsApp
+                <h4>
+                    COMPANY
+                </h4>
 
-                <span>
-                    →
-                </span>
+                <a href="/index.html">
+                    Home
+                </a>
 
-            </a>
+                <a href="/about.html">
+                    About
+                </a>
+
+                <a href="/market.html">
+                    Markets
+                </a>
+
+                <a href="/contact.html">
+                    Contact
+                </a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>
+                    LEGAL
+                </h4>
+
+                <a
+                    href="/risk-disclosure.html"
+                    class="active"
+                >
+                    Risk Disclosure
+                </a>
+
+                <a href="/privacy-policy.html">
+                    Privacy Policy
+                </a>
+
+                <a href="/terms.html">
+                    Terms &amp; Conditions
+                </a>
+
+                <a href="/faq.html">
+                    FAQ
+                </a>
+
+            </div>
 
         </div>
 
-    </div>
 
-</section>
-
-
-
-<!-- =========================================
-     FOOTER
-========================================= -->
-
-<footer>
-
-    <div class="footer-container">
-
-
-        <div class="footer-brand">
-
-            <img
-                src="/ChatGPT Image Aug 16, 2026, 07_22_34 PM.png"
-                alt="Goldenice International Logo"
-            >
-
+        <div class="footer-bottom">
 
             <p>
 
-                Goldenice International provides
-                investment and market information
-                for a global audience.
+                ©
+                <span id="year"></span>
+                Goldenice International.
+                All rights reserved.
 
+            </p>
+
+
+            <p>
+                Investment involves risk.
             </p>
 
         </div>
 
+    </footer>
 
 
-        <div class="footer-column">
+    <!-- =========================================
+         FLOATING WHATSAPP
+    ========================================= -->
 
-            <h4>
-                COMPANY
-            </h4>
-
-            <a href="/index.html">
-                Home
-            </a>
-
-            <a href="/about.html">
-                About
-            </a>
-
-            <a href="/market.html">
-                Markets
-            </a>
-
-            <a href="/contact.html">
-                Contact
-            </a>
-
-        </div>
+    <a
+        href="https://wa.me/2347068609938?text=Hello%20Goldenice%20International%2C%20I%20would%20like%20more%20information"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="whatsapp-button"
+        aria-label="Chat with Goldenice International on WhatsApp"
+    >
+        ◉
+    </a>
 
 
+    <script>
 
-        <div class="footer-column">
+        /* =========================================
+           GOLDENICE INTERNATIONAL
+           RISK DISCLOSURE JAVASCRIPT
+        ========================================= */
 
-            <h4>
-                LEGAL
-            </h4>
-
-            <a href="risk-disclosure.html">
-                Risk Disclosure
-            </a>
-
-            <a href="/privacy-policy.html">
-                Privacy Policy
-            </a>
-
-            <a href="/terms.html">
-                Terms & Conditions
-            </a>
-
-            <a href="/faq.html">
-                FAQ
-            </a>
-
-        </div>
-
-    </div>
+        document.addEventListener("DOMContentLoaded", () => {
 
 
-    <div class="footer-bottom">
+            /* =====================================
+               MOBILE NAVIGATION
+            ===================================== */
 
-        <p>
+            const menuButton =
+                document.getElementById("menuButton");
 
-            ©
-            <span id="year"></span>
-            Goldenice International.
-            All rights reserved.
-
-        </p>
-
-
-        <p>
-            Investment involves risk.
-        </p>
-
-    </div>
-
-</footer>
+            const navLinks =
+                document.getElementById("navLinks");
 
 
+            if (menuButton && navLinks) {
 
-<!-- =========================================
-     FLOATING WHATSAPP
-========================================= -->
+                menuButton.addEventListener("click", () => {
 
-<a
-    href="https://wa.me/2347068609938?text=Hello%20Goldenice%20International,%20I%20would%20like%20more%20information."
-    target="_blank"
-    class="whatsapp-button"
-    aria-label="Chat with Goldenice International on WhatsApp"
->
-    ◉
-</a>
+                    navLinks.classList.toggle("active");
 
-
-
-<script>
-    /* =========================================
-   GOLDENICE INTERNATIONAL
-   RISK DISCLOSURE JAVASCRIPT
-========================================= */
-
-document.addEventListener("DOMContentLoaded", () => {
-
-    /* =====================================
-       MOBILE NAVIGATION
-    ===================================== */
-
-    const menuButton =
-        document.getElementById("menuButton");
-
-    const navLinks =
-        document.getElementById("navLinks");
-
-
-    if (menuButton && navLinks) {
-
-        menuButton.addEventListener("click", () => {
-
-            navLinks.classList.toggle("active");
-
-            const isOpen =
-                navLinks.classList.contains("active");
-
-            menuButton.setAttribute(
-                "aria-expanded",
-                isOpen ? "true" : "false"
-            );
-
-            menuButton.innerHTML =
-                isOpen ? "×" : "☰";
-
-        });
-
-    }
-
-
-    /* =====================================
-       CLOSE MENU AFTER LINK CLICK
-    ===================================== */
-
-    document
-        .querySelectorAll(".nav-links a")
-        .forEach((link) => {
-
-            link.addEventListener("click", () => {
-
-                if (navLinks) {
-                    navLinks.classList.remove("active");
-                }
-
-                if (menuButton) {
+                    const isOpen =
+                        navLinks.classList.contains("active");
 
                     menuButton.setAttribute(
                         "aria-expanded",
-                        "false"
+                        isOpen ? "true" : "false"
                     );
 
-                    menuButton.innerHTML = "☰";
+                    menuButton.innerHTML =
+                        isOpen ? "×" : "☰";
 
-                }
+                });
 
-            });
-
-        });
-
-
-    /* =====================================
-       NAVBAR SCROLL EFFECT
-    ===================================== */
-
-    const navbar =
-        document.querySelector(".navbar");
+            }
 
 
-    function updateNavbar() {
+            /* =====================================
+               CLOSE MENU AFTER LINK CLICK
+            ===================================== */
 
-        if (!navbar) return;
+            document
+                .querySelectorAll(".nav-links a")
+                .forEach((link) => {
 
-        if (window.scrollY > 40) {
+                    link.addEventListener("click", () => {
 
-            navbar.style.background =
-                "rgba(3, 8, 5, 0.98)";
+                        if (navLinks) {
 
-            navbar.style.boxShadow =
-                "0 10px 35px rgba(0, 0, 0, 0.25)";
-
-        } else {
-
-            navbar.style.background =
-                "rgba(5, 11, 8, 0.94)";
-
-            navbar.style.boxShadow =
-                "none";
-
-        }
-
-    }
-
-
-    window.addEventListener(
-        "scroll",
-        updateNavbar,
-        { passive: true }
-    );
-
-    updateNavbar();
-
-
-    /* =====================================
-       SCROLL REVEAL
-    ===================================== */
-
-    const revealElements =
-        document.querySelectorAll(
-            ".warning-box, .section-heading, .risk-card, .ai-risk-box, .responsibility-content, .returns-box, .cta-card"
-        );
-
-
-    if ("IntersectionObserver" in window) {
-
-        const observer =
-            new IntersectionObserver(
-                (entries, observerInstance) => {
-
-                    entries.forEach((entry) => {
-
-                        if (
-                            entry.isIntersecting
-                        ) {
-
-                            entry.target.classList.add(
-                                "visible"
+                            navLinks.classList.remove(
+                                "active"
                             );
 
-                            observerInstance.unobserve(
-                                entry.target
+                        }
+
+                        if (menuButton) {
+
+                            menuButton.setAttribute(
+                                "aria-expanded",
+                                "false"
                             );
+
+                            menuButton.innerHTML = "☰";
 
                         }
 
                     });
 
-                },
-                {
-                    threshold: 0.1
+                });
+
+
+            /* =====================================
+               NAVBAR SCROLL EFFECT
+            ===================================== */
+
+            const navbar =
+                document.querySelector(".navbar");
+
+
+            function updateNavbar() {
+
+                if (!navbar) return;
+
+
+                if (window.scrollY > 40) {
+
+                    navbar.style.background =
+                        "rgba(3, 8, 5, 0.98)";
+
+                    navbar.style.boxShadow =
+                        "0 10px 35px rgba(0, 0, 0, 0.25)";
+
+                } else {
+
+                    navbar.style.background =
+                        "rgba(5, 11, 8, 0.94)";
+
+                    navbar.style.boxShadow =
+                        "none";
+
                 }
+
+            }
+
+
+            window.addEventListener(
+                "scroll",
+                updateNavbar,
+                { passive: true }
             );
 
-
-        revealElements.forEach((element) => {
-
-            element.classList.add("reveal");
-
-            observer.observe(element);
-
-        });
-
-    } else {
-
-        revealElements.forEach((element) => {
-
-            element.classList.add("visible");
-
-        });
-
-    }
+            updateNavbar();
 
 
-    /* =====================================
-       SMOOTH INTERNAL LINKS
-    ===================================== */
+            /* =====================================
+               SCROLL REVEAL
+            ===================================== */
 
-    const internalLinks =
-        document.querySelectorAll(
-            'a[href^="#"]'
-        );
-
-
-    internalLinks.forEach((link) => {
-
-        link.addEventListener(
-            "click",
-            (event) => {
-
-                const targetID =
-                    link.getAttribute("href");
+            const revealElements =
+                document.querySelectorAll(
+                    ".warning-box, .section-heading, .risk-card, .ai-risk-box, .responsibility-content, .returns-box, .cta-card"
+                );
 
 
-                if (
-                    !targetID ||
-                    targetID === "#"
-                ) {
-                    return;
-                }
+            if ("IntersectionObserver" in window) {
+
+                const observer =
+                    new IntersectionObserver(
+                        (entries, observerInstance) => {
+
+                            entries.forEach((entry) => {
+
+                                if (
+                                    entry.isIntersecting
+                                ) {
+
+                                    entry.target.classList.add(
+                                        "visible"
+                                    );
+
+                                    observerInstance.unobserve(
+                                        entry.target
+                                    );
+
+                                }
+
+                            });
+
+                        },
+                        {
+                            threshold: 0.1
+                        }
+                    );
 
 
-                const target =
-                    document.querySelector(targetID);
+                revealElements.forEach((element) => {
 
+                    element.classList.add("reveal");
 
-                if (!target) return;
+                    observer.observe(element);
 
+                });
 
-                event.preventDefault();
+            } else {
 
+                revealElements.forEach((element) => {
 
-                target.scrollIntoView({
-                    behavior: "smooth",
-                    block: "start"
+                    element.classList.add("visible");
+
                 });
 
             }
-        );
-
-    });
 
 
-    /* =====================================
-       WHATSAPP LINKS
-    ===================================== */
+            /* =====================================
+               SMOOTH INTERNAL LINKS
+            ===================================== */
 
-    const whatsappLinks =
-        document.querySelectorAll(
-            'a[href*="wa.me"]'
-        );
-
-
-    whatsappLinks.forEach((link) => {
-
-        link.addEventListener(
-            "click",
-            () => {
-
-                console.log(
-                    "Goldenice International WhatsApp contact opened."
+            const internalLinks =
+                document.querySelectorAll(
+                    'a[href^="#"]'
                 );
 
+
+            internalLinks.forEach((link) => {
+
+                link.addEventListener(
+                    "click",
+                    (event) => {
+
+                        const targetID =
+                            link.getAttribute("href");
+
+
+                        if (
+                            !targetID ||
+                            targetID === "#"
+                        ) {
+                            return;
+                        }
+
+
+                        const target =
+                            document.querySelector(targetID);
+
+
+                        if (!target) return;
+
+
+                        event.preventDefault();
+
+
+                        target.scrollIntoView({
+                            behavior: "smooth",
+                            block: "start"
+                        });
+
+                    }
+                );
+
+            });
+
+
+            /* =====================================
+               WHATSAPP LINKS
+            ===================================== */
+
+            const whatsappLinks =
+                document.querySelectorAll(
+                    'a[href*="wa.me"]'
+                );
+
+
+            whatsappLinks.forEach((link) => {
+
+                link.addEventListener(
+                    "click",
+                    () => {
+
+                        console.log(
+                            "Goldenice International WhatsApp contact opened."
+                        );
+
+                    }
+                );
+
+            });
+
+
+            /* =====================================
+               CURRENT YEAR
+            ===================================== */
+
+            const yearElement =
+                document.getElementById("year");
+
+
+            if (yearElement) {
+
+                yearElement.textContent =
+                    new Date().getFullYear();
+
             }
-        );
-
-    });
 
 
-    /* =====================================
-       CURRENT YEAR
-    ===================================== */
+            /* =====================================
+               PAGE READY
+            ===================================== */
 
-    const yearElement =
-        document.getElementById("year");
+            console.log(
+                "Goldenice International Risk Disclosure page loaded successfully."
+            );
 
+        });
 
-    if (yearElement) {
-
-        yearElement.textContent =
-            new Date().getFullYear();
-
-    }
-
-
-    /* =====================================
-       PAGE READY
-    ===================================== */
-
-    console.log(
-        "Goldenice International Risk Disclosure page loaded successfully."
-    );
-
-});
-</script>
+    </script>
 
 </body>
 

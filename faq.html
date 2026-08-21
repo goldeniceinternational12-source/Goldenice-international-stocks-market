@@ -10,24 +10,114 @@
         content="width=device-width, initial-scale=1.0"
     >
 
+    <!-- =========================================
+         PRIMARY SEO
+    ========================================= -->
+
     <title>
         FAQ | Goldenice International
     </title>
 
     <meta
         name="description"
-        content="Frequently asked questions about Goldenice International, our market research, investment opportunities, AI-assisted insights and direct WhatsApp communication."
+        content="Find answers to frequently asked questions about Goldenice International, AI-powered market research, market intelligence, business intelligence, investment insights and our services."
     >
 
     <meta
         name="keywords"
-        content="Goldenice International FAQ, investment FAQ, stock investment questions, AI investment insights, global investment"
+        content="Goldenice International FAQ, market research FAQ, market intelligence FAQ, AI market research, AI investment insights, investment research, business intelligence, global market research, market analysis, investment insights"
     >
 
     <meta
         name="robots"
-        content="index, follow"
+        content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
     >
+
+    <meta
+        name="author"
+        content="Goldenice International"
+    >
+
+    <meta
+        name="theme-color"
+        content="#050b08"
+    >
+
+    <!-- =========================================
+         CANONICAL URL
+    ========================================= -->
+
+    <link
+        rel="canonical"
+        href="https://goldeniceinternational.com/faq.html"
+    >
+
+    <!-- =========================================
+         OPEN GRAPH / FACEBOOK / LINKEDIN
+    ========================================= -->
+
+    <meta
+        property="og:type"
+        content="website"
+    >
+
+    <meta
+        property="og:title"
+        content="FAQ | Goldenice International"
+    >
+
+    <meta
+        property="og:description"
+        content="Find answers to frequently asked questions about Goldenice International, AI-powered market research, market intelligence, business intelligence and investment insights."
+    >
+
+    <meta
+        property="og:url"
+        content="https://goldeniceinternational.com/faq.html"
+    >
+
+    <meta
+        property="og:site_name"
+        content="Goldenice International"
+    >
+
+    <meta
+        property="og:image"
+        content="https://goldeniceinternational.com/gin.jpeg"
+    >
+
+    <meta
+        property="og:image:alt"
+        content="Goldenice International"
+    >
+
+    <!-- =========================================
+         TWITTER / X
+    ========================================= -->
+
+    <meta
+        name="twitter:card"
+        content="summary_large_image"
+    >
+
+    <meta
+        name="twitter:title"
+        content="FAQ | Goldenice International"
+    >
+
+    <meta
+        name="twitter:description"
+        content="Frequently asked questions about Goldenice International, AI-powered market research, market intelligence, business intelligence and investment insights."
+    >
+
+    <meta
+        name="twitter:image"
+        content="https://goldeniceinternational.com/gin.jpeg"
+    >
+
+    <!-- =========================================
+         PERFORMANCE / GOOGLE FONTS
+    ========================================= -->
 
     <link
         rel="preconnect"
@@ -45,1029 +135,1082 @@
         rel="stylesheet"
     >
 
-  <style>
-    /* =========================================
-   GOLDENICE INTERNATIONAL
-   FAQ PAGE
-========================================= */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    font-family: "Inter", sans-serif;
-    background: #050b08;
-    color: #ffffff;
-    line-height: 1.6;
-    overflow-x: hidden;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-img {
-    max-width: 100%;
-    display: block;
-}
-
-
-/* =========================================
-   NAVIGATION
-========================================= */
-
-.navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-
-    width: 100%;
-
-    z-index: 1000;
-
-    background: rgba(5, 11, 8, 0.93);
-
-    backdrop-filter: blur(18px);
-
-    border-bottom:
-        1px solid rgba(255, 255, 255, 0.06);
-
-    transition: 0.3s ease;
-}
-
-.nav-container {
-    width: min(1200px, 92%);
-
-    min-height: 82px;
-
-    margin: auto;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: space-between;
-
-    gap: 25px;
-}
-
-.logo img {
-    width: 155px;
-}
-
-.nav-links {
-    display: flex;
-
-    align-items: center;
-
-    gap: 22px;
-}
-
-.nav-links a {
-    color: #89958e;
-
-    font-size: 10px;
-
-    transition: 0.3s ease;
-}
-
-.nav-links a:hover,
-.nav-links a.active {
-    color: #b9ef49;
-}
-
-.nav-button {
-    padding: 12px 18px;
-
-    border-radius: 7px;
-
-    background: #b9ef49;
-
-    color: #061008;
-
-    font-size: 10px;
-
-    font-weight: 800;
-
-    transition: 0.3s ease;
-}
-
-.nav-button:hover {
-    transform: translateY(-2px);
-}
-
-.menu-button {
-    display: none;
-
-    border: none;
-
-    background: transparent;
-
-    color: #ffffff;
-
-    font-size: 27px;
-
-    cursor: pointer;
-}
-
-
-/* =========================================
-   CONTAINER
-========================================= */
-
-.container {
-    width: min(1100px, 92%);
-
-    margin: auto;
-}
-
-
-/* =========================================
-   FAQ HERO
-========================================= */
-
-.faq-hero {
-    position: relative;
-
-    min-height: 620px;
-
-    display: flex;
-
-    align-items: center;
-
-    overflow: hidden;
-
-    background:
-        radial-gradient(
-            circle at 78% 40%,
-            rgba(185, 239, 73, 0.12),
-            transparent 32%
-        ),
-        #050c08;
-}
-
-.hero-grid {
-    position: absolute;
-
-    inset: 0;
-
-    opacity: 0.4;
-
-    background-image:
-        linear-gradient(
-            rgba(185, 239, 73, 0.035) 1px,
-            transparent 1px
-        ),
-        linear-gradient(
-            90deg,
-            rgba(185, 239, 73, 0.035) 1px,
-            transparent 1px
-        );
-
-    background-size: 65px 65px;
-
-    mask-image:
-        linear-gradient(
-            to bottom,
-            black,
-            transparent
-        );
-}
-
-.hero-glow {
-    position: absolute;
-
-    width: 500px;
-    height: 500px;
-
-    right: -180px;
-    top: 80px;
-
-    border-radius: 50%;
-
-    background:
-        radial-gradient(
-            circle,
-            rgba(185, 239, 73, 0.12),
-            transparent 70%
-        );
-}
-
-.hero-content {
-    position: relative;
-
-    z-index: 2;
-
-    width: min(1100px, 92%);
-
-    margin: 70px auto 0;
-}
-
-.hero-label {
-    display: inline-block;
-
-    padding: 8px 13px;
-
-    border:
-        1px solid rgba(185, 239, 73, 0.25);
-
-    border-radius: 30px;
-
-    color: #b9ef49;
-
-    font-size: 9px;
-
-    font-weight: 800;
-
-    letter-spacing: 2px;
-}
-
-.hero-content h1 {
-    max-width: 800px;
-
-    margin-top: 25px;
-
-    font-size: clamp(50px, 7vw, 78px);
-
-    line-height: 0.98;
-
-    letter-spacing: -4px;
-}
-
-.hero-content h1 span {
-    color: #b9ef49;
-}
-
-.hero-content p {
-    max-width: 620px;
-
-    margin-top: 25px;
-
-    color: #7d8a82;
-
-    font-size: 13px;
-}
-
-.hero-button {
-    display: inline-flex;
-
-    align-items: center;
-
-    gap: 12px;
-
-    margin-top: 30px;
-
-    padding: 14px 20px;
-
-    border-radius: 7px;
-
-    background: #b9ef49;
-
-    color: #061008;
-
-    font-size: 10px;
-
-    font-weight: 900;
-
-    transition: 0.3s ease;
-}
-
-.hero-button:hover {
-    transform: translateY(-3px);
-}
-
-.hero-button span {
-    font-size: 16px;
-}
-
-
-/* =========================================
-   INTRO
-========================================= */
-
-.faq-intro {
-    padding: 95px 0;
-
-    background: #08120d;
-}
-
-.intro-content {
-    max-width: 720px;
-}
-
-.intro-content > span,
-.section-heading > span,
-.question-card > div > span,
-.disclaimer-box > span {
-    color: #b9ef49;
-
-    font-size: 9px;
-
-    font-weight: 800;
-
-    letter-spacing: 2px;
-}
-
-.intro-content h2 {
-    margin-top: 14px;
-
-    font-size: clamp(38px, 5vw, 55px);
-
-    line-height: 1.05;
-
-    letter-spacing: -2.5px;
-}
-
-.intro-content h2 strong {
-    color: #b9ef49;
-}
-
-.intro-content p {
-    max-width: 650px;
-
-    margin-top: 18px;
-
-    color: #738078;
-
-    font-size: 12px;
-}
-
-
-/* =========================================
-   FAQ SECTION
-========================================= */
-
-.faq-section {
-    padding: 110px 0;
-
-    background: #050c08;
-}
-
-.section-heading {
-    margin-bottom: 45px;
-}
-
-.section-heading h2 {
-    margin-top: 12px;
-
-    font-size: clamp(38px, 5vw, 55px);
-
-    line-height: 1.05;
-
-    letter-spacing: -2.5px;
-}
-
-.section-heading h2 strong {
-    color: #b9ef49;
-}
-
-
-/* =========================================
-   FAQ LIST
-========================================= */
-
-.faq-list {
-    max-width: 900px;
-
-    display: grid;
-
-    gap: 10px;
-}
-
-.faq-item {
-    border:
-        1px solid rgba(255, 255, 255, 0.065);
-
-    border-radius: 10px;
-
-    background:
-        linear-gradient(
-            145deg,
-            #0a1710,
-            #071009
-        );
-
-    overflow: hidden;
-
-    transition: 0.3s ease;
-}
-
-.faq-item:hover {
-    border-color:
-        rgba(185, 239, 73, 0.18);
-}
-
-.faq-item.open {
-    border-color:
-        rgba(185, 239, 73, 0.22);
-}
-
-.faq-question {
-    width: 100%;
-
-    padding: 23px 25px;
-
-    border: none;
-
-    outline: none;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: space-between;
-
-    gap: 20px;
-
-    background: transparent;
-
-    color: #ffffff;
-
-    text-align: left;
-
-    font-family: inherit;
-
-    font-size: 12px;
-
-    font-weight: 700;
-
-    cursor: pointer;
-}
-
-.faq-icon {
-    flex-shrink: 0;
-
-    width: 28px;
-    height: 28px;
-
-    display: grid;
-
-    place-items: center;
-
-    border:
-        1px solid rgba(185, 239, 73, 0.25);
-
-    border-radius: 50%;
-
-    color: #b9ef49;
-
-    font-size: 17px;
-
-    font-weight: 400;
-
-    transition: 0.3s ease;
-}
-
-.faq-item.open .faq-icon {
-    transform: rotate(45deg);
-
-    background:
-        rgba(185, 239, 73, 0.08);
-}
-
-.faq-answer {
-    max-height: 0;
-
-    overflow: hidden;
-
-    transition:
-        max-height 0.4s ease,
-        padding 0.4s ease;
-}
-
-.faq-answer p {
-    padding: 0 25px;
-
-    color: #707c74;
-
-    font-size: 11px;
-
-    line-height: 1.9;
-}
-
-.faq-item.open .faq-answer {
-    max-height: 350px;
-
-    padding-bottom: 25px;
-}
-
-.answer-link {
-    display: inline-block;
-
-    margin:
-        14px 25px 0;
-
-    color: #b9ef49;
-
-    font-size: 9px;
-
-    font-weight: 800;
-
-    transition: 0.3s ease;
-}
-
-.answer-link:hover {
-    transform: translateX(4px);
-}
-
-
-/* =========================================
-   QUESTION CTA
-========================================= */
-
-.question-cta {
-    padding: 95px 0;
-
-    background: #08120d;
-}
-
-.question-card {
-    display: flex;
-
-    align-items: center;
-
-    justify-content: space-between;
-
-    gap: 40px;
-
-    padding: 45px;
-
-    border-radius: 15px;
-
-    background:
-        linear-gradient(
-            135deg,
-            #101f16,
-            #08110c
-        );
-
-    border:
-        1px solid rgba(185, 239, 73, 0.14);
-}
-
-.question-card h2 {
-    margin-top: 10px;
-
-    font-size: clamp(25px, 3vw, 36px);
-
-    line-height: 1.1;
-
-    letter-spacing: -1px;
-}
-
-.question-card p {
-    max-width: 570px;
-
-    margin-top: 12px;
-
-    color: #6f7b73;
-
-    font-size: 10px;
-}
-
-.whatsapp-cta {
-    flex-shrink: 0;
-
-    display: inline-flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    gap: 12px;
-
-    padding: 15px 20px;
-
-    border-radius: 7px;
-
-    background: #b9ef49;
-
-    color: #061008;
-
-    font-size: 9px;
-
-    font-weight: 900;
-
-    transition: 0.3s ease;
-}
-
-.whatsapp-cta:hover {
-    transform: translateY(-3px);
-}
-
-.whatsapp-cta span {
-    font-size: 16px;
-}
-
-
-/* =========================================
-   DISCLAIMER
-========================================= */
-
-.disclaimer-section {
-    padding: 75px 0;
-
-    background: #050c08;
-}
-
-.disclaimer-box {
-    padding: 30px;
-
-    border-radius: 12px;
-
-    background: #09140e;
-
-    border:
-        1px solid rgba(185, 239, 73, 0.1);
-}
-
-.disclaimer-box h2 {
-    margin-top: 8px;
-
-    font-size: 22px;
-}
-
-.disclaimer-box p {
-    max-width: 850px;
-
-    margin-top: 12px;
-
-    color: #68756d;
-
-    font-size: 10px;
-}
-
-.disclaimer-box a {
-    display: inline-block;
-
-    margin-top: 15px;
-
-    color: #b9ef49;
-
-    font-size: 9px;
-
-    font-weight: 800;
-}
-
-
-/* =========================================
-   FOOTER
-========================================= */
-
-footer {
-    background: #030805;
-
-    border-top:
-        1px solid rgba(255, 255, 255, 0.06);
-}
-
-.footer-container {
-    width: min(1100px, 92%);
-
-    margin: auto;
-
-    padding: 60px 0;
-
-    display: grid;
-
-    grid-template-columns: 2fr 1fr 1fr;
-
-    gap: 60px;
-}
-
-.footer-brand img {
-    width: 145px;
-}
-
-.footer-brand p {
-    max-width: 350px;
-
-    margin-top: 14px;
-
-    color: #505c55;
-
-    font-size: 10px;
-}
-
-.footer-column {
-    display: flex;
-
-    flex-direction: column;
-
-    gap: 10px;
-}
-
-.footer-column h4 {
-    margin-bottom: 5px;
-
-    font-size: 9px;
-}
-
-.footer-column a {
-    color: #5e6a63;
-
-    font-size: 10px;
-
-    transition: 0.3s ease;
-}
-
-.footer-column a:hover {
-    color: #b9ef49;
-}
-
-.footer-bottom {
-    width: min(1100px, 92%);
-
-    margin: auto;
-
-    padding: 20px 0;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: space-between;
-
-    gap: 20px;
-
-    border-top:
-        1px solid rgba(255, 255, 255, 0.06);
-
-    color: #455149;
-
-    font-size: 8px;
-}
-
-
-/* =========================================
-   FLOATING WHATSAPP
-========================================= */
-
-.whatsapp-button {
-    position: fixed;
-
-    right: 24px;
-    bottom: 24px;
-
-    z-index: 999;
-
-    width: 58px;
-    height: 58px;
-
-    display: grid;
-
-    place-items: center;
-
-    border-radius: 50%;
-
-    background: #25d366;
-
-    color: #ffffff;
-
-    font-size: 22px;
-
-    box-shadow:
-        0 10px 30px rgba(0, 0, 0, 0.4);
-
-    animation:
-        whatsappPulse 2s infinite;
-}
-
-@keyframes whatsappPulse {
-
-    0% {
-        box-shadow:
-            0 0 0 0 rgba(37, 211, 102, 0.45);
+    <!-- =========================================
+         FAQ STRUCTURED DATA
+    =========================================
+    
+    IMPORTANT:
+    The questions below should match the actual
+    questions and answers visible in your FAQ body.
+    ========================================= -->
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What is Goldenice International?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Goldenice International provides market research, market intelligence, business intelligence and AI-assisted insights designed to help businesses, investors and decision-makers understand markets and identify opportunities."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What services does Goldenice International provide?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Goldenice International provides market research, market intelligence, business intelligence, AI-assisted research and strategic insights for businesses, investors and organizations."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Does Goldenice International provide investment advice?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Goldenice International provides research, information and analytical insights. Information provided on the website should not be considered personalized financial or investment advice."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How can I contact Goldenice International?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "You can contact Goldenice International through the contact options provided on the website, including direct WhatsApp communication where available."
+                }
+            }
+        ]
     }
+    </script>
 
-    70% {
-        box-shadow:
-            0 0 0 15px rgba(37, 211, 102, 0);
-    }
 
-    100% {
-        box-shadow:
-            0 0 0 0 rgba(37, 211, 102, 0);
-    }
-}
+    <style>
 
+        /* =========================================
+           GOLDENICE INTERNATIONAL
+           FAQ PAGE
+        ========================================= */
 
-/* =========================================
-   SCROLL REVEAL
-========================================= */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-.reveal {
-    opacity: 0;
+        html {
+            scroll-behavior: smooth;
+        }
 
-    transform: translateY(25px);
+        body {
+            font-family: "Inter", sans-serif;
+            background: #050b08;
+            color: #ffffff;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
 
-    transition:
-        opacity 0.7s ease,
-        transform 0.7s ease;
-}
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
 
-.reveal.visible {
-    opacity: 1;
+        img {
+            max-width: 100%;
+            display: block;
+        }
 
-    transform: translateY(0);
-}
 
+        /* =========================================
+           NAVIGATION
+        ========================================= */
 
-/* =========================================
-   TABLET
-========================================= */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
 
-@media (max-width: 1050px) {
+            width: 100%;
 
-    .nav-links {
-        gap: 13px;
-    }
+            z-index: 1000;
 
-    .nav-links a {
-        font-size: 8px;
-    }
+            background: rgba(5, 11, 8, 0.93);
 
-}
+            backdrop-filter: blur(18px);
 
+            border-bottom:
+                1px solid rgba(255, 255, 255, 0.06);
 
-/* =========================================
-   MOBILE NAVIGATION
-========================================= */
+            transition: 0.3s ease;
+        }
 
-@media (max-width: 850px) {
+        .nav-container {
+            width: min(1200px, 92%);
 
-    .nav-links,
-    .nav-button {
-        display: none;
-    }
+            min-height: 82px;
 
-    .menu-button {
-        display: block;
-    }
+            margin: auto;
 
-    .nav-links.active {
+            display: flex;
 
-        position: absolute;
+            align-items: center;
 
-        top: 82px;
-        left: 0;
+            justify-content: space-between;
 
-        width: 100%;
+            gap: 25px;
+        }
 
-        padding: 25px;
+        .logo img {
+            width: 155px;
+        }
 
-        display: flex;
+        .nav-links {
+            display: flex;
 
-        flex-direction: column;
+            align-items: center;
 
-        align-items: flex-start;
+            gap: 22px;
+        }
 
-        gap: 20px;
+        .nav-links a {
+            color: #89958e;
 
-        background: #061009;
+            font-size: 10px;
 
-        border-bottom:
-            1px solid rgba(255, 255, 255, 0.08);
-    }
+            transition: 0.3s ease;
+        }
 
-    .question-card {
-        flex-direction: column;
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: #b9ef49;
+        }
 
-        align-items: flex-start;
-    }
+        .nav-button {
+            padding: 12px 18px;
 
-    .whatsapp-cta {
-        width: 100%;
-    }
+            border-radius: 7px;
 
-    .footer-container {
-        gap: 40px;
-    }
+            background: #b9ef49;
 
-}
+            color: #061008;
 
+            font-size: 10px;
 
-/* =========================================
-   PHONE
-========================================= */
+            font-weight: 800;
 
-@media (max-width: 600px) {
+            transition: 0.3s ease;
+        }
 
-    .nav-container {
-        min-height: 72px;
-    }
+        .nav-button:hover {
+            transform: translateY(-2px);
+        }
 
-    .logo img {
-        width: 125px;
-    }
+        .menu-button {
+            display: none;
 
-    .faq-hero {
-        min-height: 600px;
-    }
+            border: none;
 
-    .hero-content {
-        margin-top: 55px;
-    }
+            background: transparent;
 
-    .hero-content h1 {
-        font-size: 45px;
+            color: #ffffff;
 
-        letter-spacing: -2.5px;
-    }
+            font-size: 27px;
 
-    .hero-content p {
-        font-size: 11px;
-    }
+            cursor: pointer;
+        }
 
-    .faq-intro,
-    .faq-section,
-    .question-cta,
-    .disclaimer-section {
-        padding: 75px 0;
-    }
 
-    .intro-content h2,
-    .section-heading h2 {
-        font-size: 36px;
-    }
+        /* =========================================
+           CONTAINER
+        ========================================= */
 
-    .faq-question {
-        padding: 20px;
+        .container {
+            width: min(1100px, 92%);
 
-        font-size: 11px;
-    }
+            margin: auto;
+        }
 
-    .faq-answer p {
-        padding: 0 20px;
 
-        font-size: 10px;
-    }
+        /* =========================================
+           FAQ HERO
+        ========================================= */
 
-    .answer-link {
-        margin-left: 20px;
-    }
+        .faq-hero {
+            position: relative;
 
-    .question-card {
-        padding: 27px;
-    }
+            min-height: 620px;
 
-    .question-card h2 {
-        font-size: 26px;
-    }
+            display: flex;
 
-    .disclaimer-box {
-        padding: 25px;
-    }
+            align-items: center;
 
-    .footer-container {
-        grid-template-columns: 1fr;
+            overflow: hidden;
 
-        padding: 50px 0;
-    }
+            background:
+                radial-gradient(
+                    circle at 78% 40%,
+                    rgba(185, 239, 73, 0.12),
+                    transparent 32%
+                ),
+                #050c08;
+        }
 
-    .footer-bottom {
-        flex-direction: column;
+        .hero-grid {
+            position: absolute;
 
-        align-items: flex-start;
+            inset: 0;
 
-        padding-bottom: 25px;
-    }
+            opacity: 0.4;
 
-    .whatsapp-button {
-        right: 18px;
-        bottom: 18px;
+            background-image:
+                linear-gradient(
+                    rgba(185, 239, 73, 0.035) 1px,
+                    transparent 1px
+                ),
+                linear-gradient(
+                    90deg,
+                    rgba(185, 239, 73, 0.035) 1px,
+                    transparent 1px
+                );
 
-        width: 54px;
-        height: 54px;
-    }
+            background-size: 65px 65px;
 
-}
+            mask-image:
+                linear-gradient(
+                    to bottom,
+                    black,
+                    transparent
+                );
+        }
 
+        .hero-glow {
+            position: absolute;
 
-/* =========================================
-   SMALL PHONES
-========================================= */
+            width: 500px;
+            height: 500px;
 
-@media (max-width: 380px) {
+            right: -180px;
+            top: 80px;
 
-    .hero-content h1 {
-        font-size: 39px;
-    }
+            border-radius: 50%;
 
-    .faq-question {
-        font-size: 10px;
-    }
+            background:
+                radial-gradient(
+                    circle,
+                    rgba(185, 239, 73, 0.12),
+                    transparent 70%
+                );
+        }
 
-}
-  </style>
+        .hero-content {
+            position: relative;
+
+            z-index: 2;
+
+            width: min(1100px, 92%);
+
+            margin: 70px auto 0;
+        }
+
+        .hero-label {
+            display: inline-block;
+
+            padding: 8px 13px;
+
+            border:
+                1px solid rgba(185, 239, 73, 0.25);
+
+            border-radius: 30px;
+
+            color: #b9ef49;
+
+            font-size: 9px;
+
+            font-weight: 800;
+
+            letter-spacing: 2px;
+        }
+
+        .hero-content h1 {
+            max-width: 800px;
+
+            margin-top: 25px;
+
+            font-size: clamp(50px, 7vw, 78px);
+
+            line-height: 0.98;
+
+            letter-spacing: -4px;
+        }
+
+        .hero-content h1 span {
+            color: #b9ef49;
+        }
+
+        .hero-content p {
+            max-width: 620px;
+
+            margin-top: 25px;
+
+            color: #7d8a82;
+
+            font-size: 13px;
+        }
+
+        .hero-button {
+            display: inline-flex;
+
+            align-items: center;
+
+            gap: 12px;
+
+            margin-top: 30px;
+
+            padding: 14px 20px;
+
+            border-radius: 7px;
+
+            background: #b9ef49;
+
+            color: #061008;
+
+            font-size: 10px;
+
+            font-weight: 900;
+
+            transition: 0.3s ease;
+        }
+
+        .hero-button:hover {
+            transform: translateY(-3px);
+        }
+
+        .hero-button span {
+            font-size: 16px;
+        }
+
+
+        /* =========================================
+           INTRO
+        ========================================= */
+
+        .faq-intro {
+            padding: 95px 0;
+
+            background: #08120d;
+        }
+
+        .intro-content {
+            max-width: 720px;
+        }
+
+        .intro-content > span,
+        .section-heading > span,
+        .question-card > div > span,
+        .disclaimer-box > span {
+            color: #b9ef49;
+
+            font-size: 9px;
+
+            font-weight: 800;
+
+            letter-spacing: 2px;
+        }
+
+        .intro-content h2 {
+            margin-top: 14px;
+
+            font-size: clamp(38px, 5vw, 55px);
+
+            line-height: 1.05;
+
+            letter-spacing: -2.5px;
+        }
+
+        .intro-content h2 strong {
+            color: #b9ef49;
+        }
+
+        .intro-content p {
+            max-width: 650px;
+
+            margin-top: 18px;
+
+            color: #738078;
+
+            font-size: 12px;
+        }
+
+
+        /* =========================================
+           FAQ SECTION
+        ========================================= */
+
+        .faq-section {
+            padding: 110px 0;
+
+            background: #050c08;
+        }
+
+        .section-heading {
+            margin-bottom: 45px;
+        }
+
+        .section-heading h2 {
+            margin-top: 12px;
+
+            font-size: clamp(38px, 5vw, 55px);
+
+            line-height: 1.05;
+
+            letter-spacing: -2.5px;
+        }
+
+        .section-heading h2 strong {
+            color: #b9ef49;
+        }
+
+
+        /* =========================================
+           FAQ LIST
+        ========================================= */
+
+        .faq-list {
+            max-width: 900px;
+
+            display: grid;
+
+            gap: 10px;
+        }
+
+        .faq-item {
+            border:
+                1px solid rgba(255, 255, 255, 0.065);
+
+            border-radius: 10px;
+
+            background:
+                linear-gradient(
+                    145deg,
+                    #0a1710,
+                    #071009
+                );
+
+            overflow: hidden;
+
+            transition: 0.3s ease;
+        }
+
+        .faq-item:hover {
+            border-color:
+                rgba(185, 239, 73, 0.18);
+        }
+
+        .faq-item.open {
+            border-color:
+                rgba(185, 239, 73, 0.22);
+        }
+
+        .faq-question {
+            width: 100%;
+
+            padding: 23px 25px;
+
+            border: none;
+
+            outline: none;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: space-between;
+
+            gap: 20px;
+
+            background: transparent;
+
+            color: #ffffff;
+
+            text-align: left;
+
+            font-family: inherit;
+
+            font-size: 12px;
+
+            font-weight: 700;
+
+            cursor: pointer;
+        }
+
+        .faq-icon {
+            flex-shrink: 0;
+
+            width: 28px;
+            height: 28px;
+
+            display: grid;
+
+            place-items: center;
+
+            border:
+                1px solid rgba(185, 239, 73, 0.25);
+
+            border-radius: 50%;
+
+            color: #b9ef49;
+
+            font-size: 17px;
+
+            font-weight: 400;
+
+            transition: 0.3s ease;
+        }
+
+        .faq-item.open .faq-icon {
+            transform: rotate(45deg);
+
+            background:
+                rgba(185, 239, 73, 0.08);
+        }
+
+        .faq-answer {
+            max-height: 0;
+
+            overflow: hidden;
+
+            transition:
+                max-height 0.4s ease,
+                padding 0.4s ease;
+        }
+
+        .faq-answer p {
+            padding: 0 25px;
+
+            color: #707c74;
+
+            font-size: 11px;
+
+            line-height: 1.9;
+        }
+
+        .faq-item.open .faq-answer {
+            max-height: 350px;
+
+            padding-bottom: 25px;
+        }
+
+        .answer-link {
+            display: inline-block;
+
+            margin:
+                14px 25px 0;
+
+            color: #b9ef49;
+
+            font-size: 9px;
+
+            font-weight: 800;
+
+            transition: 0.3s ease;
+        }
+
+        .answer-link:hover {
+            transform: translateX(4px);
+        }
+
+
+        /* =========================================
+           QUESTION CTA
+        ========================================= */
+
+        .question-cta {
+            padding: 95px 0;
+
+            background: #08120d;
+        }
+
+        .question-card {
+            display: flex;
+
+            align-items: center;
+
+            justify-content: space-between;
+
+            gap: 40px;
+
+            padding: 45px;
+
+            border-radius: 15px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #101f16,
+                    #08110c
+                );
+
+            border:
+                1px solid rgba(185, 239, 73, 0.14);
+        }
+
+        .question-card h2 {
+            margin-top: 10px;
+
+            font-size: clamp(25px, 3vw, 36px);
+
+            line-height: 1.1;
+
+            letter-spacing: -1px;
+        }
+
+        .question-card p {
+            max-width: 570px;
+
+            margin-top: 12px;
+
+            color: #6f7b73;
+
+            font-size: 10px;
+        }
+
+        .whatsapp-cta {
+            flex-shrink: 0;
+
+            display: inline-flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            gap: 12px;
+
+            padding: 15px 20px;
+
+            border-radius: 7px;
+
+            background: #b9ef49;
+
+            color: #061008;
+
+            font-size: 9px;
+
+            font-weight: 900;
+
+            transition: 0.3s ease;
+        }
+
+        .whatsapp-cta:hover {
+            transform: translateY(-3px);
+        }
+
+        .whatsapp-cta span {
+            font-size: 16px;
+        }
+
+
+        /* =========================================
+           DISCLAIMER
+        ========================================= */
+
+        .disclaimer-section {
+            padding: 75px 0;
+
+            background: #050c08;
+        }
+
+        .disclaimer-box {
+            padding: 30px;
+
+            border-radius: 12px;
+
+            background: #09140e;
+
+            border:
+                1px solid rgba(185, 239, 73, 0.1);
+        }
+
+        .disclaimer-box h2 {
+            margin-top: 8px;
+
+            font-size: 22px;
+        }
+
+        .disclaimer-box p {
+            max-width: 850px;
+
+            margin-top: 12px;
+
+            color: #68756d;
+
+            font-size: 10px;
+        }
+
+        .disclaimer-box a {
+            display: inline-block;
+
+            margin-top: 15px;
+
+            color: #b9ef49;
+
+            font-size: 9px;
+
+            font-weight: 800;
+        }
+
+
+        /* =========================================
+           FOOTER
+        ========================================= */
+
+        footer {
+            background: #030805;
+
+            border-top:
+                1px solid rgba(255, 255, 255, 0.06);
+        }
+
+        .footer-container {
+            width: min(1100px, 92%);
+
+            margin: auto;
+
+            padding: 60px 0;
+
+            display: grid;
+
+            grid-template-columns: 2fr 1fr 1fr;
+
+            gap: 60px;
+        }
+
+        .footer-brand img {
+            width: 145px;
+        }
+
+        .footer-brand p {
+            max-width: 350px;
+
+            margin-top: 14px;
+
+            color: #505c55;
+
+            font-size: 10px;
+        }
+
+        .footer-column {
+            display: flex;
+
+            flex-direction: column;
+
+            gap: 10px;
+        }
+
+        .footer-column h4 {
+            margin-bottom: 5px;
+
+            font-size: 9px;
+        }
+
+        .footer-column a {
+            color: #5e6a63;
+
+            font-size: 10px;
+
+            transition: 0.3s ease;
+        }
+
+        .footer-column a:hover {
+            color: #b9ef49;
+        }
+
+        .footer-bottom {
+            width: min(1100px, 92%);
+
+            margin: auto;
+
+            padding: 20px 0;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: space-between;
+
+            gap: 20px;
+
+            border-top:
+                1px solid rgba(255, 255, 255, 0.06);
+
+            color: #455149;
+
+            font-size: 8px;
+        }
+
+
+        /* =========================================
+           FLOATING WHATSAPP
+        ========================================= */
+
+        .whatsapp-button {
+            position: fixed;
+
+            right: 24px;
+            bottom: 24px;
+
+            z-index: 999;
+
+            width: 58px;
+            height: 58px;
+
+            display: grid;
+
+            place-items: center;
+
+            border-radius: 50%;
+
+            background: #25d366;
+
+            color: #ffffff;
+
+            font-size: 22px;
+
+            box-shadow:
+                0 10px 30px rgba(0, 0, 0, 0.4);
+
+            animation:
+                whatsappPulse 2s infinite;
+        }
+
+        @keyframes whatsappPulse {
+
+            0% {
+                box-shadow:
+                    0 0 0 0 rgba(37, 211, 102, 0.45);
+            }
+
+            70% {
+                box-shadow:
+                    0 0 0 15px rgba(37, 211, 102, 0);
+            }
+
+            100% {
+                box-shadow:
+                    0 0 0 0 rgba(37, 211, 102, 0);
+            }
+        }
+
+
+        /* =========================================
+           SCROLL REVEAL
+        ========================================= */
+
+        .reveal {
+            opacity: 0;
+
+            transform: translateY(25px);
+
+            transition:
+                opacity 0.7s ease,
+                transform 0.7s ease;
+        }
+
+        .reveal.visible {
+            opacity: 1;
+
+            transform: translateY(0);
+        }
+
+
+        /* =========================================
+           TABLET
+        ========================================= */
+
+        @media (max-width: 1050px) {
+
+            .nav-links {
+                gap: 13px;
+            }
+
+            .nav-links a {
+                font-size: 8px;
+            }
+
+        }
+
+
+        /* =========================================
+           MOBILE NAVIGATION
+        ========================================= */
+
+        @media (max-width: 850px) {
+
+            .nav-links,
+            .nav-button {
+                display: none;
+            }
+
+            .menu-button {
+                display: block;
+            }
+
+            .nav-links.active {
+
+                position: absolute;
+
+                top: 82px;
+                left: 0;
+
+                width: 100%;
+
+                padding: 25px;
+
+                display: flex;
+
+                flex-direction: column;
+
+                align-items: flex-start;
+
+                gap: 20px;
+
+                background: #061009;
+
+                border-bottom:
+                    1px solid rgba(255, 255, 255, 0.08);
+            }
+
+            .question-card {
+                flex-direction: column;
+
+                align-items: flex-start;
+            }
+
+            .whatsapp-cta {
+                width: 100%;
+            }
+
+            .footer-container {
+                gap: 40px;
+            }
+
+        }
+
+
+        /* =========================================
+           PHONE
+        ========================================= */
+
+        @media (max-width: 600px) {
+
+            .nav-container {
+                min-height: 72px;
+            }
+
+            .logo img {
+                width: 125px;
+            }
+
+            .faq-hero {
+                min-height: 600px;
+            }
+
+            .hero-content {
+                margin-top: 55px;
+            }
+
+            .hero-content h1 {
+                font-size: 45px;
+
+                letter-spacing: -2.5px;
+            }
+
+            .hero-content p {
+                font-size: 11px;
+            }
+
+            .faq-intro,
+            .faq-section,
+            .question-cta,
+            .disclaimer-section {
+                padding: 75px 0;
+            }
+
+            .intro-content h2,
+            .section-heading h2 {
+                font-size: 36px;
+            }
+
+            .faq-question {
+                padding: 20px;
+
+                font-size: 11px;
+            }
+
+            .faq-answer p {
+                padding: 0 20px;
+
+                font-size: 10px;
+            }
+
+            .answer-link {
+                margin-left: 20px;
+            }
+
+            .question-card {
+                padding: 27px;
+            }
+
+            .question-card h2 {
+                font-size: 26px;
+            }
+
+            .disclaimer-box {
+                padding: 25px;
+            }
+
+            .footer-container {
+                grid-template-columns: 1fr;
+
+                padding: 50px 0;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+
+                align-items: flex-start;
+
+                padding-bottom: 25px;
+            }
+
+            .whatsapp-button {
+                right: 18px;
+                bottom: 18px;
+
+                width: 54px;
+                height: 54px;
+            }
+
+        }
+
+
+        /* =========================================
+           SMALL PHONES
+        ========================================= */
+
+        @media (max-width: 380px) {
+
+            .hero-content h1 {
+                font-size: 39px;
+            }
+
+            .faq-question {
+                font-size: 10px;
+            }
+
+        }
+
+    </style>
 
 </head>
 
@@ -1090,7 +1233,7 @@ footer {
         >
 
             <img
-                src="/ChatGPT Image Aug 16, 2026, 07_22_34 PM.png"
+                src="/gin.jpeg"
                 alt="Goldenice International Logo"
             >
 
@@ -1811,7 +1954,7 @@ footer {
         <div class="footer-brand">
 
             <img
-                src="/ChatGPT Image Aug 16, 2026, 07_22_34 PM.png"
+                src="/gin.jpeg"
                 alt="Goldenice International Logo"
             >
 
